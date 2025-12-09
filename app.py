@@ -1003,7 +1003,7 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation (3 Question Test)")
+    st.markdown("### Self-Evaluation")
     
     def submit_callback():
         # Collect answers directly from widget keys (auto-saved by Streamlit)
