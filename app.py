@@ -1002,29 +1002,33 @@ if 'dig_deeper_responses' not in st.session_state:
     st.session_state.dig_deeper_responses = {}
 
 def render_assessment():
-    st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation ")  
-    with st.form("assessment_form"):
+    st.title("Proverbs at Work Assessment")
+    st.markdown("### Self-Evaluation")
+
+    # ←←← THIS IS THE KEY FIX ←←←
+    with st.form("assessment_form", clear_on_submit=False):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
             st.markdown(f"*{item['question']}*")
-            
+
             answer = st.radio(
-                f"Question {item['id']}",
+                "Choose one",
                 options=["Usually", "Not Usually"],
                 key=f"q_{item['id']}",
-                label_visibility="collapsed"
+                label_visibility="collapsed",
+                index=["Usually", "Not Usually"].index(st.session_state.answers.get(item['id'], "Usually"))
             )
             st.session_state.answers[item['id']] = answer
             st.markdown("---")
-        
-        submitted = st.form_submit_button("Submit Assessment", type="primary")
-        st.write(f"Button clicked: {submitted}")
-        
+
+        submitted = st.form_submit_button("Submit Assessment", type="primary", use_container_width=True)
+
         if submitted:
+            # Mark as complete and go straight to results
             st.session_state.assessment_complete = True
             st.session_state.current_page = 'results'
-            st.rerun()
+            st.success("Assessment submitted successfully!")
+            st.rerun()   # This forces the switch immediately
 
 def render_results():
     st.title("📊 Assessment Results")
@@ -1176,6 +1180,13 @@ def export_json(weaknesses):
     )
 
 def main():
+    # Allow manual navigation override (e.g. clicking sidebar after submission)
+    if st.session_state.get('assessment_complete', False):
+        if st.session_state.current_page == 'assessment':
+            # They clicked back to assessment — that's allowed
+            pass
+        else:
+            st.session_state.current_page = 'results'  # always show results once submitted
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
         "Go to:",
