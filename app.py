@@ -1038,13 +1038,13 @@ def render_assessment():
 def render_results():
     st.title("Assessment Results")
 
-    # Ensure answers are saved even if page is refreshed
+    # Make sure answers are always available (even after refresh)
     for item in ASSESSMENT_DATA:
-        key = f"q_{item['id']}"
-        if key in st.session_state:
-            st.session_state.answers[item["id"]] = st.session_state[key]
+        widget_key = f"q_{item['id']}"
+        if widget_key in st.session_state:
+            st.session_state.answers[item["id"]] = st.session_state[widget_key]
 
-    # Find weaknesses
+    # Calculate weaknesses
     weaknesses = [
         item for item in ASSESSMENT_DATA
         if st.session_state.answers.get(item["id"]) != CORRECT_ANSWERS.get(item["id"])
@@ -1053,33 +1053,36 @@ def render_results():
     st.markdown(f"### Areas of Weakness: {len(weaknesses)} out of 3")
 
     if len(weaknesses) == 0:
-        st.success("Congratulations! No areas of weakness identified.")
+        st.balloons()
+        st.success("Congratulations! You scored perfectly — no areas of weakness identified.")
     else:
+        st.markdown("#### Click each topic below to view details and reflect")
         for item in weaknesses:
-            with st.expander(f"{item['id']}. {item['title']}", expanded=True):
+            with st.expander(f"{item['id']}. {item['title']}", expanded=False):
                 st.markdown(f"**Question:** {item['question']}")
                 st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], '—')}")
                 st.markdown(f"**Desired Answer:** {CORRECT_ANSWERS[item['id']]}")
 
-                st.markdown("#### Biblical References")
+                st.markdown("---")
+                st.subheader("Biblical References")
                 for verse in item["verses"]:
                     st.markdown(f"**{verse['ref']}**")
                     st.markdown(f"_{verse['text']}_")
+                    st.markdown("")  # spacing
 
-                st.markdown("#### Dig Deeper Questions")
+                st.markdown("---")
+                st.subheader("Dig Deeper Questions")
                 for idx, question in enumerate(item["dig_deeper"]):
-                    response_key = f"{item['id']}_dd_{idx}"
-                    # Show the actual question as the label — this fixes the disappearing issue
+                    key = f"{item['id']}_dd_{idx}"
                     st.text_area(
                         label=question,
-                        value=st.session_state.dig_deeper_responses.get(response_key, ""),
-                        key=response_key,
+                        value=st.session_state.dig_deeper_responses.get(key, ""),
+                        key=key,
                         height=130,
                         label_visibility="visible"
                     )
 
-    # Report buttons (only show if there are weaknesses)
-    if weaknesses:
+        # Report buttons
         st.markdown("---")
         col1, col2 = st.columns(2)
         with col1:
@@ -1089,7 +1092,7 @@ def render_results():
             if st.button("Export as JSON", use_container_width=True):
                 export_json(weaknesses)
 
-    # Reset button at the bottom
+    # Restart button
     st.markdown("---")
     if st.button("Take Assessment Again", type="secondary", use_container_width=True):
         st.session_state.answers = {}
