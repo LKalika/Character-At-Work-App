@@ -5,6 +5,15 @@ from datetime import datetime
 # Set page config - MUST BE FIRST and ONLY ONCE
 st.set_page_config(page_title="Proverbs at Work Assessment", layout="wide")
 
+# Hide any leftover sidebar space (mobile-proof)
+hide_sidebar_style = """
+    <style>
+        section[data-testid="stSidebar"] {display: none !important;}
+        div[data-testid="collapsedControl"] {display: none !important;}
+    </style>
+"""
+st.markdown(hide_sidebar_style, unsafe_allow_html=True)
+
 # HARD-CODED CORRECT ANSWERS FOR STREAMLIT CLOUD
 CORRECT_ANSWERS = {
     1: "Usually", 2: "Usually", 3: "Usually", 4: "Not Usually", 5: "Usually",
@@ -990,8 +999,6 @@ ASSESSMENT_DATA = [
 # ============================================================================
 
 # Initialize session state
-if 'current_page' not in st.session_state:
-    st.session_state.current_page = 'assessment'
 if 'answers' not in st.session_state:
     st.session_state.answers = {}
 if 'admin_answers' not in st.session_state:
@@ -1001,38 +1008,36 @@ if 'assessment_complete' not in st.session_state:
 if 'dig_deeper_responses' not in st.session_state:
     st.session_state.dig_deeper_responses = {}
 
-# ──────────────────────────────────────────────────────────────
-# 2. Replace your ENTIRE render_assessment() function with this one
-# ──────────────────────────────────────────────────────────────
 def render_assessment():
-    st.title("Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
-
-    # Real-time radios – no form needed
-    for item in ASSESSMENT_DATA:
-        st.markdown(f"**{item['id']}. {item['title']}**")
-        st.markdown(f"*{item['question']}*")
-
-        # Remember the user’s previous choice
-        current = st.session_state.answers.get(item['id'], "Usually")
-        choice = st.radio(
-            "Your answer",
-            ["Usually", "Not Usually"],
-            key=f"q_{item['id']}",
-            index=0 if current == "Usually" else 1,
-            label_visibility="collapsed",
-            horizontal=True
-        )
-        # Save instantly when they change it
-        st.session_state.answers[item['id']] = choice
-
-        st.markdown("___")
-
-    # Simple button – works perfectly on iPhone
-    if st.button("See My Results →", type="primary", use_container_width=True):
+    st.title("📖 Proverbs at Work Assessment")
+    st.markdown("### Self-Evaluation (3 Question Test)")
+    
+    def handle_submit():
+        # Set the complete flag (runs before rerun)
         st.session_state.assessment_complete = True
-        st.balloons()
-        st.rerun()
+    
+    with st.form("assessment_form"):
+        for item in ASSESSMENT_DATA:
+            st.markdown(f"**{item['id']}. {item['title']}**")
+            st.markdown(f"*{item['question']}*")
+            
+            # Use key for auto-persistence; load initial from session
+            initial_index = 0 if st.session_state.answers.get(item['id'], "Usually") == "Usually" else 1
+            st.radio(
+                f"Question {item['id']}",
+                options=["Usually", "Not Usually"],
+                key=f"q_{item['id']}",
+                index=initial_index,
+                label_visibility="collapsed",
+                horizontal=True  # Easier on mobile
+            )
+            st.markdown("---")
+        
+        st.form_submit_button(
+            "Submit Assessment",
+            type="primary",
+            on_click=handle_submit,  # Triggers switch reliably
+            use_container_width=True  # Full-width for mobile taps
         )
 
 def render_results():
@@ -1041,6 +1046,10 @@ def render_results():
     if not st.session_state.assessment_complete:
         st.warning("Please complete the assessment first.")
         return
+    
+    # Collect answers from keys (since form submitted)
+    for item in ASSESSMENT_DATA:
+        st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
     
     weaknesses = []
     for item in ASSESSMENT_DATA:
@@ -1100,16 +1109,20 @@ def render_results():
         with col2:
             if st.button("📄 Export as JSON"):
                 export_json(weaknesses)
+    
+    # Add reset button at the bottom
+    st.markdown("---")
+    if st.button("← Take Assessment Again", type="secondary", use_container_width=True):
+        st.session_state.assessment_complete = False
+        st.session_state.answers = {}
+        st.session_state.dig_deeper_responses = {}
 
 def generate_report(weaknesses):
     report = f"""
 PROVERBS AT WORK ASSESSMENT - RESULTS
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-
 AREAS OF WEAKNESS: {len(weaknesses)}
-
 {'='*80}
-
 """
     
     for item in weaknesses:
@@ -1119,11 +1132,9 @@ AREAS OF WEAKNESS: {len(weaknesses)}
         report += f"""
 {item['id']}. {item['title'].upper()}
 {'-'*80}
-
 Question: {item['question']}
 Your Answer: {user_answer}
 Correct Answer: {correct_answer}
-
 BIBLICAL REFERENCES:
 """
         for verse in item['verses']:
@@ -1184,33 +1195,11 @@ def export_json(weaknesses):
         mime="application/json"
     )
 
-# ──────────────────────────────────────────────────────────────
-# 1. Replace your ENTIRE main() function with this one
-# ──────────────────────────────────────────────────────────────
 def main():
-    # COMPLETELY HIDE the sidebar (works on every device)
-    hide_sidebar_style = """
-        <style>
-            section[data-testid="stSidebar"] {display: none !important;}
-            div[data-testid="collapsedControl"] {display: none !important;}
-        </style>
-    """
-    st.markdown(hide_sidebar_style, unsafe_allow_html=True)
-
-    # Simple flow: Assessment → Results → Start again
-    if not st.session_state.get("assessment_complete", False):
-        render_assessment()
-    else:
+    if st.session_state.assessment_complete:
         render_results()
+    else:
+        render_assessment()
 
-        st.markdown("---")
-        if st.button("Take Assessment Again", type="primary", use_container_width=True):
-            # Reset everything
-            st.session_state.answers = {}
-            st.session_state.assessment_complete = False
-            st.session_state.dig_deeper_responses = {}
-            st.rerun()
 if __name__ == "__main__":
     main()
-
-    
