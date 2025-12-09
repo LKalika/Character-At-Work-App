@@ -1003,8 +1003,7 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation (3 Question Test)")
-    
+    st.markdown("### Self-Evaluation ")  
     with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
@@ -1197,5 +1196,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
     
