@@ -1183,37 +1183,23 @@ def export_json(weaknesses):
     )
 
 def main():
-    st.sidebar.title("Navigation")
-    
-    # Define options and get current index safely
-    page_options = ["Assessment", "Results"]
-    try:
-        current_index = page_options.index(st.session_state.current_page.title())
-    except ValueError:
-        current_index = 0  # Fallback to Assessment
-    
-    # Optional: Lock navigation to results once complete (prevents back-navigation)
-    if st.session_state.assessment_complete:
-        current_index = 1  # Force to Results index
-        st.sidebar.warning("Assessment complete—view your results below.")
-    
-    page = st.sidebar.radio(
-        "Go to:",
-        page_options,
-        key="main_navigation",
-        index=current_index
-    )
-    
-    st.session_state.current_page = page.lower()
-    
-    if st.session_state.current_page == 'assessment':
+    # Hide the sidebar completely on mobile & desktop for the best experience
+    st.sidebar.empty()   # optional – removes the empty sidebar space
+
+    if not st.session_state.get("assessment_complete", False):
         render_assessment()
-    elif st.session_state.current_page == 'results':
+    else:
         render_results()
-    
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### About")
-    st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
+
+        st.markdown("---")
+        col1, col2, col3 = st.columns([1, 3, 1])
+        with col2:
+            if st.button("Take Assessment Again", type="primary", use_container_width=True):
+                # Reset everything for a fresh start
+                st.session_state.answers = {}
+                st.session_state.assessment_complete = False
+                st.session_state.dig_deeper_responses = {}
+                st.rerun()
 if __name__ == "__main__":
     main()
 
