@@ -1022,7 +1022,6 @@ def render_assessment():
             st.markdown("---")
 
         submitted = st.form_submit_button("Submit Assessment", type="primary", use_container_width=True)
-st.write(f"Button clicked: {submitted}")  # DEBUG LINE - ADD THIS
 
         if submitted:
             # Mark as complete and go straight to results
