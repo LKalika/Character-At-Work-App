@@ -1,42 +1,79 @@
 import streamlit as st
-st.set_page_config(page_title="Proverbs", layout="centered")
-
-
-import streamlit as st
 import json
 from datetime import datetime
 import os
 
-# Set page config
+# Set page config - MUST BE FIRST and ONLY ONCE
 st.set_page_config(page_title="Proverbs at Work Assessment", layout="wide")
 
-# File to store admin answers
-ADMIN_ANSWERS_FILE = "admin_answers.json"
+# HARD-CODED CORRECT ANSWERS FOR STREAMLIT CLOUD
+CORRECT_ANSWERS = {
+    1: "Usually",
+    2: "Usually",
+    3: "Usually",
+    4: "Not Usually",
+    5: "Usually",
+    6: "Usually",   
+    7: "Usually",
+    8: "Usually",
+    9: "Not Usually",
+    10: "Usually",
+    11: "Usually",
+    12: "Not Usually",   
+    13: "Not Usually",
+    14: "Not Usually",
+    15: "Usually",
+    16: "Not Usually",
+    17: "Not Usually",
+    18: "Not Usually",   
+    19: "Not Usually",
+    20: "Not Usually",
+    21: "Not Usually",
+    22: "Usually",
+    23: "Not Usually",
+    24: "Usually",  
+    25: "Usually",
+    26: "Not Usually",
+    27: "Not Usually",
+    28: "Not Usually",
+    29: "Not Usually",
+    30: "Not Usually",   
+    31: "Usually",
+    32: "Usually",
+    33: "Not Usually",
+    34: "Usually",
+    35: "Usually",
+    36: "Usually",   
+    37: "Usually",
+    38: "Usually",
+    39: "Usually",
+    40: "Not Usually",
+    41: "Usually",
+    42: "Usually",   
+    43: "Usually",
+    44: "Not Usually",
+    45: "Not Usually",
+    46: "Not Usually",
+    47: "Not Usually",
+    48: "Usually",  
+    49: "Usually",
+    50: "Usually",
+    51: "Usually",
+    52: "Usually"
+}  # <-- CLOSING BRACE ADDED HERE
 
-# Function to load admin answers from file
-def load_admin_answers():
-    try:
-        if os.path.exists(ADMIN_ANSWERS_FILE):
-            with open(ADMIN_ANSWERS_FILE, 'r') as f:
-                answers = json.load(f)
-                # Convert string keys to integers if needed
-                return {int(k): v for k, v in answers.items()}
-        return {}
-    except Exception as e:
-        st.error(f"Error loading admin answers: {e}")
-        return {}
-
-# Function to save admin answers to file
-def save_admin_answers(answers):
-    try:
-        # Ensure all keys are integers and values are valid
-        clean_answers = {int(k): str(v) for k, v in answers.items() if v in ["Usually", "Not Usually"]}
-        with open(ADMIN_ANSWERS_FILE, 'w') as f:
-            json.dump(clean_answers, f, indent=2)
-        return True
-    except Exception as e:
-        st.error(f"Error saving admin answers: {e}")
-        return False
+# Assessment data - ADD YOUR 52 QUESTIONS HERE
+ASSESSMENT_DATA = [
+    # Your assessment data goes here
+    # Example format:
+    # {
+    #     "id": 1,
+    #     "title": "Question Title",
+    #     "question": "Question text?",
+    #     "verses": [{"ref": "Proverbs 1:1", "text": "Verse text"}],
+    #     "dig_deeper": ["Question 1?", "Question 2?"]
+    # },
+]
 
 # Initialize session state
 if 'current_page' not in st.session_state:
@@ -44,17 +81,220 @@ if 'current_page' not in st.session_state:
 if 'answers' not in st.session_state:
     st.session_state.answers = {}
 if 'admin_answers' not in st.session_state:
-    st.session_state.admin_answers = load_admin_answers()
+    # Use hard-coded answers instead of loading from file
+    st.session_state.admin_answers = CORRECT_ANSWERS.copy()
 if 'assessment_complete' not in st.session_state:
     st.session_state.assessment_complete = False
 if 'dig_deeper_responses' not in st.session_state:
     st.session_state.dig_deeper_responses = {}
-if 'show_admin' not in st.session_state:
-    # Show admin tab only if no admin answers have been set yet
-    st.session_state.show_admin = len(st.session_state.admin_answers) == 0
 
-# Assessment data (truncated for brevity - add all 52 items)
-ASSESSMENT_DATA = [
+# ASSESSMENT FUNCTIONS
+def render_assessment():
+    st.title("📖 Proverbs at Work Assessment")
+    st.markdown("### Self-Evaluation")
+    
+    with st.form("assessment_form"):
+        for item in ASSESSMENT_DATA:
+            st.markdown(f"**{item['id']}. {item['title']}**")
+            st.markdown(f"*{item['question']}*")
+            
+            answer = st.radio(
+                f"Question {item['id']}",
+                options=["Usually", "Not Usually"],
+                key=f"q_{item['id']}",
+                label_visibility="collapsed"
+            )
+            st.session_state.answers[item['id']] = answer
+            st.markdown("---")
+        
+        submitted = st.form_submit_button("Submit Assessment", type="primary")
+        
+        if submitted:
+            st.session_state.assessment_complete = True
+            st.session_state.current_page = 'results'
+            st.rerun()
+
+def render_results():
+    st.title("📊 Assessment Results")
+    
+    if not st.session_state.assessment_complete:
+        st.warning("Please complete the assessment first.")
+        return
+    
+    # Calculate weaknesses
+    weaknesses = []
+    for item in ASSESSMENT_DATA:
+        user_answer = st.session_state.answers.get(item['id'])
+        correct_answer = st.session_state.admin_answers.get(item['id'])
+        
+        # Only compare if both answers exist
+        if user_answer and correct_answer and user_answer != correct_answer:
+            weaknesses.append(item)
+    
+    st.markdown(f"### Areas of Weakness: {len(weaknesses)} out of {len(ASSESSMENT_DATA)}")
+    
+    if len(weaknesses) == 0:
+        st.success("🎉 Congratulations! No areas of weakness identified.")
+        return
+    
+    # Display weaknesses
+    for item in weaknesses:
+        with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
+            st.markdown(f"**Question:** {item['question']}")
+            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
+            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
+            
+            st.markdown("---")
+            st.markdown("#### 📖 Biblical References:")
+            
+            for verse in item['verses']:
+                with st.container():
+                    st.markdown(f"**{verse['ref']}**")
+                    st.markdown(f"*{verse['text']}*")
+                    st.markdown("")
+            
+            st.markdown("---")
+            st.markdown("#### 💭 Dig Deeper Questions:")
+            
+            for idx, question in enumerate(item['dig_deeper']):
+                st.markdown(f"**{idx + 1}.** {question}")
+                
+                response_key = f"{item['id']}_dd_{idx}"
+                response = st.text_area(
+                    f"Your response to question {idx + 1}",
+                    key=response_key,
+                    height=100,
+                    label_visibility="collapsed"
+                )
+                
+                if response_key not in st.session_state.dig_deeper_responses:
+                    st.session_state.dig_deeper_responses[response_key] = ""
+                st.session_state.dig_deeper_responses[response_key] = response
+                
+                st.markdown("")
+    
+    # Print/Export functionality
+    st.markdown("---")
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        if st.button("🖨️ Generate Printable Report", type="primary"):
+            generate_report(weaknesses)
+    
+    with col2:
+        if st.button("📄 Export as JSON"):
+            export_json(weaknesses)
+
+def generate_report(weaknesses):
+    """Generate a printable text report"""
+    report = f"""
+PROVERBS AT WORK ASSESSMENT - RESULTS
+Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+AREAS OF WEAKNESS: {len(weaknesses)}
+
+{'='*80}
+
+"""
+    
+    for item in weaknesses:
+        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
+        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
+        
+        report += f"""
+{item['id']}. {item['title'].upper()}
+{'-'*80}
+
+Question: {item['question']}
+Your Answer: {user_answer}
+Correct Answer: {correct_answer}
+
+BIBLICAL REFERENCES:
+"""
+        for verse in item['verses']:
+            report += f"\n{verse['ref']}\n{verse['text']}\n"
+        
+        report += "\nDIG DEEPER QUESTIONS AND YOUR RESPONSES:\n"
+        
+        for idx, question in enumerate(item['dig_deeper']):
+            response_key = f"{item['id']}_dd_{idx}"
+            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
+            report += f"\n{idx + 1}. {question}\n"
+            report += f"Response: {response}\n"
+        
+        report += f"\n{'='*80}\n"
+    
+    st.download_button(
+        label="📥 Download Report (TXT)",
+        data=report,
+        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
+        mime="text/plain"
+    )
+
+def export_json(weaknesses):
+    """Export results as JSON"""
+    export_data = {
+        "timestamp": datetime.now().isoformat(),
+        "total_weaknesses": len(weaknesses),
+        "weaknesses": []
+    }
+    
+    for item in weaknesses:
+        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
+        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
+        
+        weakness_data = {
+            "id": item['id'],
+            "title": item['title'],
+            "question": item['question'],
+            "user_answer": user_answer,
+            "correct_answer": correct_answer,
+            "verses": item['verses'],
+            "dig_deeper_questions": item['dig_deeper'],
+            "dig_deeper_responses": []
+        }
+        
+        for idx in range(len(item['dig_deeper'])):
+            response_key = f"{item['id']}_dd_{idx}"
+            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
+            weakness_data['dig_deeper_responses'].append(response)
+        
+        export_data['weaknesses'].append(weakness_data)
+    
+    json_str = json.dumps(export_data, indent=2)
+    
+    st.download_button(
+        label="📥 Download JSON",
+        data=json_str,
+        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+        mime="application/json"
+    )
+
+# Main app
+def main():
+    # Sidebar navigation (no Admin tab - answers are hard-coded)
+    st.sidebar.title("Navigation")
+    page = st.sidebar.radio(
+        "Go to:",
+        ["Assessment", "Results"],
+        index=["Assessment", "Results"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results"] else 0
+    )
+    
+    st.session_state.current_page = page.lower()
+    
+    # Render appropriate page
+    if st.session_state.current_page == 'assessment':
+        render_assessment()
+    elif st.session_state.current_page == 'results':
+        render_results()
+    
+    # Footer
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### About")
+    st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
+
+if __name__ == "__main__":
+    main()
     {
         "id": 1,
         "title": "Accept Instruction from Others",
@@ -978,9 +1218,9 @@ ASSESSMENT_DATA = [
             "How can improving your skills of understanding human nature help you work with and/or lead others?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    },
+        },
     {
-        "id": 51,
+         "id": 51,
         "title": "Respect Elders",
         "question": "I'd consider myself respectful of my elders? Or, if you are the elder, have you been respectful of yourself; imparting your knowledge to the younger generation?",
         "verses": [
@@ -993,7 +1233,7 @@ ASSESSMENT_DATA = [
             "As an elder, are you valuing yourself, passing on your wisdom and being an asset to those who are younger and have more strength and energy?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    },
+        },
     {
         "id": 52,
         "title": "Great Commission",
@@ -1004,9 +1244,19 @@ ASSESSMENT_DATA = [
         "dig_deeper": [
             "Have you tried your best to share Christ with those around you that are drawn to death, stumbling to the slaughter?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    }
-]
+      ]
+ }
+
+if 'current_page' not in st.session_state:
+    st.session_state.current_page = 'assessment'
+if 'answers' not in st.session_state:
+    st.session_state.answers = {}
+if 'admin_answers' not in st.session_state:
+    st.session_state.admin_answers = CORRECT_ANSWERS.copy()
+if 'assessment_complete' not in st.session_state:
+    st.session_state.assessment_complete = False
+if 'dig_deeper_responses' not in st.session_state:
+    st.session_state.dig_deeper_responses = {}
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
@@ -1033,29 +1283,6 @@ def render_assessment():
             st.session_state.current_page = 'results'
             st.rerun()
 
-def render_admin():
-    st.title("⚙️ Admin - Set Correct Answers")
-    st.markdown("### Define the 'correct' answer for each question")
-    
-    with st.form("admin_form"):
-        for item in ASSESSMENT_DATA:
-            st.markdown(f"**{item['id']}. {item['title']}**")
-            st.markdown(f"*{item['question']}*")
-            
-            correct_answer = st.radio(
-                f"Correct Answer for Question {item['id']}",
-                options=["Usually", "Not Usually"],
-                key=f"admin_{item['id']}",
-                index=0 if st.session_state.admin_answers.get(item['id']) == "Usually" else 1
-            )
-            st.session_state.admin_answers[item['id']] = correct_answer
-            st.markdown("---")
-        
-        saved = st.form_submit_button("Save Admin Settings", type="primary")
-        
-        if saved:
-            st.success("✅ Admin settings saved successfully!")
-
 def render_results():
     st.title("📊 Assessment Results")
     
@@ -1063,13 +1290,12 @@ def render_results():
         st.warning("Please complete the assessment first.")
         return
     
-    # Calculate weaknesses
     weaknesses = []
     for item in ASSESSMENT_DATA:
         user_answer = st.session_state.answers.get(item['id'])
-        correct_answer = st.session_state.admin_answers.get(item['id'], "Usually")
+        correct_answer = st.session_state.admin_answers.get(item['id'])
         
-        if user_answer != correct_answer:
+        if user_answer and correct_answer and user_answer != correct_answer:
             weaknesses.append(item)
     
     st.markdown(f"### Areas of Weakness: {len(weaknesses)} out of {len(ASSESSMENT_DATA)}")
@@ -1078,12 +1304,11 @@ def render_results():
         st.success("🎉 Congratulations! No areas of weakness identified.")
         return
     
-    # Display weaknesses
     for item in weaknesses:
         with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
             st.markdown(f"**Question:** {item['question']}")
-            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'])}")
-            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'])}")
+            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
+            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
             
             st.markdown("---")
             st.markdown("#### 📖 Biblical References:")
@@ -1114,7 +1339,6 @@ def render_results():
                 
                 st.markdown("")
     
-    # Print/Export functionality
     st.markdown("---")
     col1, col2 = st.columns(2)
     
@@ -1127,7 +1351,6 @@ def render_results():
             export_json(weaknesses)
 
 def generate_report(weaknesses):
-    """Generate a printable text report"""
     report = f"""
 PROVERBS AT WORK ASSESSMENT - RESULTS
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
@@ -1139,13 +1362,16 @@ AREAS OF WEAKNESS: {len(weaknesses)}
 """
     
     for item in weaknesses:
+        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
+        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
+        
         report += f"""
 {item['id']}. {item['title'].upper()}
 {'-'*80}
 
 Question: {item['question']}
-Your Answer: {st.session_state.answers.get(item['id'])}
-Correct Answer: {st.session_state.admin_answers.get(item['id'])}
+Your Answer: {user_answer}
+Correct Answer: {correct_answer}
 
 BIBLICAL REFERENCES:
 """
@@ -1156,7 +1382,7 @@ BIBLICAL REFERENCES:
         
         for idx, question in enumerate(item['dig_deeper']):
             response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "")
+            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
             report += f"\n{idx + 1}. {question}\n"
             report += f"Response: {response}\n"
         
@@ -1170,7 +1396,6 @@ BIBLICAL REFERENCES:
     )
 
 def export_json(weaknesses):
-    """Export results as JSON"""
     export_data = {
         "timestamp": datetime.now().isoformat(),
         "total_weaknesses": len(weaknesses),
@@ -1178,12 +1403,15 @@ def export_json(weaknesses):
     }
     
     for item in weaknesses:
+        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
+        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
+        
         weakness_data = {
             "id": item['id'],
             "title": item['title'],
             "question": item['question'],
-            "user_answer": st.session_state.answers.get(item['id']),
-            "correct_answer": st.session_state.admin_answers.get(item['id']),
+            "user_answer": user_answer,
+            "correct_answer": correct_answer,
             "verses": item['verses'],
             "dig_deeper_questions": item['dig_deeper'],
             "dig_deeper_responses": []
@@ -1191,7 +1419,7 @@ def export_json(weaknesses):
         
         for idx in range(len(item['dig_deeper'])):
             response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "")
+            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
             weakness_data['dig_deeper_responses'].append(response)
         
         export_data['weaknesses'].append(weakness_data)
@@ -1205,27 +1433,21 @@ def export_json(weaknesses):
         mime="application/json"
     )
 
-# Main app
 def main():
-    # Sidebar navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
-        "Go to:",
-        ["Assessment", "Results", "Admin"],
-        index=["Assessment", "Results", "Admin"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results", "Admin"] else 0
+    "Go to:",
+    ["Assessment", "Results"],
+    key="main_navigation",  # ← ADD THIS LINE
+    index=["Assessment", "Results"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results"] else 0
     )
-    
     st.session_state.current_page = page.lower()
     
-    # Render appropriate page
     if st.session_state.current_page == 'assessment':
         render_assessment()
-    elif st.session_state.current_page == 'admin':
-        render_admin()
     elif st.session_state.current_page == 'results':
         render_results()
     
-    # Footer
     st.sidebar.markdown("---")
     st.sidebar.markdown("### About")
     st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
