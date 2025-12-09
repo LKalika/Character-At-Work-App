@@ -1003,14 +1003,14 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation (3 Question Test)")
+    st.markdown("### Self-Evaluation")
    
     with st.form("assessment_form", clear_on_submit=False):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
             st.markdown(f"*{item['question']}*")
            
-            default_index = ["Usually", "Not Usually"].index(st.session_state.answers.get(item['id'], "Usually"))
+            default_index = 0 if st.session_state.answers.get(item['id'], "Usually") == "Usually" else 1
             st.radio(
                 f"Question {item['id']}",
                 options=["Usually", "Not Usually"],
@@ -1022,12 +1022,12 @@ def render_assessment():
        
         submitted = st.form_submit_button("Submit Assessment", type="primary")
    
+    # Move OUTSIDE the form to avoid proxy issues
     if submitted:
-        for item in ASSESSMENT_DATA:  # Collect answers here
+        for item in ASSESSMENT_DATA:
             st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
         st.session_state.assessment_complete = True
         st.session_state.current_page = 'results'
-        st.session_state['main_navigation'] = 'Results'  # Sync navigation state
         st.success("Assessment submitted—switching to results!")
         st.rerun()
 
@@ -1181,32 +1181,34 @@ def export_json(weaknesses):
     )
 
 def main():
-    # Allow manual navigation override (e.g. clicking sidebar after submission)
-    if st.session_state.get('assessment_complete', False):
-        if st.session_state.current_page == 'assessment':
-            # They clicked back to assessment — that's allowed
-            pass
-        else:
-            st.session_state.current_page = 'results'  # always show results once submitted
     st.sidebar.title("Navigation")
+    
+    # Pre-set the radio to match current_page (this syncs UI without setting state inside form)
+    page_options = ["Assessment", "Results"]
+    current_index = page_options.index(st.session_state.current_page.title())
+    
     page = st.sidebar.radio(
         "Go to:",
-        ["Assessment", "Results"],
+        page_options,
         key="main_navigation",
-        index=["Assessment", "Results"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results"] else 0
+        index=current_index  # Now safe—no more errors
     )
-    
+   
     st.session_state.current_page = page.lower()
-    
+   
+    # Optional: Lock to results once submitted (remove if you want full back/forth)
+    if st.session_state.assessment_complete and st.session_state.current_page == 'assessment':
+        st.session_state.current_page = 'results'
+        st.rerun()
+   
     if st.session_state.current_page == 'assessment':
         render_assessment()
     elif st.session_state.current_page == 'results':
         render_results()
-    
+   
     st.sidebar.markdown("---")
     st.sidebar.markdown("### About")
     st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
-
 if __name__ == "__main__":
     main()
 
