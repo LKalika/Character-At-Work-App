@@ -1001,36 +1001,38 @@ if 'assessment_complete' not in st.session_state:
 if 'dig_deeper_responses' not in st.session_state:
     st.session_state.dig_deeper_responses = {}
 
+# ──────────────────────────────────────────────────────────────
+# 2. Replace your ENTIRE render_assessment() function with this one
+# ──────────────────────────────────────────────────────────────
 def render_assessment():
     st.title("Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation(2)")
+    st.markdown("### Self-Evaluation")
 
-    def go_to_results():
-        # Collect answers from the radio widgets
-        for item in ASSESSMENT_DATA:
-            st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
+    # Real-time radios – no form needed
+    for item in ASSESSMENT_DATA:
+        st.markdown(f"**{item['id']}. {item['title']}**")
+        st.markdown(f"*{item['question']}*")
+
+        # Remember the user’s previous choice
+        current = st.session_state.answers.get(item['id'], "Usually")
+        choice = st.radio(
+            "Your answer",
+            ["Usually", "Not Usually"],
+            key=f"q_{item['id']}",
+            index=0 if current == "Usually" else 1,
+            label_visibility="collapsed",
+            horizontal=True
+        )
+        # Save instantly when they change it
+        st.session_state.answers[item['id']] = choice
+
+        st.markdown("___")
+
+    # Simple button – works perfectly on iPhone
+    if st.button("See My Results →", type="primary", use_container_width=True):
         st.session_state.assessment_complete = True
-
-    with st.form("assessment_form"):
-        for item in ASSESSMENT_DATA:
-            st.markdown(f"**{item['id']}. {item['title']}**")
-            st.markdown(f"*{item['question']}*")
-
-            initial = st.session_state.answers.get(item['id'], "Usually")
-            st.radio(
-                "Select one",
-                ["Usually", "Not Usually"],
-                key=f"q_{item['id']}",
-                index=0 if initial == "Usually" else 1,
-                label_visibility="collapsed"
-            )
-            st.markdown("---")
-
-        st.form_submit_button(
-            "See My Results",
-            type="primary",
-            on_click=go_to_results,
-            use_container_width=True
+        st.balloons()
+        st.rerun()
         )
 
 def render_results():
@@ -1182,24 +1184,32 @@ def export_json(weaknesses):
         mime="application/json"
     )
 
+# ──────────────────────────────────────────────────────────────
+# 1. Replace your ENTIRE main() function with this one
+# ──────────────────────────────────────────────────────────────
 def main():
-    # Hide the sidebar completely on mobile & desktop for the best experience
-    st.sidebar.empty()   # optional – removes the empty sidebar space
+    # COMPLETELY HIDE the sidebar (works on every device)
+    hide_sidebar_style = """
+        <style>
+            section[data-testid="stSidebar"] {display: none !important;}
+            div[data-testid="collapsedControl"] {display: none !important;}
+        </style>
+    """
+    st.markdown(hide_sidebar_style, unsafe_allow_html=True)
 
+    # Simple flow: Assessment → Results → Start again
     if not st.session_state.get("assessment_complete", False):
         render_assessment()
     else:
         render_results()
 
         st.markdown("---")
-        col1, col2, col3 = st.columns([1, 3, 1])
-        with col2:
-            if st.button("Take Assessment Again", type="primary", use_container_width=True):
-                # Reset everything for a fresh start
-                st.session_state.answers = {}
-                st.session_state.assessment_complete = False
-                st.session_state.dig_deeper_responses = {}
-                st.rerun()
+        if st.button("Take Assessment Again", type="primary", use_container_width=True):
+            # Reset everything
+            st.session_state.answers = {}
+            st.session_state.assessment_complete = False
+            st.session_state.dig_deeper_responses = {}
+            st.rerun()
 if __name__ == "__main__":
     main()
 
