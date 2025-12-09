@@ -1006,52 +1006,42 @@ if "assessment_complete" not in st.session_state:
 if "dig_deeper_responses" not in st.session_state:
     st.session_state.dig_deeper_responses = {}
 
-# ------------------------------------------------------------------
+# ————————————————————————————————————————
 def render_assessment():
     st.title("Proverbs at Work Assessment")
     st.markdown("### Self-Evaluation")
 
-    with st.form(key="assessment_form"):
+    with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
             st.markdown(f"*{item['question']}*")
 
-            # Remember previous selection (if any)
             prev = st.session_state.answers.get(item["id"], "Usually")
             index = 0 if prev == "Usually" else 1
 
             choice = st.radio(
-                "Select one",
+                "",
                 ["Usually", "Not Usually"],
                 index=index,
                 key=f"q_{item['id']}",
                 label_visibility="collapsed",
-                horizontal=True,
+                horizontal=True
             )
-            # Save immediately so it's available on the results page
             st.session_state.answers[item["id"]] = choice
-
             st.markdown("---")
 
-        submitted = st.form_submit_button(
-            "See My Results",
-            type="primary",
-            use_container_width=True
-        )
-
-        if submitted:
+        if st.form_submit_button("See My Results", type="primary", use_container_width=True):
             st.session_state.assessment_complete = True
             st.rerun()
 
-# ------------------------------------------------------------------
+# ————————————————————————————————————————
 def render_results():
     st.title("Assessment Results")
 
-    # Safety: copy answers again in case someone lands here directly
+    # Make sure answers are copied (in case page is refreshed)
     for item in ASSESSMENT_DATA:
-        key = f"q_{item['id']}"
-        if key in st.session_state:
-            st.session_state.answers[item["id"]] = st.session_state[key]
+        if f"q_{item['id']}" in st.session_state:
+            st.session_state.answers[item["id"]] = st.session_state[f"q_{item['id']}"]
 
     weaknesses = [
         item for item in ASSESSMENT_DATA
@@ -1077,7 +1067,6 @@ def render_results():
                     resp = st.text_area(q, value=st.session_state.dig_deeper_responses.get(key, ""), key=key, height=100, label_visibility="collapsed")
                     st.session_state.dig_deeper_responses[key] = resp
 
-    # Buttons (report & JSON) – unchanged from your original code
     if weaknesses:
         col1, col2 = st.columns(2)
         with col1:
@@ -1094,15 +1083,65 @@ def render_results():
         st.session_state.dig_deeper_responses = {}
         st.rerun()
 
-# ------------------------------------------------------------------
-# Report & JSON functions (exactly the same as yours – just pasted here)
+# ————————————————————————————————————————
 def generate_report(weaknesses):
-    # ... (your original generate_report code unchanged)
+    report = f"""
+PROVERBS AT WORK ASSESSMENT - RESULTS
+Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+AREAS OF WEAKNESS: {len(weaknesses)}
+{'='*80}
+"""
+    for item in weaknesses:
+        report += f"\n{item['id']}. {item['title'].upper()}\n"
+        report += f"Question: {item['question']}\n"
+        report += f"Your Answer: {st.session_state.answers.get(item['id'], '—')}\n"
+        report += f"Correct Answer: {CORRECT_ANSWERS[item['id']]}\n\nBiblical References:\n"
+        for v in item["verses"]:
+            report += f"{v['ref']}\n{v['text']}\n\n"
+        report += "Dig Deeper Responses:\n"
+        for i, q in enumerate(item["dig_deeper"]):
+            key = f"{item['id']}_dd_{i}"
+            report += f"{i+1}. {q}\n   → {st.session_state.dig_deeper_responses.get(key, 'No response')}\n"
+        report += "\n" + "="*80 + "\n"
 
+    st.download_button(
+        "Download Report (TXT)",
+        data=report,
+        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
+        mime="text/plain"
+    )
+
+# ————————————————————————————————————————
 def export_json(weaknesses):
-    # ... (your original export_json code unchanged)
+    data = {
+        "timestamp": datetime.now().isoformat(),
+        "weaknesses_count": len(weaknesses),
+        "weaknesses": []
+    }
+    for item in weaknesses:
+        entry = {
+            "id": item["id"],
+            "title": item["title"],
+            "question": item["question"],
+            "your_answer": st.session_state.answers.get(item["id"]),
+            "correct_answer": CORRECT_ANSWERS[item["id"]],
+            "verses": item["verses"],
+            "dig_deeper": item["dig_deeper"],
+            "responses": [
+                st.session_state.dig_deeper_responses.get(f"{item['id']}_dd_{i}", "")
+                for i in range(len(item["dig_deeper"]))
+            ]
+        }
+        data["weaknesses"].append(entry)
 
-# ------------------------------------------------------------------
+    st.download_button(
+        "Download JSON",
+        data=json.dumps(data, indent=2),
+        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+        mime="application/json"
+    )
+
+# ————————————————————————————————————————
 def main():
     if st.session_state.assessment_complete:
         render_results()
