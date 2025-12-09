@@ -1003,7 +1003,7 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
+    st.markdown("### Self-Evaluation (3 Question Test)")
     
     with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
@@ -1045,52 +1045,52 @@ def render_results():
     
     if len(weaknesses) == 0:
         st.success("🎉 Congratulations! No areas of weakness identified.")
-        return
-    
-    for item in weaknesses:
-        with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
-            st.markdown(f"**Question:** {item['question']}")
-            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
-            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
-            
-            st.markdown("---")
-            st.markdown("#### 📖 Biblical References:")
-            
-            for verse in item['verses']:
-                st.markdown(f"**{verse['ref']}**")
-                st.markdown(f"*{verse['text']}*")
-                st.markdown("")
-            
-            st.markdown("---")
-            st.markdown("#### 💭 Dig Deeper Questions:")
-            
-            for idx, question in enumerate(item['dig_deeper']):
-                st.markdown(f"**{idx + 1}.** {question}")
+    else:
+        for item in weaknesses:
+            with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
+                st.markdown(f"**Question:** {item['question']}")
+                st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
+                st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
                 
-                response_key = f"{item['id']}_dd_{idx}"
-                response = st.text_area(
-                    f"Your response to question {idx + 1}",
-                    key=response_key,
-                    height=100,
-                    label_visibility="collapsed"
-                )
+                st.markdown("---")
+                st.markdown("#### 📖 Biblical References:")
                 
-                if response_key not in st.session_state.dig_deeper_responses:
-                    st.session_state.dig_deeper_responses[response_key] = ""
-                st.session_state.dig_deeper_responses[response_key] = response
+                for verse in item['verses']:
+                    st.markdown(f"**{verse['ref']}**")
+                    st.markdown(f"*{verse['text']}*")
+                    st.markdown("")
                 
-                st.markdown("")
+                st.markdown("---")
+                st.markdown("#### 💭 Dig Deeper Questions:")
+                
+                for idx, question in enumerate(item['dig_deeper']):
+                    st.markdown(f"**{idx + 1}.** {question}")
+                    
+                    response_key = f"{item['id']}_dd_{idx}"
+                    response = st.text_area(
+                        f"Your response to question {idx + 1}",
+                        key=response_key,
+                        height=100,
+                        label_visibility="collapsed"
+                    )
+                    
+                    if response_key not in st.session_state.dig_deeper_responses:
+                        st.session_state.dig_deeper_responses[response_key] = ""
+                    st.session_state.dig_deeper_responses[response_key] = response
+                    
+                    st.markdown("")
     
-    st.markdown("---")
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("🖨️ Generate Printable Report", type="primary"):
-            generate_report(weaknesses)
-    
-    with col2:
-        if st.button("📄 Export as JSON"):
-            export_json(weaknesses)
+    if len(weaknesses) > 0:
+        st.markdown("---")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            if st.button("🖨️ Generate Printable Report", type="primary"):
+                generate_report(weaknesses)
+        
+        with col2:
+            if st.button("📄 Export as JSON"):
+                export_json(weaknesses)
 
 def generate_report(weaknesses):
     report = f"""
@@ -1197,431 +1197,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-if 'current_page' not in st.session_state:
-    st.session_state.current_page = 'assessment'
-if 'answers' not in st.session_state:
-    st.session_state.answers = {}
-if 'admin_answers' not in st.session_state:
-    # Use hard-coded answers instead of loading from file
-    st.session_state.admin_answers = CORRECT_ANSWERS.copy()
-if 'assessment_complete' not in st.session_state:
-    st.session_state.assessment_complete = False
-if 'dig_deeper_responses' not in st.session_state:
-    st.session_state.dig_deeper_responses = {}
-
-# ASSESSMENT FUNCTIONS
-def render_assessment():
-    st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
     
-    with st.form("assessment_form"):
-        for item in ASSESSMENT_DATA:
-            st.markdown(f"**{item['id']}. {item['title']}**")
-            st.markdown(f"*{item['question']}*")
-            
-            answer = st.radio(
-                f"Question {item['id']}",
-                options=["Usually", "Not Usually"],
-                key=f"q_{item['id']}",
-                label_visibility="collapsed"
-            )
-            st.session_state.answers[item['id']] = answer
-            st.markdown("---")
-        
-        submitted = st.form_submit_button("Submit Assessment", type="primary")
-        
-        if submitted:
-            st.session_state.assessment_complete = True
-            st.session_state.current_page = 'results'
-            st.rerun()
-
-def render_results():
-    st.title("📊 Assessment Results")
     
-    if not st.session_state.assessment_complete:
-        st.warning("Please complete the assessment first.")
-        return
-    
-    # Calculate weaknesses
-    weaknesses = []
-    for item in ASSESSMENT_DATA:
-        user_answer = st.session_state.answers.get(item['id'])
-        correct_answer = st.session_state.admin_answers.get(item['id'])
-        
-        # Only compare if both answers exist
-        if user_answer and correct_answer and user_answer != correct_answer:
-            weaknesses.append(item)
-    
-    st.markdown(f"### Areas of Weakness: {len(weaknesses)} out of {len(ASSESSMENT_DATA)}")
-    
-    if len(weaknesses) == 0:
-        st.success("🎉 Congratulations! No areas of weakness identified.")
-        return
-    
-    # Display weaknesses
-    for item in weaknesses:
-        with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
-            st.markdown(f"**Question:** {item['question']}")
-            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
-            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
-            
-            st.markdown("---")
-            st.markdown("#### 📖 Biblical References:")
-            
-            for verse in item['verses']:
-                with st.container():
-                    st.markdown(f"**{verse['ref']}**")
-                    st.markdown(f"*{verse['text']}*")
-                    st.markdown("")
-            
-            st.markdown("---")
-            st.markdown("#### 💭 Dig Deeper Questions:")
-            
-            for idx, question in enumerate(item['dig_deeper']):
-                st.markdown(f"**{idx + 1}.** {question}")
-                
-                response_key = f"{item['id']}_dd_{idx}"
-                response = st.text_area(
-                    f"Your response to question {idx + 1}",
-                    key=response_key,
-                    height=100,
-                    label_visibility="collapsed"
-                )
-                
-                if response_key not in st.session_state.dig_deeper_responses:
-                    st.session_state.dig_deeper_responses[response_key] = ""
-                st.session_state.dig_deeper_responses[response_key] = response
-                
-                st.markdown("")
-    
-    # Print/Export functionality
-    st.markdown("---")
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("🖨️ Generate Printable Report", type="primary"):
-            generate_report(weaknesses)
-    
-    with col2:
-        if st.button("📄 Export as JSON"):
-            export_json(weaknesses)
-
-def generate_report(weaknesses):
-    """Generate a printable text report"""
-    report = f"""
-PROVERBS AT WORK ASSESSMENT - RESULTS
-Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-
-AREAS OF WEAKNESS: {len(weaknesses)}
-
-{'='*80}
-
-"""
-    
-    for item in weaknesses:
-        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
-        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
-        
-        report += f"""
-{item['id']}. {item['title'].upper()}
-{'-'*80}
-
-Question: {item['question']}
-Your Answer: {user_answer}
-Correct Answer: {correct_answer}
-
-BIBLICAL REFERENCES:
-"""
-        for verse in item['verses']:
-            report += f"\n{verse['ref']}\n{verse['text']}\n"
-        
-        report += "\nDIG DEEPER QUESTIONS AND YOUR RESPONSES:\n"
-        
-        for idx, question in enumerate(item['dig_deeper']):
-            response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
-            report += f"\n{idx + 1}. {question}\n"
-            report += f"Response: {response}\n"
-        
-        report += f"\n{'='*80}\n"
-    
-    st.download_button(
-        label="📥 Download Report (TXT)",
-        data=report,
-        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
-        mime="text/plain"
-    )
-
-def export_json(weaknesses):
-    """Export results as JSON"""
-    export_data = {
-        "timestamp": datetime.now().isoformat(),
-        "total_weaknesses": len(weaknesses),
-        "weaknesses": []
-    }
-    
-    for item in weaknesses:
-        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
-        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
-        
-        weakness_data = {
-            "id": item['id'],
-            "title": item['title'],
-            "question": item['question'],
-            "user_answer": user_answer,
-            "correct_answer": correct_answer,
-            "verses": item['verses'],
-            "dig_deeper_questions": item['dig_deeper'],
-            "dig_deeper_responses": []
-        }
-        
-        for idx in range(len(item['dig_deeper'])):
-            response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
-            weakness_data['dig_deeper_responses'].append(response)
-        
-        export_data['weaknesses'].append(weakness_data)
-    
-    json_str = json.dumps(export_data, indent=2)
-    
-    st.download_button(
-        label="📥 Download JSON",
-        data=json_str,
-        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
-        mime="application/json"
-    )
-
-# Main app
-def main():
-    # Sidebar navigation (no Admin tab - answers are hard-coded)
-    st.sidebar.title("Navigation")
-    page = st.sidebar.radio(
-        "Go to:",
-        ["Assessment", "Results"],
-        index=["Assessment", "Results"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results"] else 0
-    )
-    
-    st.session_state.current_page = page.lower()
-    
-    # Render appropriate page
-    if st.session_state.current_page == 'assessment':
-        render_assessment()
-    elif st.session_state.current_page == 'results':
-        render_results()
-    
-    # Footer
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### About")
-    st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
-
-if __name__ == "__main__":
-    main()
-          
-if 'current_page' not in st.session_state:
-    st.session_state.current_page = 'assessment'
-if 'answers' not in st.session_state:
-    st.session_state.answers = {}
-if 'admin_answers' not in st.session_state:
-    st.session_state.admin_answers = CORRECT_ANSWERS.copy()
-if 'assessment_complete' not in st.session_state:
-    st.session_state.assessment_complete = False
-if 'dig_deeper_responses' not in st.session_state:
-    st.session_state.dig_deeper_responses = {}
-
-def render_assessment():
-    st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
-    
-    with st.form("assessment_form"):
-        for item in ASSESSMENT_DATA:
-            st.markdown(f"**{item['id']}. {item['title']}**")
-            st.markdown(f"*{item['question']}*")
-            
-            answer = st.radio(
-                f"Question {item['id']}",
-                options=["Usually", "Not Usually"],
-                key=f"q_{item['id']}",
-                label_visibility="collapsed"
-            )
-            st.session_state.answers[item['id']] = answer
-            st.markdown("---")
-        
-        submitted = st.form_submit_button("Submit Assessment", type="primary")
-        
-        if submitted:
-            st.session_state.assessment_complete = True
-            st.session_state.current_page = 'results'
-            st.rerun()
-
-def render_results():
-    st.title("📊 Assessment Results")
-    
-    if not st.session_state.assessment_complete:
-        st.warning("Please complete the assessment first.")
-        return
-    
-    weaknesses = []
-    for item in ASSESSMENT_DATA:
-        user_answer = st.session_state.answers.get(item['id'])
-        correct_answer = st.session_state.admin_answers.get(item['id'])
-        
-        if user_answer and correct_answer and user_answer != correct_answer:
-            weaknesses.append(item)
-    
-    st.markdown(f"### Areas of Weakness: {len(weaknesses)} out of {len(ASSESSMENT_DATA)}")
-    
-    if len(weaknesses) == 0:
-        st.success("🎉 Congratulations! No areas of weakness identified.")
-        return
-    
-    for item in weaknesses:
-        with st.expander(f"📌 {item['id']}. {item['title']}", expanded=False):
-            st.markdown(f"**Question:** {item['question']}")
-            st.markdown(f"**Your Answer:** {st.session_state.answers.get(item['id'], 'Not answered')}")
-            st.markdown(f"**Correct Answer:** {st.session_state.admin_answers.get(item['id'], 'Not set')}")
-            
-            st.markdown("---")
-            st.markdown("#### 📖 Biblical References:")
-            
-            for verse in item['verses']:
-                with st.container():
-                    st.markdown(f"**{verse['ref']}**")
-                    st.markdown(f"*{verse['text']}*")
-                    st.markdown("")
-            
-            st.markdown("---")
-            st.markdown("#### 💭 Dig Deeper Questions:")
-            
-            for idx, question in enumerate(item['dig_deeper']):
-                st.markdown(f"**{idx + 1}.** {question}")
-                
-                response_key = f"{item['id']}_dd_{idx}"
-                response = st.text_area(
-                    f"Your response to question {idx + 1}",
-                    key=response_key,
-                    height=100,
-                    label_visibility="collapsed"
-                )
-                
-                if response_key not in st.session_state.dig_deeper_responses:
-                    st.session_state.dig_deeper_responses[response_key] = ""
-                st.session_state.dig_deeper_responses[response_key] = response
-                
-                st.markdown("")
-    
-    st.markdown("---")
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("🖨️ Generate Printable Report", type="primary"):
-            generate_report(weaknesses)
-    
-    with col2:
-        if st.button("📄 Export as JSON"):
-            export_json(weaknesses)
-
-def generate_report(weaknesses):
-    report = f"""
-PROVERBS AT WORK ASSESSMENT - RESULTS
-Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-
-AREAS OF WEAKNESS: {len(weaknesses)}
-
-{'='*80}
-
-"""
-    
-    for item in weaknesses:
-        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
-        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
-        
-        report += f"""
-{item['id']}. {item['title'].upper()}
-{'-'*80}
-
-Question: {item['question']}
-Your Answer: {user_answer}
-Correct Answer: {correct_answer}
-
-BIBLICAL REFERENCES:
-"""
-        for verse in item['verses']:
-            report += f"\n{verse['ref']}\n{verse['text']}\n"
-        
-        report += "\nDIG DEEPER QUESTIONS AND YOUR RESPONSES:\n"
-        
-        for idx, question in enumerate(item['dig_deeper']):
-            response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
-            report += f"\n{idx + 1}. {question}\n"
-            report += f"Response: {response}\n"
-        
-        report += f"\n{'='*80}\n"
-    
-    st.download_button(
-        label="📥 Download Report (TXT)",
-        data=report,
-        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
-        mime="text/plain"
-    )
-
-def export_json(weaknesses):
-    export_data = {
-        "timestamp": datetime.now().isoformat(),
-        "total_weaknesses": len(weaknesses),
-        "weaknesses": []
-    }
-    
-    for item in weaknesses:
-        user_answer = st.session_state.answers.get(item['id'], 'Not answered')
-        correct_answer = st.session_state.admin_answers.get(item['id'], 'Not set')
-        
-        weakness_data = {
-            "id": item['id'],
-            "title": item['title'],
-            "question": item['question'],
-            "user_answer": user_answer,
-            "correct_answer": correct_answer,
-            "verses": item['verses'],
-            "dig_deeper_questions": item['dig_deeper'],
-            "dig_deeper_responses": []
-        }
-        
-        for idx in range(len(item['dig_deeper'])):
-            response_key = f"{item['id']}_dd_{idx}"
-            response = st.session_state.dig_deeper_responses.get(response_key, "No response provided")
-            weakness_data['dig_deeper_responses'].append(response)
-        
-        export_data['weaknesses'].append(weakness_data)
-    
-    json_str = json.dumps(export_data, indent=2)
-    
-    st.download_button(
-        label="📥 Download JSON",
-        data=json_str,
-        file_name=f"proverbs_assessment_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
-        mime="application/json"
-    )
-
-def main():
-    st.sidebar.title("Navigation")
-    page = st.sidebar.radio(
-    "Go to:",
-    ["Assessment", "Results"],
-    key="main_navigation",  # ← ADD THIS LINE
-    index=["Assessment", "Results"].index(st.session_state.current_page.title()) if st.session_state.current_page.title() in ["Assessment", "Results"] else 0
-    )
-    st.session_state.current_page = page.lower()
-    
-    if st.session_state.current_page == 'assessment':
-        render_assessment()
-    elif st.session_state.current_page == 'results':
-        render_results()
-    
-    st.sidebar.markdown("---")
-    st.sidebar.markdown("### About")
-    st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
-
-if __name__ == "__main__":
-    main()
