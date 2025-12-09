@@ -1019,6 +1019,7 @@ def render_assessment():
             st.markdown("---")
         
         submitted = st.form_submit_button("Submit Assessment", type="primary")
+        st.write(f"Button clicked: {submitted}")
         
         if submitted:
             st.session_state.assessment_complete = True
