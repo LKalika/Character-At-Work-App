@@ -1003,7 +1003,7 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
+    st.markdown("### Self-Evaluation(2)")
 
     def go_to_results():
         # Collect answers from the radio widgets
