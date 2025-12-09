@@ -1002,43 +1002,36 @@ if 'dig_deeper_responses' not in st.session_state:
     st.session_state.dig_deeper_responses = {}
 
 def render_assessment():
-    st.title("📖 Proverbs at Work Assessment")
+    st.title("Proverbs at Work Assessment")
     st.markdown("### Self-Evaluation")
-    
-    def submit_callback():
-        # Collect answers directly from widget keys (auto-saved by Streamlit)
+
+    def go_to_results():
+        # Collect answers from the radio widgets
         for item in ASSESSMENT_DATA:
             st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
         st.session_state.assessment_complete = True
-        st.session_state.current_page = 'results'
-        # No st.rerun() here—callback runs before natural rerun
 
     with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
             st.markdown(f"*{item['question']}*")
-            
-            # Use key for auto-persistence; set initial value from session state
-            initial_value = st.session_state.answers.get(item['id'], "Usually")
+
+            initial = st.session_state.answers.get(item['id'], "Usually")
             st.radio(
-                f"Question {item['id']}",
-                options=["Usually", "Not Usually"],
+                "Select one",
+                ["Usually", "Not Usually"],
                 key=f"q_{item['id']}",
-                label_visibility="collapsed",
-                index=0 if initial_value == "Usually" else 1
+                index=0 if initial == "Usually" else 1,
+                label_visibility="collapsed"
             )
             st.markdown("---")
-        
-        submitted = st.form_submit_button(
-            "Submit Assessment", 
+
+        st.form_submit_button(
+            "See My Results",
             type="primary",
-            on_click=submit_callback  # This is the magic—handles everything pre-rerun
+            on_click=go_to_results,
+            use_container_width=True
         )
-    
-    # Optional debug (remove after testing)
-    if 'debug' in st.session_state and st.session_state.debug:
-        st.write("Debug: submitted =", submitted)
-        st.write("Debug: current_page =", st.session_state.current_page)
 
 def render_results():
     st.title("📊 Assessment Results")
