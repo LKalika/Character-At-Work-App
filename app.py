@@ -1003,33 +1003,42 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
-   
-    with st.form("assessment_form", clear_on_submit=False):
+    st.markdown("### Self-Evaluation (3 Question Test)")
+    
+    def submit_callback():
+        # Collect answers directly from widget keys (auto-saved by Streamlit)
+        for item in ASSESSMENT_DATA:
+            st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
+        st.session_state.assessment_complete = True
+        st.session_state.current_page = 'results'
+        # No st.rerun() here—callback runs before natural rerun
+
+    with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
             st.markdown(f"**{item['id']}. {item['title']}**")
             st.markdown(f"*{item['question']}*")
-           
-            default_index = 0 if st.session_state.answers.get(item['id'], "Usually") == "Usually" else 1
+            
+            # Use key for auto-persistence; set initial value from session state
+            initial_value = st.session_state.answers.get(item['id'], "Usually")
             st.radio(
                 f"Question {item['id']}",
                 options=["Usually", "Not Usually"],
                 key=f"q_{item['id']}",
                 label_visibility="collapsed",
-                index=default_index
+                index=0 if initial_value == "Usually" else 1
             )
             st.markdown("---")
-       
-        submitted = st.form_submit_button("Submit Assessment", type="primary")
-   
-    # Move OUTSIDE the form to avoid proxy issues
-    if submitted:
-        for item in ASSESSMENT_DATA:
-            st.session_state.answers[item['id']] = st.session_state[f"q_{item['id']}"]
-        st.session_state.assessment_complete = True
-        st.session_state.current_page = 'results'
-        st.success("Assessment submitted—switching to results!")
-        st.rerun()
+        
+        submitted = st.form_submit_button(
+            "Submit Assessment", 
+            type="primary",
+            on_click=submit_callback  # This is the magic—handles everything pre-rerun
+        )
+    
+    # Optional debug (remove after testing)
+    if 'debug' in st.session_state and st.session_state.debug:
+        st.write("Debug: submitted =", submitted)
+        st.write("Debug: current_page =", st.session_state.current_page)
 
 def render_results():
     st.title("📊 Assessment Results")
@@ -1183,29 +1192,32 @@ def export_json(weaknesses):
 def main():
     st.sidebar.title("Navigation")
     
-    # Pre-set the radio to match current_page (this syncs UI without setting state inside form)
+    # Define options and get current index safely
     page_options = ["Assessment", "Results"]
-    current_index = page_options.index(st.session_state.current_page.title())
+    try:
+        current_index = page_options.index(st.session_state.current_page.title())
+    except ValueError:
+        current_index = 0  # Fallback to Assessment
+    
+    # Optional: Lock navigation to results once complete (prevents back-navigation)
+    if st.session_state.assessment_complete:
+        current_index = 1  # Force to Results index
+        st.sidebar.warning("Assessment complete—view your results below.")
     
     page = st.sidebar.radio(
         "Go to:",
         page_options,
         key="main_navigation",
-        index=current_index  # Now safe—no more errors
+        index=current_index
     )
-   
+    
     st.session_state.current_page = page.lower()
-   
-    # Optional: Lock to results once submitted (remove if you want full back/forth)
-    if st.session_state.assessment_complete and st.session_state.current_page == 'assessment':
-        st.session_state.current_page = 'results'
-        st.rerun()
-   
+    
     if st.session_state.current_page == 'assessment':
         render_assessment()
     elif st.session_state.current_page == 'results':
         render_results()
-   
+    
     st.sidebar.markdown("---")
     st.sidebar.markdown("### About")
     st.sidebar.info("This assessment is based on biblical Proverbs related to workplace behavior and character development.")
