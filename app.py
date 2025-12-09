@@ -1010,7 +1010,7 @@ if 'dig_deeper_responses' not in st.session_state:
 
 def render_assessment():
     st.title("📖 Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation (3 Question Test)")
+    st.markdown("### Self-Evaluation (V1)")
     
     def handle_submit():
         # Set the complete flag (runs before rerun)
