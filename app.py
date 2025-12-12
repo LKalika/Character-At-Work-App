@@ -728,7 +728,6 @@ ASSESSMENT_DATA = [
                     "3. Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
                 ]
             )
-        ]
             # ========================================
             # TOPIC 11: Don't be in Debt
             # ========================================
