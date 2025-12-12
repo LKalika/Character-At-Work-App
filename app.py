@@ -695,7 +695,6 @@ ASSESSMENT_DATA = [
         "question": "Am I actively fleeing wickedness and pursuing righteousness in every area of life?",
         "verses": [
             {"ref": "Proverbs 3:7", "text": "Do not be wise in your own eyes; Fear the LORD and depart from evil."},
-            },
             {"ref": "Proverbs 4:14-15", "text": "Do not enter the path of the wicked, And do not walk in the way of evil. Avoid it, do not travel on it; Turn away from it and pass on."},
             {"ref": "Proverbs 8:13", "text": "The fear of the LORD is to hate evil; Pride and arrogance and the evil way And the perverse mouth I hate."},
             {"ref": "Proverbs 11:5", "text": "The righteousness of the blameless will direct his way aright, But the wicked will fall by his own wickedness."},
