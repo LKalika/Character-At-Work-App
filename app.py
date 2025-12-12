@@ -653,7 +653,7 @@ ASSESSMENT_DATA = [
             "If you aren’t sure others would describe you as kind, what can you do to change your image?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    }
+    },
     {
         "id": 26,
         "title": "Be Merciful",
