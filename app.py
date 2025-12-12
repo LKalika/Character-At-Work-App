@@ -225,7 +225,8 @@ ASSESSMENT_DATA = [
             "The verses above show that those that DON'T revere or fear the Lord and keep His commandments will suffer. They tell us... The way of the unfaithful, the careless, the one who turns his ear from the law is hard and leads to death. This causes one: to be dissatisfied, visited with evil, to praise wickedness, to cast off restraint, and results in unhappiness and prayers that are an abomination. Being a faithful Christian, however, should help you: be rewarded, turn away from the snares of death, gain favor, have strong confidence, have a safe refuge, find good, be happy, keep your soul, abide in satisfaction, not be visited with evil, and allow you to contend with the wicked. Which list of characteristics best describes your life? Is your life reflecting the rewards of a faithful Christian, why or why not?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    },
+     },
+     {
         "id": 8,
         "title": "Trust in the Lord",
         "question": "I demonstrate that I trust in the Lord?",
