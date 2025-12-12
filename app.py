@@ -732,7 +732,7 @@ ASSESSMENT_DATA = [
             # ========================================
             # TOPIC 11: Don't be in Debt
             # ========================================
-            ProverbTopic(
+          ProverbTopic(
                 number=11,
                 title="Don't be in Debt",
                 assessment_questions=[
