@@ -727,7 +727,7 @@ ASSESSMENT_DATA = [
                     "2. The verse above pertains to payment of debts; do you feel you have a debt of praise to an employee or boss that has done a job well?",
                     "3. Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
                 ]
-            )
+            ),
             # ========================================
             # TOPIC 11: Don't be in Debt
             # ========================================
