@@ -46,12 +46,45 @@ ASSESSMENT_DATA = [
         "title": "Accept Instruction from Others",
         "question": "I willingly accept instruction from others?",
         "verses": [
-            {"ref": "Proverbs 1:7-9", "text": "The fear of the LORD is the beginning of knowledge, But fools despise wisdom and instruction. My son, hear the instruction of your father, And do not forsake the law of your mother; For they will be a graceful ornament on your head, And chains about your neck."},
-            {"ref": "Proverbs 3:1-4", "text": "My son, do not forget my law, But let your heart keep my commands; For length of days and long life And peace they will add to you. Let not mercy and truth forsake you; Bind them around your neck, Write them on the tablet of your heart, And so find favor and high esteem In the sight of God and man."},
-            {"ref": "Proverbs 4:1-4", "text": "Hear, my children, the instruction of a father, And give attention to know understanding; For I give you good doctrine: Do not forsake my law. When I was my father's son, Tender and the only one in the sight of my mother, He also taught me, and said to me: Let your heart retain my words; Keep my commands, and live."},
-            {"ref": "Proverbs 10:8", "text": "The wise in heart will receive commands, But a prating fool will fall."},
-            {"ref": "Proverbs 13:1", "text": "A wise son heeds his father's instruction, But a scoffer does not listen to rebuke."}
-        ],
+            {"reference": "Proverbs 1:7-9",
+                "text": "The fear of the LORD is the beginning of knowledge, But fools despise wisdom and instruction. My son, hear the instruction of your father, And do not forsake the law of your mother; For they will be a graceful ornament on your head, And chains about your neck."
+            },
+            {
+                "reference": "Proverbs 3:1-4",
+                "text": "My son, do not forget my law, But let your heart keep my commands; For length of days and long life And peace they will add to you. Let not mercy and truth forsake you; Bind them around your neck, Write them on the tablet of your heart, And so find favor and high esteem In the sight of God and man."
+            },
+            {
+                "reference": "Proverbs 4:1-4",
+                "text": "Hear, my children, the instruction of a father, And give attention to know understanding; For I give you good doctrine: Do not forsake my law. When I was my father's son, Tender and the only one in the sight of my mother, He also taught me, and said to me: Let your heart retain my words; Keep my commands, and live."
+            },
+            {
+                "reference": "Proverbs 4:20-23",
+                "text": "My son, give attention to my words; Incline your ear to my sayings. Do not let them depart from your eyes; Keep them in the midst of your heart; For they are life to those who find them, And health to all their flesh. Keep your heart with all diligence, For out of it spring the issues of life."
+            },
+            {
+                "reference": "Proverbs 5:12-14",
+                "text": "And say: How I have hated instruction, And my heart despised correction! I have not obeyed the voice of my teachers, Nor inclined my ear to those who instructed me! I was on the verge of total ruin, In the midst of the assembly and congregation."
+            },
+            {
+                "reference": "Proverbs 6:20-23",
+                "text": "My son, keep your father's command, And do not forsake the law of your mother. Bind them continually upon your heart; Tie them around your neck. When you roam, they will lead you; When you sleep, they will keep you; And when you awake, they will speak with you. For the commandment is a lamp, And the law a light; Reproofs of instruction are the way of life."
+            },
+            {
+                "reference": "Proverbs 10:8",
+                "text": "The wise in heart will receive commands, But a prating fool will fall."
+            },
+            {
+                "reference": "Proverbs 13:1",
+                "text": "A wise son heeds his father's instruction, But a scoffer does not listen to rebuke."
+            },
+            {
+                "reference": "Proverbs 19:27",
+                "text": "Cease listening to instruction, my son, And you will stray from the words of knowledge."
+            },
+            {
+                "reference": "Proverbs 23:12",
+                "text": "Apply your heart to instruction, And your ears to words of knowledge."
+            }
         "dig_deeper": [
             "Looking at your life, how have you fallen short in the area of accepting instruction from others: your parents, teachers, Godly advisors? How about others that give commands or counsel i.e., your boss, your spouse? Give some examples of how this has hurt you.",
             "Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction?",
