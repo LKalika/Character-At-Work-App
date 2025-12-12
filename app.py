@@ -562,7 +562,7 @@ ASSESSMENT_DATA = [
         "title": "Let Your Ways Be Established",
         "question": "Are my ways steady and established, or do I waver and stumble?",
         "verses": [
-            {"ref": "ref": "Proverbs 4:26-27", "text": "Ponder the path of your feet, And let all your ways be established. Do not turn to the right or the left; Remove your foot from evil."}
+            {"ref": "Proverbs 4:26-27", "text": "Ponder the path of your feet, And let all your ways be established. Do not turn to the right or the left; Remove your foot from evil."}
         ],
         "dig_deeper": [
             "In what area of life or work do your “ways” feel unsteady right now?",
