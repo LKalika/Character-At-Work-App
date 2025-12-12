@@ -668,8 +668,7 @@ ASSESSMENT_DATA = [
         ]
     },
     {      
-    {
-        "id": 30,
+            "id": 30,
         "title": "Don't let a Perverse Mouth Sow Discord",
         "question": "Do my words bring peace and unity, or do they sow discord and division?",
         "verses": [
