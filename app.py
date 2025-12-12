@@ -1117,7 +1117,6 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 21:23", "text": "Whoever guards his mouth and tongue Keeps his soul from troubles."},
             {"ref": "Proverbs 23:9", "text": "Do not speak in the hearing of a fool, For he will despise the wisdom of your words."},
             {"ref": "Proverbs 25:23", "text": "The north wind brings forth rain, And a backbiting tongue an angry countenance."},
-            },
             {"ref": "Proverbs 29:11", "text": "A fool vents all his feelings, But a wise man holds them back."}
         ],
         "dig_deeper": [
