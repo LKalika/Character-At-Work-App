@@ -1081,7 +1081,7 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 28:8", "text": "One who increases his possessions by usury and extortion Gathers it for him who will pity the poor."},
             {"ref": "Proverbs 28:21", "text": "To show partiality is not good, Because for a piece of bread a man will transgress."},
             {"ref": "Proverbs 29:2", "text": "When the righteous are in authority, the people rejoice; But when a wicked man rules, the people groan."},
-            {"ref": "Proverbs 29:4", "text": "text": "The king establishes the land by justice, But he who receives bribes overthrows it."},
+            {"ref": "Proverbs 29:4", "text": "The king establishes the land by justice, But he who receives bribes overthrows it."},
             {"ref": "Proverbs 29:12-14", "text": "If a ruler pays attention to lies, All his servants become wicked. The poor man and the oppressor have this in common: The LORD gives light to the eyes of both. The king who judges the poor with truth, His throne will be established forever."},
             {"ref": "Proverbs 31:8-9", "text": "Open your mouth for the speechless, In the cause of all who are appointed to die. Open your mouth, judge righteously, And plead the cause of the poor and needy."}
         ],
