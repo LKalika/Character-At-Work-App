@@ -1047,9 +1047,10 @@ ASSESSMENT_DATA = [
         "dig_deeper": [
             "Have you tried your best to share Christ with those around you that are drawn to death, stumbling to the slaughter?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-    ]
-}
+        ]
+    }
 ]
+
 
 
 # ============================================================================
