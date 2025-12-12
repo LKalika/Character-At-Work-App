@@ -44,39 +44,43 @@ ASSESSMENT_DATA = [
     {
      "id": 1,
         "title": "Accept Instruction from Others",
-        "question": "I willingly accept instruction from others?",
+        "question": "Do I willingly accept instruction from parents, teachers, bosses, spouse, and God?",
         "verses": [
-            {"ref": "Proverbs 1:7-9", "text": "The fear of the LORD is the beginning of knowledge, But fools despise wisdom and instruction. My son, hear the instruction of your father, And do not forsake the law of your mother; For they will be a graceful ornament on your head, And chains about your neck."},
+            {"ref": "Proverbs 1:7", "text": "The fear of the LORD is the beginning of knowledge, But fools despise wisdom and instruction."},
+            {"ref": "Proverbs 1:8-9", "text": "My son, hear the instruction of your father, And do not forsake the law of your mother; For they will be a graceful ornament on your head, And chains about your neck."},
             {"ref": "Proverbs 3:1-4", "text": "My son, do not forget my law, But let your heart keep my commands; For length of days and long life And peace they will add to you. Let not mercy and truth forsake you; Bind them around your neck, Write them on the tablet of your heart, And so find favor and high esteem In the sight of God and man."},
-            {"ref": "Proverbs 4:1-4", "text": "Hear, my children, the instruction of a father, And give attention to know understanding; For I give you good doctrine: Do not forsake my law. When I was my father's son, Tender and the only one in the sight of my mother, He also taught me, and said to me: Let your heart retain my words; Keep my commands, and live."},
+            {"ref": "Proverbs 4:1-4", "text": "Hear, my children, the instruction of a father, And give attention to know understanding; For I give you good doctrine: Do not forsake my law. When I was my father’s son, Tender and the only one in the sight of my mother, He also taught me, and said to me: Let your heart retain my words; Keep my commands, and live."},
+            {"ref": "Proverbs 4:20-23", "text": "My son, give attention to my words; Incline your ear to my sayings. Do not let them depart from your eyes; Keep them in the midst of your heart; For they are life to those who find them, And health to all their flesh. Keep your heart with all diligence, For out of it spring the issues of life."},
+            {"ref": "Proverbs 5:12-14", "text": "And say: How I have hated instruction, And my heart despised correction! I have not obeyed the voice of my teachers, Nor inclined my ear to those who instructed me! I was on the verge of total ruin, In the midst of the assembly and congregation.”"},
+            {"ref": "Proverbs 6:20-23", "text": "My son, keep your father’s command, And do not forsake the law of your mother. Bind them continually upon your heart; Tie them around your neck. When you roam, they will lead you; When you sleep, they will keep you; And when you awake, they will speak with you. For the commandment is a lamp, And the law a light; Reproofs of instruction are the way of life,"},
             {"ref": "Proverbs 10:8", "text": "The wise in heart will receive commands, But a prating fool will fall."},
-            {"ref": "Proverbs 13:1", "text": "A wise son heeds his father's instruction, But a scoffer does not listen to rebuke."},
+            {"ref": "Proverbs 13:1", "text": "A wise son heeds his father’s instruction, But a scoffer does not listen to rebuke."},
             {"ref": "Proverbs 19:27", "text": "Cease listening to instruction, my son, And you will stray from the words of knowledge."},
             {"ref": "Proverbs 23:12", "text": "Apply your heart to instruction, And your ears to words of knowledge."}
         ],
         "dig_deeper": [
             "Looking at your life, how have you fallen short in the area of accepting instruction from others: your parents, teachers, Godly advisors? How about others that give commands or counsel i.e., your boss, your spouse? Give some examples of how this has hurt you.",
-            "Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction?",
+            "Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction? See Proverbs 23:12 above.",
             "What do you think stops you from accepting or seeking out instruction willingly?",
             "Specifically, has your lack of accepting instruction affected you in your work? How?",
             "Is there something you could learn (be instructed in) right now that would make you a better employee in your current job or for future career aspirations?",
             "If so, how will you improve in this area?",
             "How can you minister to others that have an issue in this area?",
+            "Finally, review Chapter 2 – Self -Image Issues, regarding a “Coachable Spirit”. How does this pertain to accepting instruction?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
-        
         "id": 2,
         "title": "Accept Correction",
-        "question": "I gracefully accept correction when it is given?",
+        "question": "Do I receive correction and rebuke well, or do I get defensive and resentful?",
         "verses": [
-            {"ref": "Proverbs 1:20-33", "text": "Wisdom calls aloud outside; She raises her voice in the open squares. She cries out in the chief concourses, At the openings of the gates in the city She speaks her words: 'How long, you simple ones, will you love simplicity? For scorners delight in their scorning, And fools hate knowledge. Turn at my rebuke; Surely I will pour out my spirit on you; I will make my words known to you. Because I have called and you refused, I have stretched out my hand and no one regarded, Because you disdained all my counsel, And would have none of my rebuke, I also will laugh at your calamity; I will mock when your terror comes, When your terror comes like a storm, And your destruction comes like a whirlwind, When distress and anguish come upon you. Then they will call on me, but I will not answer; They will seek me diligently, but they will not find me. Because they hated knowledge And did not choose the fear of the LORD, They would have none of my counsel And despised my every rebuke. Therefore they shall eat the fruit of their own way, And be filled to the full with their own fancies. For the turning away of the simple will slay them, And the complacency of fools will destroy them; But whoever listens to me will dwell safely, And will be secure, without fear of evil.'"},
+            {"ref": "Proverbs 1:20-33", "text": "Wisdom calls aloud outside; She raises her voice in the open squares. She cries out in the chief concourses, At the openings of the gates in the city She speaks her words: “ How long, you simple ones, will you love simplicity? For scorners delight in their scorning, And fools hate knowledge. Turn at my rebuke; Surely I will pour out my spirit on you; I will make my words known to you. Because I have called and you refused, I have stretched out my hand and no one regarded, Because you disdained all my counsel, And would have none of my rebuke, I also will laugh at your calamity; I will mock when your terror comes, When your terror comes like a storm, And your destruction comes like a whirlwind, When distress and anguish come upon you. “ Then they will call on me, but I will not answer; They will seek me diligently, but they will not find me. Because they hated knowledge And did not choose the fear of the LORD, They would have none of my counsel And despised my every rebuke. Therefore they shall eat the fruit of their own way, And be filled to the full with their own fancies. For the turning away of the simple will slay them, And the complacency of fools will destroy them; But whoever listens to me will dwell safely, And will be secure, without fear of evil.”"},
             {"ref": "Proverbs 3:11-12", "text": "My son, do not despise the chastening of the LORD, Nor detest His correction; For whom the LORD loves He corrects, Just as a father the son in whom he delights."},
             {"ref": "Proverbs 10:17", "text": "He who keeps instruction is in the way of life, But he who refuses correction goes astray."},
             {"ref": "Proverbs 12:1", "text": "Whoever loves instruction loves knowledge, But he who hates correction is stupid."},
             {"ref": "Proverbs 13:18", "text": "Poverty and shame will come to him who disdains correction, But he who regards a rebuke will be honored."},
-            {"ref": "Proverbs 15:5", "text": "A fool despises his father's instruction, But he who receives correction is prudent."},
+            {"ref": "Proverbs 15:5", "text": "A fool despises his father’s instruction, But he who receives correction is prudent."},
             {"ref": "Proverbs 15:10-12", "text": "Harsh discipline is for him who forsakes the way, And he who hates correction will die. Hell and Destruction are before the LORD; So how much more the hearts of the sons of men. A scoffer does not love one who corrects him, Nor will he go to the wise."},
             {"ref": "Proverbs 15:30-32", "text": "The light of the eyes rejoices the heart, And a good report makes the bones healthy. The ear that hears the rebukes of life Will abide among the wise. He who disdains instruction despises his own soul, But he who heeds rebuke gets understanding."},
             {"ref": "Proverbs 16:22", "text": "Understanding is a wellspring of life to him who has it. But the correction of fools is folly."},
@@ -85,23 +89,23 @@ ASSESSMENT_DATA = [
         ],
         "dig_deeper": [
             "After you have received criticism, explain your normal reaction initially and eventually?",
-            "How quickly can you recover after hearing criticism? What about self-criticism? Are you hard on yourself, beating yourself up and letting this affect your performance, long after others have moved on?",
-            "Can you think of someone that you have witnessed take criticism well? Describe what about that person's reaction appealed to you.",
-            "Delightful, 'in' the way of life, knowledgeable, honored, prudent, wise, of good report, healthy, possesses understanding and cleansed away from evil, these are ways that Proverbs describes the person who accepts correction. Contrast that to the terms describing those who do not accept correction: going astray, stupid, poor, shameful, dead, despiser of one's own soul, fool, destroyed without remedy. Describe some of the negative consequences you've experienced from not accepting correction:",
+            "How quickly can you recover after hearing criticism?  What about self-criticism?  Are you hard on yourself, beating yourself up and letting this affect your performance, long after others have moved on?",
+            "Can you think of someone that you have witnessed take criticism well? Describe what about that person’s reaction appealed to you.",
+            "Delightful, “in” the way of life, knowledgeable, honored, prudent, wise, of good report, healthy, possesses understanding and cleansed away from evil, these are ways that Proverbs describes the person who accepts correction. Contrast that to the terms describing those who do not accept correction: going astray, stupid, poor, shameful, dead, despiser of one’s own soul, fool, destroyed without remedy. Describe some of the negative consequences you’ve experienced from not accepting correction:",
             "Which verses above will help you when you are tempted to harbor resentment against someone who offers criticism?",
-            "How does a person's demeanor/style when offering criticism impact how well you accept the message?",
+            "How does a person’s demeanor/style when offering criticism impact how well you accept the message?",
             "Explain how you would best like to hear criticism?",
-            "Do you offer criticism as a friend, in love, with well-chosen words, 'fitly spoken'? If not, how can you improve?",
-            "The next time you receive criticism in a way, other than your preference outlined above, could you communicate to the person offering the message, how you would rather it be delivered? How could this conversation be helpful?",
+            "Do you offer criticism as a friend, in love, with well-chosen words, “fitly spoken”?  If not, how can you improve?",
+            "The next time you receive criticism in a way, other than your preference outlined above, could you communicate to the person offering the message, how you would rather it be delivered?   How could this conversation be helpful?",
             "According to the verses above, should you offer criticism to fools? To wise men?",
-            "Does your boss consider you wise enough to be worthy of criticism? This may depend on your reaction (do you harden your neck or do you have a 'coachable spirit'). Think about it. Is there anything you need to change?",
+            "Does your boss consider you wise enough to be worthy of criticism? This may depend on your reaction (do you harden your neck or do you have a  “coachable spirit”). Think about it.  Is there anything you need to change?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 3,
         "title": "Administer Discipline to Others",
-        "question": "I readily discipline those that need correction?",
+        "question": "Am I consistent and loving in administering discipline or feedback to others?",
         "verses": [
             {"ref": "Proverbs 13:24", "text": "He who spares his rod hates his son, But he who loves him disciplines him promptly."},
             {"ref": "Proverbs 19:18", "text": "Chasten your son while there is hope, And do not set your heart on his destruction."},
@@ -109,9 +113,9 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 21:11", "text": "When the scoffer is punished, the simple is made wise; But when the wise is instructed, he receives knowledge."},
             {"ref": "Proverbs 22:15", "text": "Foolishness is bound up in the heart of a child; The rod of correction will drive it far from him."},
             {"ref": "Proverbs 23:13-14", "text": "Do not withhold correction from a child, For if you beat him with a rod, he will not die. You shall beat him with a rod, And deliver his soul from hell."},
-            {"ref": "Proverbs 24:11-12", "text": "Deliver those who are drawn toward death, And hold back those stumbling to the slaughter. If you say, 'Surely we did not know this,' Does not He who weighs the hearts consider it? He who keeps your soul, does He not know it? And will He not render to each man according to his deeds?"},
+            {"ref": "Proverbs 24:11-12", "text": "Deliver those who are drawn toward death, And hold back those stumbling to the slaughter. If you say, “Surely we did not know this,” Does not He who weighs the hearts consider it? He who keeps your soul, does He not know it? And will He not render to each man according to his deeds?"},
             {"ref": "Proverbs 25:11-12", "text": "A word fitly spoken is like apples of gold In settings of silver. Like an earring of gold and an ornament of fine gold Is a wise rebuker to an obedient ear."},
-            {"ref": "Proverbs 26:3-5", "text": "A whip for the horse, A bridle for the donkey, And a rod for the fool's back. Do not answer a fool according to his folly, Lest you also be like him. Answer a fool according to his folly, Lest he be wise in his own eyes."},
+            {"ref": "Proverbs 26:3-5", "text": "A whip for the horse, A bridle for the donkey, And a rod for the fool’s back. Do not answer a fool according to his folly, Lest you also be like him. Answer a fool according to his folly, Lest he be wise in his own eyes."},
             {"ref": "Proverbs 27:5", "text": "Open rebuke is better Than love carefully concealed."},
             {"ref": "Proverbs 27:6", "text": "Faithful are the wounds of a friend, But the kisses of an enemy are deceitful."},
             {"ref": "Proverbs 27:17", "text": "As iron sharpens iron, So a man sharpens the countenance of his friend."},
@@ -119,20 +123,20 @@ ASSESSMENT_DATA = [
         ],
         "dig_deeper": [
             "Are you consistent in your administration of discipline or constructive feedback?",
-            "Is it hard for you to discipline or correct someone? Why do you think this is?",
+            "Is it hard for you to discipline or correct someone?  Why do you think this is?",
             "Are you too harsh (set your heart on his destruction) in your discipline?",
-            "Are your words 'fitful'? Do you feel you can appropriately communicate a correction or could use improvement in this area? (For help, see Chapter 6 -- Communicating Issues.)",
-            "Have you ever given someone a break (spared the rod) because you felt sorry for them? How did it turn out? Looking back, was that the 'loving' thing to do?",
-            "Can you accept discipline better because you now understand it's value and motivation (love/concern)?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Are your words “fitly”? Do you feel you can appropriately communicate a correction or could use improvement in this area? (For help, see Chapter 6 – Communicating Issues.)",
+            "Have you ever given someone a break (spared the rod) because you felt sorry for them? How did it turn out? Looking back, was that the “loving” thing to do?",
+            "Can you accept discipline better because you now understand it’s value and motivation (love/concern)?",
+            "Summarize/prioritize things you can do, (do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 4,
         "title": "Avoid Sinners Enticing You",
-        "question": "I am easily misled into wrong behavior(s) by peer pressure?",
+        "question": "Am I careful about the company I keep and who influences me?",
         "verses": [
-            {"ref": "Proverbs 1:10-19", "text": "My son, if sinners entice you, Do not consent. If they say, 'Come with us, Let us lie in wait to shed blood; Let us lurk secretly for the innocent without cause; Let us swallow them alive like Sheol, We shall find all kinds of precious possessions, We shall fill our houses with spoil; Cast in your lot among us, Let us all have one purse'—My son, do not walk in the way with them, Keep your foot from their path; For their feet run to evil, And they make haste to shed blood. Surely, in vain the net is spread In the sight of any bird; But they lie in wait for their own blood, They lurk secretly for their own lives. So are the ways of everyone who is greedy for gain; It takes away the life of its owners."},
+            {"ref": "Proverbs 1:10-19", "text": "My son, if sinners entice you, Do not consent. If they say, “Come with us, Let us lie in wait to shed blood; Let us lurk secretly for the innocent without cause; Let us swallow them alive like Sheol, And whole, like those who go down to the Pit; We shall find all kinds of precious possessions, We shall fill our houses with spoil; Cast in your lot among us, Let us all have one purse”— My son, do not walk in the way with them, Keep your foot from their path; For their feet run to evil, And they make haste to shed blood. Surely, in vain the net is spread In the sight of any bird; But they lie in wait for their own blood, They lurk secretly for their own lives. So are the ways of everyone who is greedy for gain; It takes away the life of its owners."},
             {"ref": "Proverbs 4:14-19", "text": "Do not enter the path of the wicked, And do not walk in the way of evil. Avoid it, do not travel on it; Turn away from it and pass on. For they do not sleep unless they have done evil; And their sleep is taken away unless they make someone fall. For they eat the bread of wickedness, And drink the wine of violence. But the path of the just is like the shining sun, That shines ever brighter unto the perfect day. The way of the wicked is like darkness; They do not know what makes them stumble."},
             {"ref": "Proverbs 12:26", "text": "The righteous should choose his friends carefully, For the way of the wicked leads them astray."},
             {"ref": "Proverbs 13:20-21", "text": "He who walks with wise men will be wise, But the companion of fools will be destroyed. Evil pursues sinners, But to the righteous, good shall be repaid."},
@@ -143,50 +147,51 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 29:24", "text": "Whoever is a partner with a thief hates his own life; He swears to tell the truth, but reveals nothing."}
         ],
         "dig_deeper": [
-            "Have you ever associated with people that cause you to behave poorly? Give some examples:",
+            "Have you ever associated with people that cause you to behave poorly?  Give some examples:",
             "Do you continue to associate with people who are enticing you into evil?",
-            "Those greedy for gain, fools, violent, talebearers/gossips, flatterers, thieves, are just some of the types of sinners enumerated in the verses above. Look around your close circle of friends. Do you need to make some changes in your relationships?",
+            "Those greedy for gain, fools, violent, talebearers/gossips, flatterers, thieves, are just some of the types of sinners enumerated in the verses above.  Look around your close circle of friends.  Do you need to make some changes in your relationships?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 5,
         "title": "Seek Wisdom/Discretion",
-        "question": "I really work hard at seeking wisdom/discretion; trying to figure out the right thing to do in difficult situations?",
+        "question": "Do I actively seek godly wisdom and understanding?",
         "verses": [
             {"ref": "Proverbs 2:1-9", "text": "My son, if you receive my words, And treasure my commands within you, So that you incline your ear to wisdom, And apply your heart to understanding; Yes, if you cry out for discernment, And lift up your voice for understanding, If you seek her as silver, And search for her as for hidden treasures; Then you will understand the fear of the LORD, And find the knowledge of God. For the LORD gives wisdom; From His mouth come knowledge and understanding; He stores up sound wisdom for the upright; He is a shield to those who walk uprightly; He guards the paths of justice, And preserves the way of His saints. Then you will understand righteousness and justice, Equity and every good path."},
-            {"ref": "Proverbs 3:13-24", "text": "Happy is the man who finds wisdom, And the man who gains understanding; For her proceeds are better than the profits of silver, And her gain than fine gold. She is more precious than rubies, And all the things you may desire cannot compare with her. Length of days is in her right hand, In her left hand riches and honor. Her ways are ways of pleasantness, And all her paths are peace. She is a tree of life to those who take hold of her, And happy are all who retain her. The LORD by wisdom founded the earth; By understanding He established the heavens; By His knowledge the depths were broken up, And clouds drop down the dew. My son, let them not depart from your eyes—Keep sound wisdom and discretion; So they will be life to your soul And grace to your neck. Then you will walk safely in your way, And your foot will not stumble. When you lie down, you will not be afraid; Yes, you will lie down and your sleep will be sweet."},
+            {"ref": "Proverbs 3:13-24", "text": "Happy is the man who finds wisdom, And the man who gains understanding; For her proceeds are better than the profits of silver, And her gain than fine gold. She is more precious than rubies, And all the things you may desire cannot compare with her. Length of days is in her right hand, In her left hand riches and honor. Her ways are ways of pleasantness, And all her paths are peace. She is a tree of life to those who take hold of her, And happy are all who retain her. The LORD by wisdom founded the earth; By understanding He established the heavens; By His knowledge the depths were broken up, And clouds drop down the dew. My son, let them not depart from your eyes— Keep sound wisdom and discretion; So they will be life to your soul And grace to your neck. Then you will walk safely in your way, And your foot will not stumble. When you lie down, you will not be afraid; Yes, you will lie down and your sleep will be sweet."},
             {"ref": "Proverbs 3:35", "text": "The wise shall inherit glory, But shame shall be the legacy of fools."},
-            {"ref": "Proverbs 4:5-13", "text": "Get wisdom! Get understanding! Do not forget, nor turn away from the words of my mouth. Do not forsake her, and she will preserve you; Love her, and she will keep you. Wisdom is the principal thing; Therefore get wisdom. And in all your getting, get understanding. Exalt her, and she will promote you; She will bring you honor, when you embrace her. She will place on your head an ornament of grace; A crown of glory she will deliver to you. Hear, my son, and receive my sayings, And the years of your life will be many. I have taught you in the way of wisdom; I have led you in right paths. When you walk, your steps will not be hindered, And when you run, you will not stumble. Take firm hold of instruction, do not let go; Keep her, for she is your life."},
-            {"ref": "Proverbs 8:1-9", "text": "Does not wisdom cry out, And understanding lift up her voice? She takes her stand on the top of the high hill, Beside the way, where the paths meet. She cries out by the gates, at the entry of the city, At the entrance of the doors: 'To you, O men, I call, And my voice is to the sons of men. O you simple ones, understand prudence, And you fools, be of an understanding heart. Listen, for I will speak of excellent things, And from the opening of my lips will come right things; For my mouth will speak truth; Wickedness is an abomination to my lips. All the words of my mouth are with righteousness; Nothing crooked or perverse is in them. They are all plain to him who understands, And right to those who find knowledge.'"},
+            {"ref": "Proverbs 4:5-13", "text": "Get wisdom! Get understanding! Do not forget, nor turn away from the words of my mouth. Do not forsake her, and she will preserve you; Love her, and she will keep you. Wisdom is the principal thing; Therefore get wisdom. And in all your getting, get understanding. Exalt her, and she will promote you; She will bring you honor, when you embrace her. She will place on your head an ornament of grace; A crown of glory she will deliver to you.” Hear, my son, and receive my sayings, And the years of your life will be many. I have taught you in the way of wisdom; I have led you in right paths. When you walk, your steps will not be hindered, And when you run, you will not stumble. Take firm hold of instruction, do not let go; Keep her, for she is your life."},
+            {"ref": "Proverbs 8:1-9", "text": "Does not wisdom cry out, And understanding lift up her voice? She takes her stand on the top of the high hill, Beside the way, where the paths meet. She cries out by the gates, at the entry of the city, At the entrance of the doors: “ To you, O men, I call, And my voice is to the sons of men. O you simple ones, understand prudence, And you fools, be of an understanding heart. Listen, for I will speak of excellent things, And from the opening of my lips will come right things; For my mouth will speak truth; Wickedness is an abomination to my lips. All the words of my mouth are with righteousness; Nothing crooked or perverse is in them. They are all plain to him who understands, And right to those who find knowledge."},
             {"ref": "Proverbs 10:1", "text": "The proverbs of Solomon: A wise son makes a glad father, But a foolish son is the grief of his mother."},
             {"ref": "Proverbs 10:13", "text": "Wisdom is found on the lips of him who has understanding, But a rod is for the back of him who is devoid of understanding."},
-            {"ref": "Proverbs 11:22", "text": "As a ring of gold in a swine's snout, So is a lovely woman who lacks discretion."},
-            {"ref": "Proverbs 15:24", "text": "The way of life winds upward for the wise, That he may turn away from hell below."},
+            {"ref": "Proverbs 11:22", "text": "As a ring of gold in a swine’s snout, So is a lovely woman who lacks discretion."},
+            {"ref": "Proverbs 15:24", "text": "The way of life winds upward for the wise, That he may turn away from hell."},
             {"ref": "Proverbs 16:16", "text": "How much better to get wisdom than gold! And to get understanding is to be chosen rather than silver."},
             {"ref": "Proverbs 16:21", "text": "The wise in heart will be called prudent, And sweetness of the lips increases learning."},
             {"ref": "Proverbs 18:15", "text": "The heart of the prudent acquires knowledge, And the ear of the wise seeks knowledge."},
             {"ref": "Proverbs 19:8", "text": "He who gets wisdom loves his own soul; He who keeps understanding will find good."},
             {"ref": "Proverbs 21:16", "text": "A man who wanders from the way of understanding Will rest in the assembly of the dead."},
             {"ref": "Proverbs 21:22", "text": "A wise man scales the city of the mighty, And brings down the trusted stronghold."},
-            {"ref": "Proverbs 24:3-5", "text": "Through wisdom a house is built, And by understanding it is established; By knowledge the rooms are filled With all precious and pleasant riches. A wise man is strong, Yes, a man of knowledge increases strength."},
+            {"ref": "Proverbs 24:3-5", "text": "Through wisdom a house is built, And by understanding it is established; By knowledge the rooms are filled With all precious and pleasant riches. A wise man is strong, Yes, a man of knowledge increases strength;"},
             {"ref": "Proverbs 24:7", "text": "Wisdom is too lofty for a fool; He does not open his mouth in the gate."},
             {"ref": "Proverbs 24:13-14", "text": "My son, eat honey because it is good, And the honeycomb which is sweet to your taste; So shall the knowledge of wisdom be to your soul; If you have found it, there is a prospect, And your hope will not be cut off."},
             {"ref": "Proverbs 27:11", "text": "My son, be wise, and make my heart glad, That I may answer him who reproaches me."}
         ],
         "dig_deeper": [
-            "Where do you go to as your source of information? Your boss, the Human Resources Department, management training classes, a career or life coach, your peers, other respected colleagues, your spouse, your own understanding?",
+            "Where do you go to as your source of information?  Your boss, the Human Resources Department, management training classes, a career or life coach, your peers, other respected colleagues, your spouse, your own understanding?",
             "Have you looked specifically in the Word instead for the root of the problem and wisdom about the solution?",
-            "When you do seek wisdom, it is important that you: Obtain knowledge (accumulate the available information or facts on the subject); Be wise (discern the true nature of things; that the knowledge you receive is knowledge that stands up to the test/will of the Word of God (1 Corinthians 2:15, 1 Thessalonians 5:21, 1 John 4:1, Hebrews 5:14, Romans 12:2) and; Gain understanding (learn how to apply this wisdom practically). If your issue is leadership, for example, and you gather knowledge about Servant Leadership and you see in God's Word that Jesus calls us to practice this leadership, what can you do, practically, to model this (assuming that literally washing your employee's feet may not be culturally acceptable)?",
-            "When reading the sections on Authority, Self-Image and Your Job, did you have any 'aha' moments? Did the perspective provided help you gain wisdom about your 'work-life' issue? Explain.",
-            "Think of a difficult situation you've faced at work recently and determine to explore what the Lord's wisdom has to say about that situation. Would you, or could you, have reacted differently if you had this wisdom at the time you were dealing with the problem? Explain below, then share this information with someone.",
+            "When you do seek wisdom, it is important that you: Obtain knowledge (accumulate the available information or facts on the subject); Be wise (discern the true nature of things; that the knowledge you receive is knowledge that stands up to the test/will of the Word of God (1 Corinthians 2:15, 1 Thessalonians 5:21, 1 John 4:1, Hebrews 5:14, Romans 12:2) and; Gain understanding (learn how to apply this wisdom practically).",
+            "If your issue is leadership, for example, and you gather knowledge about Servant Leadership and you see in God’s Word that Jesus calls us to practice this leadership, what can you do, practically, to model this (assuming that literally washing your employee’s feet may not be culturally acceptable)?",
+            "When reading the sections on Authority, Self-Image and Your Job, did you have any “aha” moments?  Did the perspective provided help you gain wisdom about your “work-life” issue? Explain.",
+            "Think of a difficult situation you’ve faced at work recently and determine to explore what the Lord’s wisdom has to say about that situation.  Would you, or could you, have reacted differently if you had this wisdom at the time you were dealing with the problem?  Explain below, then share this information with someone.",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 6,
         "title": "Seek Counsel",
-        "question": "I ask others (especially Christians) for counsel and value their insight/opinions?",
+        "question": "Do I seek wise counsel from multiple sources before making decisions?",
         "verses": [
             {"ref": "Proverbs 11:14", "text": "Where there is no counsel, the people fall; But in the multitude of counselors there is safety."},
             {"ref": "Proverbs 15:22", "text": "Without counsel, plans go awry, But in the multitude of counselors they are established."},
@@ -196,17 +201,17 @@ ASSESSMENT_DATA = [
         ],
         "dig_deeper": [
             "Do you value and seek out the opinions of many counselors?",
-            "How does being shy, proud or insecure affect your willingness to seek advice? Are any of these an issue for you? Are those acceptable excuses to not follow this piece of wisdom?",
-            "Can you remember a situation where you acted alone and you wish you had sought counsel? Share some examples:",
-            "Modern management theory suggests collaboration and seeking input from many individuals, departments, etc. is appropriate. This, in essence, is a democracy. Are there problems with seeking too much input or input from the wrong individuals? How will you balance this?",
-            "Do you (or others you deal with) sincerely seek wise counsel, the right amount of counsel, or just go through the motions of being democratic? Remember the Lord knows our hearts.",
+            "How does being shy, proud or insecure affect your willingness to seek advice? Are any of these an issue for you?  Are those acceptable excuses to not follow this piece of wisdom?",
+            "Can you remember a situation where you acted alone and you wish you had sought counsel?  Share some examples:",
+            "Modern management theory suggests collaboration and seeking input from many individuals, departments, etc. is appropriate.  This, in essence, is a democracy.  Are there problems with seeking too much input or input from the wrong individuals?  How will you balance this?",
+            "Do you (or others you deal with) sincerely seek wise counsel, the right amount of counsel, or just go through the motions of being democratic?  Remember the Lord knows our hearts.",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 7,
-        "title": "Keep the Lord's Commands",
-        "question": "I try to follow the 10 Commandments?",
+        "title": "Keep the Lord’s Commands",
+        "question": "Do I fear the Lord and keep His commandments in daily life?",
         "verses": [
             {"ref": "Proverbs 13:13-15", "text": "He who despises the word will be destroyed, But he who fears the commandment will be rewarded. The law of the wise is a fountain of life, To turn one away from the snares of death. Good understanding gains favor, But the way of the unfaithful is hard."},
             {"ref": "Proverbs 14:26-27", "text": "In the fear of the LORD there is strong confidence, And His children will have a place of refuge. The fear of the LORD is a fountain of life, To turn one away from the snares of death."},
@@ -218,15 +223,15 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 29:18", "text": "Where there is no revelation, the people cast off restraint; But happy is he who keeps the law."}
         ],
         "dig_deeper": [
-            "Review the 10 Commandments (Exodus 20). Do you feel you truly believe in them, trust them, and revere the Lord enough to try to keep them?",
+            "Review the 10 Commandments (Exodus 20).  Do you feel you truly believe in them, trust them, and revere the Lord enough to try to keep them?",
             "How can you remind yourself of the commandments and hold yourself accountable to them in every circumstance?",
-            "If you cannot live up to the commandments, 'the law', do you believe that all things are possible through Christ and that he has paid the price for your failures?",
-            "Does this release you from the responsibility to live lawfully? (See Romans 6:15.)",
-            "The verses above show that those that DON'T revere or fear the Lord and keep His commandments will suffer. They tell us... The way of the unfaithful, the careless, the one who turns his ear from the law is hard and leads to death. This causes one: to be dissatisfied, visited with evil, to praise wickedness, to cast off restraint, and results in unhappiness and prayers that are an abomination. Being a faithful Christian, however, should help you: be rewarded, turn away from the snares of death, gain favor, have strong confidence, have a safe refuge, find good, be happy, keep your soul, abide in satisfaction, not be visited with evil, and allow you to contend with the wicked. Which list of characteristics best describes your life? Is your life reflecting the rewards of a faithful Christian, why or why not?",
+            "If you cannot live up to the commandments, “the law”, do you believe that all things are possible through Christ and that he has paid the price for your failures?",
+            "Does this release you from the responsibility to live lawfully?  (See Romans 6:15.)",
+            "The verses above show that those that DON’T revere or fear the Lord and keep His commandments will suffer. They tell us… The way of the unfaithful, the careless, the one who turns his ear from the law is hard and leads to death.  This causes one: to be dissatisfied, visited with evil, to praise wickedness, to cast off restraint, and results in unhappiness and prayers that are an abomination. Being a faithful Christian, however, should help you: be rewarded, turn away from the snares of death, gain favor, have strong confidence, have a safe refuge, find good, be happy, keep your soul, abide in satisfaction, not be visited with evil, and allow you to contend with the wicked. Which list of characteristics, paragraph (a or b) above, best describes your life?  Is your life reflecting the rewards of a faithful Christian, why or why not?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-     },
-     {
+    },
+    {
         "id": 8,
         "title": "Trust in the Lord",
         "question": "Do I trust the Lord fully with my work and life paths?",
