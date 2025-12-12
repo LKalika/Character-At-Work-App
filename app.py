@@ -786,7 +786,7 @@ ASSESSMENT_DATA = [
     },
     {
         "id": 36,
-        "title": "title": "Show Graciousness/Kindness",
+        "title": "Show Graciousness/Kindness",
         "question": "Am I known for graciousness and kindness in the workplace?",
         "verses": [
             {"ref": "Proverbs 11:16", "text": "A gracious woman retains honor, But ruthless men retain riches."},
