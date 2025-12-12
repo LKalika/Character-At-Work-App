@@ -479,319 +479,420 @@ ASSESSMENT_DATA = [
         ]
     },
     {
-        "id": 20,
-        "title": "Avoid Wickedness/Seek Righteousness",
-        "question": "Am I pursuing righteousness instead of wickedness in my work and life?",
+           "id": 20,
+        "title": "Don't Envy/Be Jealous",
+        "question": "Do I envy or become jealous of the success, possessions, or position of others?",
         "verses": [
-            {"ref": "Proverbs 10:2-3", "text": "Treasures of wickedness profit nothing, But righteousness delivers from death. The LORD will not allow the righteous soul to famish, But He casts away the desire of the wicked."},
-            {"ref": "Proverbs 10:7", "text": "The memory of the righteous is blessed, But the name of the wicked will rot."},
-            {"ref": "Proverbs 10:16", "text": "The labor of the righteous leads to life, The wages of the wicked to sin."},
-            {"ref": "Proverbs 10:23-25", "text": "To do evil is like sport to a fool, But a man of understanding has wisdom. The fear of the wicked will come upon him, And the desire of the righteous will be granted. When the whirlwind passes by, the wicked is no more, But the righteous has an everlasting foundation."},
-            {"ref": "Proverbs 10:27-30", "text": "The fear of the LORD prolongs days, But the years of the wicked will be shortened. The hope of the righteous will be gladness, But the expectation of the wicked will perish. The way of the LORD is strength for the upright, But destruction will come to the workers of iniquity. The righteous will never be removed, But the wicked will not inhabit the earth."},
-            {"ref": "Proverbs 11:5-8", "text": "The righteousness of the blameless will direct his way aright, But the wicked will fall by his own wickedness. The righteousness of the upright will deliver them, But the unfaithful will be caught by their lust. When a wicked man dies, his expectation will perish, And the hope of the unjust perishes. The righteous is delivered from trouble, And it comes to the wicked instead."},
-            {"ref": "Proverbs 11:19", "text": "As righteousness leads to life, So he who pursues evil pursues it to his own death."},
-            {"ref": "Proverbs 11:21", "text": "Though they join forces, the wicked will not go unpunished; But the posterity of the righteous will be delivered."},
-            {"ref": "Proverbs 11:23", "text": "The desire of the righteous is only good, But the expectation of the wicked is wrath."},
-            {"ref": "Proverbs 11:27", "text": "He who earnestly seeks good finds favor, But trouble will come to him who seeks evil."},
-            {"ref": "Proverbs 11:30-31", "text": "The fruit of the righteous is a tree of life, And he who wins souls is wise. If the righteous will be recompensed on the earth, How much more the ungodly and the sinner."},
-            {"ref": "Proverbs 13:6", "text": "Righteousness guards him whose way is blameless, But wickedness overthrows the sinner."},
-            {"ref": "Proverbs 13:9", "text": "The light of the righteous rejoices, But the lamp of the wicked will be put out."},
-            {"ref": "Proverbs 13:25", "text": "The righteous eats to the satisfying of his soul, But the stomach of the wicked shall be in want."},
-            {"ref": "Proverbs 14:11", "text": "The house of the wicked will be overthrown, But the tent of the upright will flourish."},
-            {"ref": "Proverbs 14:19", "text": "The evil will bow before the good, And the wicked at the gates of the righteous."},
-            {"ref": "Proverbs 14:32", "text": "The wicked is banished in his wickedness, But the righteous has a refuge in his death."},
-            {"ref": "Proverbs 14:34", "text": "Righteousness exalts a nation, But sin is a reproach to any people."},
-            {"ref": "Proverbs 15:3", "text": "The eyes of the LORD are in every place, Keeping watch on the evil and the good."},
-            {"ref": "Proverbs 15:6", "text": "In the house of the righteous there is much treasure, But in the revenue of the wicked is trouble."},
-            {"ref": "Proverbs 15:8-9", "text": "The sacrifice of the wicked is an abomination to the LORD, But the prayer of the upright is His delight. The way of the wicked is an abomination to the LORD, But He loves him who follows righteousness."},
-            {"ref": "Proverbs 15:29", "text": "The LORD is far from the wicked, But He hears the prayer of the righteous."},
-            {"ref": "Proverbs 16:12", "text": "It is an abomination for kings to commit wickedness, For a throne is established by righteousness."},
-            {"ref": "Proverbs 16:31", "text": "The silver-haired head is a crown of glory, If it is found in the way of righteousness."},
-            {"ref": "Proverbs 18:3", "text": "When the wicked comes, contempt comes also; And with dishonor comes reproach."},
-            {"ref": "Proverbs 20:26", "text": "A wise king sifts out the wicked, And brings the threshing wheel over them."},
-            {"ref": "Proverbs 21:3", "text": "To do righteousness and justice Is more acceptable to the LORD than sacrifice."},
-            {"ref": "Proverbs 21:7-8", "text": "The violence of the wicked will destroy them, Because they refuse to do justice. The way of a guilty man is perverse; But as for the pure, his work is right."},
-            {"ref": "Proverbs 21:10", "text": "The soul of the wicked desires evil; His neighbor finds no favor in his eyes."},
-            {"ref": "Proverbs 21:12", "text": "The righteous God wisely considers the house of the wicked, Overthrowing the wicked for their wickedness."},
-            {"ref": "Proverbs 21:18", "text": "The wicked shall be a ransom for the righteous, And the unfaithful for the upright."},
-            {"ref": "Proverbs 22:8", "text": "He who sows iniquity will reap sorrow, And the rod of his anger will fail."},
-            {"ref": "Proverbs 22:12", "text": "The eyes of the LORD preserve knowledge, But He overthrows the words of the faithless."},
-            {"ref": "Proverbs 28:1", "text": "The wicked flee when no one pursues, But the righteous are bold as a lion."},
-            {"ref": "Proverbs 28:12", "text": "When the righteous rejoice, there is great glory; But when the wicked arise, men hide themselves."},
-            {"ref": "Proverbs 28:28", "text": "When the wicked arise, men hide themselves; But when they perish, the righteous increase."},
-            {"ref": "Proverbs 29:6-7", "text": "By transgression an evil man is snared, But the righteous sings and rejoices. The righteous considers the cause of the poor, But the wicked does not understand such knowledge."},
-            {"ref": "Proverbs 29:10", "text": "The bloodthirsty hate the blameless, But the upright seek his well-being."},
-            {"ref": "Proverbs 29:16", "text": "When the wicked are multiplied, transgression increases; But the righteous will see their fall."}
+            {"ref": "Proverbs 3:31-32", "text": "Do not envy the oppressor, And choose none of his ways; For the perverse person is an abomination to the LORD, But His secret counsel is with the upright."},
+            {"ref": "Proverbs 14:30", "text": "A sound heart is life to the body, But envy is rottenness to the bones."},
+            {"ref": "Proverbs 23:17-18", "text": "Do not let your heart envy sinners, But be zealous for the fear of the LORD all the day; For surely there is a hereafter, And your hope will not be cut off."},
+            {"ref": "Proverbs 24:1-2", "text": "Do not be envious of evil men, Nor desire to be with them; For their heart devises violence, And their lips talk of troublemaking."},
+            {"ref": "Proverbs 24:19-20", "text": "Do not fret because of evildoers, Nor be envious of the wicked; For there will be no prospect for the evil man; The lamp of the wicked will be put out."},
+            {"ref": "Proverbs 27:4", "text": "Wrath is cruel and anger a torrent, But who is able to stand before envy?"}
         ],
         "dig_deeper": [
-            "Did you think the term “righteousness” had a bad connotation?   Did it conjure up the idea of a person who is “self-righteous” or considers themselves, “holier than thou”?  A hypocritical or judgmental Christian perhaps?  Why do you think this is?",
-            "Where should your righteousness come from?  (Hint: Matthew 6).",
-            "Underline the positive consequences of righteousness in the passages above.",
-            "What causes you/others to behave wickedly (do what you know is not right)?",
-            "Even though it is not possible to be righteous without God, is it something to aspire to or is it futile?",
-            "By reading these verses, could you be encouraged, even if you are dealing with a wicked co-worker, supervisor or employee?   How?",
+            "When have you felt envy or jealousy toward someone at work or in life? What triggered it?",
+            "How did that envy affect your thoughts, words, or actions toward that person?",
+            "According to Proverbs 14:30, what does envy do to your own body and soul?",
+            "The verses above warn against envying sinners, oppressors, and evil men. Why do you think we are still tempted to envy them?",
+            "What promises does God give in Proverbs 23:17-18 and 24:19-20 to help you overcome envy?",
+            "What practical step can you take this week to replace envy with contentment and celebration of others’ success?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 21,
-        "title": "Store Knowledge",
-        "question": "Do I continually store up godly knowledge and understanding?",
+        "title": "Don't Reward Evil",
+        "question": "Do I reward evil with evil, or do I overcome evil with good?",
         "verses": [
-            {"ref": "Proverbs 10:14", "text": "Wise people store up knowledge, But the mouth of the foolish is near destruction."},
-            {"ref": "Proverbs 15:14", "text": "The heart of him who has understanding seeks knowledge, But the mouth of fools feeds on foolishness."},
-            {"ref": "Proverbs 28:2", "text": "Because of the transgression of a land, many are its princes; But by a man of understanding and knowledge Right will be prolonged."}
+            {"ref": "Proverbs 17:13", "text": "Whoever rewards evil for good, Evil will not depart from his house."},
+            {"ref": "Proverbs 20:22", "text": "Do not say, “I will recompense evil”; Wait for the LORD, and He will save you."},
+            {"ref": "Proverbs 24:29", "text": "Do not say, “I will do to him just as he has done to me; I will render to the man according to his work.”"},
+            {"ref": "Proverbs 25:21-22", "text": "If your enemy is hungry, give him bread to eat; And if he is thirsty, give him water to drink; For so you will heap coals of fire on his head, And the LORD will reward you."}
         ],
         "dig_deeper": [
-            "Could storing up more knowledge help you become wiser, advance your career?",
-            "What type of knowledge do you need to seek?",
-            "By gaining understanding and knowledge you could not only gain wisdom (and possibly career advantage) but also be able to help “prolong what is right” – Proverbs 28:2. What does this mean to you?",
-            "What is stopping you from growing in knowledge: fear, impatience, stubbornness, pride, anger, embarrassment, or incompetence?  What can you do to overcome this?",
-            "What will you do to expand your knowledge?",
-            "In your pursuit of knowledge remember an important balance that the Bible teaches. What good is knowledge without love?  How will you remind yourself of this? 1 Corinthians 13:8 NIV",
+            "Have you ever repaid evil for evil (gossip, revenge, withholding help, etc.)? What was the result?",
+            "Why is it so tempting to “get even” when someone wrongs us?",
+            "According to Proverbs 25:21-22 and Romans 12:20-21, how should we respond when someone treats us badly?",
+            "What does it mean to “heap coals of fire on his head”? Is this punishment or a way to bring conviction and possible repentance?",
+            "Think of someone who has wronged you recently. What is one practical way you can repay them with good this week?",
+            "How does refusing to reward evil protect your own house and life (Proverbs 17:13)?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 22,
-        "title": "Don’t Use Dishonest Means",
-        "question": "Do I reject dishonest gain and dishonest scales?",
+        "title": "Be Humble",
+        "question": "Am I humble or proud in spirit?",
         "verses": [
-            {"ref": "Proverbs 11:1", "text": "Dishonest scales are an abomination to the LORD, But a just weight is His delight."},
-            {"ref": "Proverbs 11:18", "text": "The wicked man does deceptive work, But he who sows righteousness will have a sure reward."},
-            {"ref": "Proverbs 11:24", "text": "There is one who scatters, yet increases more; And there is one who withholds more than is right, But it leads to poverty."},
-            {"ref": "Proverbs 13:11", "text": "Wealth gained by dishonesty will be diminished, But he who gathers by labor will increase."},
-            {"ref": "Proverbs 16:8", "text": "Better is a little with righteousness, Than vast revenues without justice."},
-            {"ref": "Proverbs 16:11", "text": "Honest weights and scales are the LORD’s; All the weights in the bag are His work."},
-            {"ref": "Proverbs 17:23", "text": "A wicked man accepts a bribe behind the back To pervert the ways of justice."},
-            {"ref": "Proverbs 20:10", "text": "Diverse weights and diverse measures, They are both alike, an abomination to the LORD."},
-            {"ref": "Proverbs 20:17", "text": "Bread gained by deceit is sweet to a man, But afterward his mouth will be filled with gravel."},
-            {"ref": "Proverbs 20:23", "text": "Diverse weights are an abomination to the LORD, And dishonest scales are not good."},
-            {"ref": "Proverbs 29:27", "text": "An unjust man is an abomination to the righteous, And he who is upright in the way is an abomination to the wicked."}
+            {"ref": "Proverbs 11:2", "text": "When pride comes, then comes shame; But with the humble is wisdom."},
+            {"ref": "Proverbs 15:33", "text": "The fear of the LORD is the instruction of wisdom, And before honor is humility."},
+            {"ref": "Proverbs 16:18-19", "text": "Pride goes before destruction, And a haughty spirit before a fall. Better to be of a humble spirit with the lowly, Than to divide the spoil with the proud."},
+            {"ref": "Proverbs 18:12", "text": "Before destruction the heart of a man is haughty, And before honor is humility."},
+            {"ref": "Proverbs 22:4", "text": "By humility and the fear of the LORD Are riches and honor and life."},
+            {"ref": "Proverbs 29:23", "text": "A man’s pride will bring him low, But the humble in spirit will retain honor."}
         ],
         "dig_deeper": [
-            "If you’ve been deceptive, used dishonest scales or have been bribed or otherwise gained without justice, how can you make it right?",
-            "If you believe others in the workplace are getting ahead by dishonest means, what can you do for them?",
+            "Where in your life or work do you struggle most with pride?",
+            "How has pride ever led to shame or a fall for you?",
+            "What practical habits help you stay humble before God and others?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 23,
-        "title": "Fairly Apply Justice",
-        "question": "Do I judge and treat people fairly and impartially?",
+        "title": "Put Away A Deceitful Mouth",
+        "question": "Do I speak truthfully, or do I lie, flatter, or slander?",
         "verses": [
-            {"ref": "Proverbs 16:10-11", "text": "Divination is on the lips of the king; His mouth must not transgress in judgment. Honest weights and scales are the LORD’s; All the weights in the bag are His work."},
-            {"ref": "Proverbs 18:13", "text": "He who answers a matter before he hears it, It is folly and shame to him."},
-            {"ref": "Proverbs 18:17", "text": "The first one to plead his cause seems right, Until his neighbor comes and examines him."},
-            {"ref": "Proverbs 20:8", "text": "A king who sits on the throne of judgment Scatters all evil with his eyes."},
-            {"ref": "Proverbs 21:15", "text": "It is a joy for the just to do justice, But destruction will come to the workers of iniquity."},
-            {"ref": "Proverbs 22:22-23", "text": "Do not rob the poor because he is poor, Nor oppress the afflicted at the gate; For the LORD will plead their cause, And plunder the soul of those who plunder them."},
-            {"ref": "Proverbs 23:10-11", "text": "Do not remove the ancient landmark, Nor enter the fields of the fatherless; For their Redeemer is mighty; He will plead their cause against you."},
-            {"ref": "Proverbs 24:23-26", "text": "These things also belong to the wise: It is not good to show partiality in judgment. He who says to the wicked, “You are righteous,” Him the people will curse; Nations will abhor him. But those who rebuke the wicked will have delight, And a good blessing will come upon them. He who gives a right answer kisses the lips."},
-            {"ref": "Proverbs 28:5", "text": "Evil men do not understand justice, But those who seek the LORD understand all."},
-            {"ref": "Proverbs 28:8", "text": "One who increases his possessions by usury and extortion Gathers it for him who will pity the poor."},
-            {"ref": "Proverbs 28:21", "text": "To show partiality is not good, Because for a piece of bread a man will transgress."},
-            {"ref": "Proverbs 29:2", "text": "When the righteous are in authority, the people rejoice; But when a wicked man rules, the people groan."},
-            {"ref": "Proverbs 29:4", "text": "The king establishes the land by justice, But he who receives bribes overthrows it."},
-            {"ref": "Proverbs 29:12-14", "text": "If a ruler pays attention to lies, All his servants become wicked. The poor man and the oppressor have this in common: The LORD gives light to the eyes of both. The king who judges the poor with truth, His throne will be established forever."},
-            {"ref": "Proverbs 31:8-9", "text": "Open your mouth for the speechless, In the cause of all who are appointed to die. Open your mouth, judge righteously, And plead the cause of the poor and needy."}
+            {"ref": "Proverbs 4:24", "text": "Put away from you a deceitful mouth, And put perverse lips far from you."},
+            {"ref": "Proverbs 6:12-14", "text": "A worthless person, a wicked man, Walks with a perverse mouth…"},
+            {"ref": "Proverbs 10:18", "text": "Whoever hides hatred has lying lips, And whoever spreads slander is a fool."},
+            {"ref": "Proverbs 12:22", "text": "Lying lips are an abomination to the LORD, But those who deal truthfully are His delight."},
+            {"ref": "Proverbs 26:28", "text": "A lying tongue hates those who are crushed by it, And a flattering mouth works ruin."}
         ],
         "dig_deeper": [
-            "Have you shown partiality in judgment, not listened well enough to make good judgments, been easily misled with lies or not stood up for those that needed their cases plead? (Underline as many as apply).  How can you make it right?",
-            "Are you prepared to admit your failure and start new making sure you heed the advice in the verses above? How?",
-            "If you feel someone, probably your boss, has been unfair in their judgment is it because they have been partial, not listened well, been misled by lies have accepted bribes, or simply not stood up for those that can’t stand up for themselves?  (Underline as many as apply).",
-            "How will you let them know how this is affecting you (See Chapter 6 – Communicating Issues for some help with this)?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "List any areas where you are tempted to lie, exaggerate, flatter, or gossip.",
+            "What damage have you seen lying or flattery cause in the workplace?",
+            "How can you replace deceitful speech with truthful, edifying words this week?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 24,
-        "title": "Hold Your Tongue",
-        "question": "Do I guard my mouth and speak wisely?",
+        "title": "Let Your Ways Be Established",
+        "question": "Are my ways steady and established, or do I waver and stumble?",
         "verses": [
-            {"ref": "Proverbs 11:13", "text": "A talebearer reveals secrets, But he who is of a faithful spirit conceals a matter."},
-            {"ref": "Proverbs 13:2-3", "text": "A man shall eat well by the fruit of his mouth, But the soul of the unfaithful feeds on violence. He who guards his mouth preserves his life, But he who opens wide his lips shall have destruction."},
-            {"ref": "Proverbs 14:23", "text": "In all labor there is profit, But idle chatter leads only to poverty."},
-            {"ref": "Proverbs 15:1-2", "text": "A soft answer turns away wrath, But a harsh word stirs up anger. The tongue of the wise uses knowledge rightly, But the mouth of fools pours forth foolishness."},
-            {"ref": "Proverbs 15:23", "text": "A man has joy by the answer of his mouth, And a word spoken in due season, how good it is!"},
-            {"ref": "Proverbs 15:26", "text": "The thoughts of the wicked are an abomination to the LORD, But the words of the pure are pleasant."},
-            {"ref": "Proverbs 15:28", "text": "The heart of the righteous studies how to answer, But the mouth of the wicked pours forth evil."},
-            {"ref": "Proverbs 16:1", "text": "The preparations of the heart belong to man, But the answer of the tongue is from the LORD."},
-            {"ref": "Proverbs 16:23-24", "text": "The heart of the wise teaches his mouth, And adds learning to his lips. Pleasant words are like a honeycomb, Sweetness to the soul and health to the bones."},
-            {"ref": "Proverbs 17:27-28", "text": "He who has knowledge spares his words, And a man of understanding is of a calm spirit. Even a fool is counted wise when he holds his peace; When he shuts his lips, he is considered perceptive."},
-            {"ref": "Proverbs 18:2", "text": "A fool has no delight in understanding, But in expressing his own heart."},
-            {"ref": "Proverbs 18:4", "text": "The words of a man’s mouth are deep waters; The wellspring of wisdom is a flowing brook."},
-            {"ref": "Proverbs 18:6-8", "text": "A fool’s lips enter into contention, And his mouth calls for blows. A fool’s mouth is his destruction, And his lips are the snare of his soul. The words of a talebearer are like tasty trifles, And they go down into the inmost body."},
-            {"ref": "Proverbs 18:23", "text": "The poor man uses entreaties, But the rich answers roughly."},
-            {"ref": "Proverbs 20:12", "text": "The hearing ear and the seeing eye, The LORD has made them both."},
-            {"ref": "Proverbs 20:25", "text": "It is a snare for a man to devote rashly something as holy, And afterward to reconsider his vows."},
-            {"ref": "Proverbs 21:23", "text": "Whoever guards his mouth and tongue Keeps his soul from troubles."},
-            {"ref": "Proverbs 23:9", "text": "Do not speak in the hearing of a fool, For he will despise the wisdom of your words."},
-            {"ref": "Proverbs 25:23", "text": "The north wind brings forth rain, And a backbiting tongue an angry countenance."},
-            {"ref": "Proverbs 29:11", "text": "A fool vents all his feelings, But a wise man holds them back."}
+            {"ref": "ref": "Proverbs 4:26-27", "text": "Ponder the path of your feet, And let all your ways be established. Do not turn to the right or the left; Remove your foot from evil."}
         ],
         "dig_deeper": [
-            "Have you ever really considered what a powerful tool or weapon the tongue can be?",
-            "Go back and underline the verses that most apply to the issue you have with your tongue; are you backbiting, a gossip, speak too quickly, talk too much, etc.",
-            "Describe a time when you should have held your tongue and didn’t.  Maybe you said something you regret (gossiped, said something hurtful, said too much, spoke too soon)?",
-            "From the verses above, list the benefits and traits associated with those that “hold their tongue” or speak wisely:",
-            "From the verses above, list the problems and traits associated with those that don’t “hold their tongue” or speak wisely:",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "In what area of life or work do your “ways” feel unsteady right now?",
+            "What specific steps can you take to “ponder the path” and establish your ways this week?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 25,
-        "title": "Show Graciousness/Kindness",
-        "question": "Am I known for graciousness and kindness in the workplace?",
+        "title": "Avoid Immoral Women",
+        "question": "Do I guard my eyes, heart, and steps from sexual immorality and seductive women (or men)?",
         "verses": [
-            {"ref": "Proverbs 11:16", "text": "A gracious woman retains honor, But ruthless men retain riches."},
-            {"ref": "Proverbs 19:22", "text": "What is desired in a man is kindness, And a poor man is better than a liar."},
-            {"ref": "Proverbs 20:28", "text": "Mercy and truth preserve the king, And by lovingkindness he upholds his throne."},
-            {"ref": "Proverbs 21:13", "text": "Whoever shuts his ears to the cry of the poor Will also cry himself and not be heard."},
-            {"ref": "Proverbs 22:11", "text": "He who loves purity of heart And has grace on his lips, The king will be his friend."}
+            {"ref": "Proverbs 2:16-19", "text": "To deliver you from the immoral woman, From the seductress who flatters with her words…"},
+            {"ref": "Proverbs 5:3-23", "text": "For the lips of an immoral woman drip honey… (full warning passage)"},
+            {"ref": "Proverbs 6:24-35", "text": "To keep you from the evil woman…"},
+            {"ref": "Proverbs 7:1-27", "text": "My son, keep my words… (the entire dramatic story of the young man and the adulteress)"},
+            {"ref": "Proverbs 9:13-18", "text": "A foolish woman is clamorous… Stolen water is sweet…"},
+            {"ref": "Proverbs 22:14", "text": "The mouth of an immoral woman is a deep pit…"},
+            {"ref": "Proverbs 23:27-28", "text": "For a harlot is a deep pit…"},
+            {"ref": "Proverbs 30:20", "text": "This is the way of an adulterous woman…"}
         ],
         "dig_deeper": [
-            "Have you considered that loving-kindness, and grace will bring honor, uphold your position, create loyalty and bring you favor?",
-            "What are the opposite consequences?",
-            "Would you rather have honor or riches?",
-            "In Proverbs 29:19-21 Is pampering different than being kind and gracious?  Will it cause a servant to be insolent; expecting to be treated as a son?  Is this an admonishment against being too lax with your employees or is this showing the difference in the level of respect one receives from kinder treatment: the willing obedience of a son versus the grudging obedience of a servant.",
-            "If you aren’t sure others would describe you as kind, what can you do to change your image?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Have you ever been enticed or drawn toward sexual immorality (pornography, flirting, emotional/physical affairs)? How close did you get?",
+            "What safeguards do you currently have in place to protect your marriage, your witness, and your soul?",
+            "How does the imagery (“her house is the way to hell”, “fire in the bosom”) affect your view of sexual sin?",
+            "If you have fallen, have you repented and set boundaries? What steps will you take this week?",
+            "How can you help someone else struggling without falling yourself?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 26,
-        "title": "Be Merciful",
-        "question": "Am I quick to show mercy and forgive others?",
+        "title": "Don't Misplace Your Confidence",
+        "question": "Do I put my confidence in the Lord rather than in man, riches, or myself?",
         "verses": [
-            {"ref": "Proverbs 11:17", "text": "The merciful man does good for his own soul, But he who is cruel troubles his own flesh."},
-            {"ref": "Proverbs 12:10", "text": "A righteous man regards the life of his animal, But the tender mercies of the wicked are cruel."},
-            {"ref": "Proverbs 14:21", "text": "He who despises his neighbor sins; But he who has mercy on the poor, happy is he."},
-            {"ref": "Proverbs 14:31", "text": "He who oppresses the poor reproaches his Maker, But he who honors Him has mercy on the needy."},
-            {"ref": "Proverbs 16:6", "text": "In mercy and truth Atonement is provided for iniquity; And by the fear of the LORD one departs from evil."},
-            {"ref": "Proverbs 19:17", "text": "He who has pity on the poor lends to the LORD, And He will pay back what he has given."},
-            {"ref": "Proverbs 21:21", "text": "He who follows righteousness and mercy Finds life, righteousness, and honor."},
-            {"ref": "Proverbs 28:13", "text": "He who covers his sins will not prosper, But whoever confesses and forsakes them will have mercy."}
+            {"ref": "Proverbs 3:26", "text": "For the LORD will be your confidence, And will keep your foot from being caught."},
+            {"ref": "Proverbs 11:28", "text": "He who trusts in his riches will fall, But the righteous will flourish like foliage."},
+            {"ref": "Proverbs 14:26", "text": "In the fear of the LORD there is strong confidence…"},
+            {"ref": "Proverbs 28:26", "text": "He who trusts in his own heart is a fool, But whoever walks wisely will be delivered."}
         ],
         "dig_deeper": [
-            "The verses above reflect that the opposite of being merciful is being cruel or oppressive. Had you considered that?",
-            "Does this change your mind about how willing you are to be merciful (even when it is hard)?",
-            "What stops you from showing mercy sometimes?",
-            "Have you considered that your willingness to confess and forsake sin will be the way to achieve mercy from others? Have you done your part to receive mercy?",
-            "How will the Lord reward you for showing mercy?",
-            "Who do you need to show mercy to today?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Where have you been tempted to put confidence in money, position, talent, or people instead of God?",
+            "What does it look like practically to make the Lord your confidence at work?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 27,
-        "title": "Be Patient",
-        "question": "Am I patient and diligent instead of hasty and impulsive?",
+        "title": "Avoid Folly",
+        "question": "Do I avoid foolish and sinful behavior?",
         "verses": [
-            {"ref": "Proverbs 13:12", "text": "Hope deferred makes the heart sick, But when the desire comes, it is a tree of life."},
-            {"ref": "Proverbs 13:19", "text": "A desire accomplished is sweet to the soul, But it is an abomination to fools to depart from evil."},
-            {"ref": "Proverbs 20:21", "text": "An inheritance gained hastily at the beginning Will not be blessed at the end."},
-            {"ref": "Proverbs 21:5", "text": "The plans of the diligent lead surely to plenty, But those of everyone who is hasty, surely to poverty."},
-            {"ref": "Proverbs 24:27", "text": "Prepare your outside work, Make it fit for yourself in the field; And afterward build your house."},
-            {"ref": "Proverbs 25:15", "text": "By long forbearance a ruler is persuaded, And a gentle tongue breaks a bone."}
+            {"ref": "Proverbs 1:22", "text": "How long, you simple ones, will you love simplicity?..."},
+            {"ref": "Proverbs 9:6", "text": "Forsake foolishness and live…"},
+            {"ref": "Proverbs 14:7-9", "text": "Go from the presence of a foolish man… Fools mock at sin…"},
+            {"ref": "Proverbs 26:11", "text": "As a dog returns to his own vomit, So a fool repeats his folly."}
         ],
         "dig_deeper": [
-            "How has being impatient ever caused problems for you?",
-            "Did you learn a lesson or are you still making mistakes by being hasty, not preparing, being heartsick while you wait?",
-            "What strategies can you employ to help you be more patient?",
-            "What strategy is shared below: Luke 14:28 NIV “Suppose one of you wants to build a tower. Won’t you first sit down and estimate the cost to see if you have enough money to complete it?”",
-            "How can you address others that rush in and experience problems as a result?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "What recurring foolish or sinful habits do you need to forsake?",
+            "How can you practically “go from the presence” of foolish influences?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 28,
-        "title": "Respect Authority/Faithful Messenger",
-        "question": "Do I respect authority and serve faithfully as a messenger?",
+        "title": "Don't Pledge Surety",
+        "question": "Am I careful about co-signing or becoming surety for others’ debts?",
         "verses": [
-            {"ref": "Proverbs 13:17", "text": "A wicked messenger falls into trouble, But a faithful ambassador brings health."},
-            {"ref": "Proverbs 14:35", "text": "The king’s favor is toward a wise servant, But his wrath is against him who causes shame."},
-            {"ref": "Proverbs 24:21-22", "text": "My son, fear the LORD and the king; Do not associate with those given to change; For their calamity will rise suddenly, And who knows the ruin those two can bring?"},
-            {"ref": "Proverbs 25:1-7", "text": "These also are proverbs of Solomon which the men of Hezekiah king of Judah copied: It is the glory of God to conceal a matter, But the glory of kings is to search out a matter... (full 7 verses)"},
-            {"ref": "Proverbs 25:13", "text": "Like the cold of snow in time of harvest Is a faithful messenger to those who send him, For he refreshes the soul of his masters."},
-            {"ref": "Proverbs 27:18", "text": "Whoever keeps the fig tree will eat its fruit; So he who waits on his master will be honored."},
-            {"ref": "Proverbs 29:26", "text": "Many seek the ruler’s favor, But justice for man comes from the LORD."}
+            {"ref": "Proverbs 6:1-5", "text": "My son, if you become surety for your friend… Do this… deliver yourself…"},
+            {"ref": "Proverbs 11:15", "text": "He who is surety for a stranger will suffer, But one who hates being surety is secure."},
+            {"ref": "Proverbs 17:18", "text": "A man devoid of understanding shakes hands in a pledge, And becomes surety for his friend."},
+            {"ref": "Proverbs 22:26-27", "text": "Do not be one of those who shakes hands in a pledge…"},
+            {"ref": "Proverbs 27:13", "text": "Take the garment of him who is surety for a stranger…"}
         ],
         "dig_deeper": [
-            "Being faithful, having reverence (fear), humility and offering willing service to authority will be refreshing to authority. Even if it is not rewarded, justice for man comes from the Lord. Are you offering the authority figures in your life their due respect?",
-            "If not, consider why. What can you do to change your attitude toward authority? I suggest you re-read Chapter 1 - Authority Issues for more information.",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Have you ever co-signed or guaranteed someone else’s debt? How did it turn out?",
+            "Why does God so strongly warn against surety?",
+            "What boundaries will you set going forward regarding financial guarantees?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
         "id": 29,
-        "title": "Don’t Be Scornful/Proud/Mockers (Scoffers)",
-        "question": "Am I humble, or do I mock, scorn, and act proudly?",
+        "title": "Don't be a Sluggard/Lazy",
+        "question": "Am I diligent and hardworking, or do I exhibit laziness?",
         "verses": [
-            {"ref": "Proverbs 3:34", "text": "Surely He scorns the scornful, But gives grace to the humble."},
-            {"ref": "Proverbs 14:6", "text": "A scoffer seeks wisdom and does not find it, But knowledge is easy to him who understands."},
-            {"ref": "Proverbs 17:5", "text": "He who mocks the poor reproaches his Maker; He who is glad at calamity will not go unpunished."},
-            {"ref": "Proverbs 17:21", "text": "He who begets a scoffer does so to his sorrow, And the father of a fool has no joy."},
-            {"ref": "Proverbs 19:25", "text": "Strike a scoffer, and the simple will become wary; Rebuke one who has understanding, and he will discern knowledge."},
-            {"ref": "Proverbs 19:29", "text": "Judgments are prepared for scoffers, And beatings for the backs of fools."},
-            {"ref": "Proverbs 21:24", "text": "A proud and haughty man—'Scoffer' is his name; He acts with arrogant pride."},
-            {"ref": "Proverbs 22:10", "text": "Cast out the scoffer, and contention will leave; Yes, strife and reproach will cease."},
-            {"ref": "Proverbs 29:8", "text": "Scoffers set a city aflame, But wise men turn away wrath."},
-            {"ref": "Proverbs 30:13-14", "text": "There is a generation—oh, how lofty are their eyes! And their eyelids are lifted up. There is a generation whose teeth are like swords, And whose fangs are like knives, To devour the poor from off the earth, And the needy from among men."},
-            {"ref": "Proverbs 30:17", "text": "The eye that mocks his father, And scorns obedience to his mother, The ravens of the valley will pick it out, And the young eagles will eat it."}
+            {"ref": "Proverbs 6:6-11", "text": "Go to the ant, you sluggard!..."},
+            {"ref": "Proverbs 10:4-5", "text": "He who has a slack hand becomes poor…"},
+            {"ref": "Proverbs 12:24", "text": "The hand of the diligent will rule, But the lazy man will be put to forced labor."},
+            {"ref": "Proverbs 13:4", "text": "The soul of a lazy man desires, and has nothing; But the soul of the diligent shall be made rich."},
+            {"ref": "Proverbs 15:19", "text": "The way of the lazy man is like a hedge of thorns…"},
+            {"ref": "Proverbs 18:9", "text": "He who is slothful in his work Is a brother to him who is a great destroyer."},
+            {"ref": "Proverbs 19:15", "text": "Laziness casts one into a deep sleep, And an idle person will suffer hunger."},
+            {"ref": "Proverbs 20:4", "text": "The lazy man will not plow because of winter; He will beg during harvest and have nothing."},
+            {"ref": "Proverbs 21:25", "text": "The desire of the lazy man kills him, For his hands refuse to labor."},
+            {"ref": "Proverbs 24:30-34", "text": "I went by the field of the lazy man… (the vineyard overgrown with thorns)"},
+            {"ref": "Proverbs 26:13-16", "text": "The lazy man says, “There is a lion in the road!”…"}
         ],
         "dig_deeper": [
-            "Someone who is scornful, proud, a mocker seems to value themselves more than others. Could there, however, be other reasons for their behavior?",
-            "Consider this verse: Philippians 2:3-4 “Let nothing be done through selfish ambition or conceit, but in lowliness of mind let each esteem others better than himself…” How should you value others?",
-            "It seems, even biblically, difficult to correct a scoffer. How can you change your own or others’ behavior if this is a character flaw?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "In what areas of work or home life are you tempted to be lazy?",
+            "How has laziness ever cost you opportunities or relationships?",
+            "What specific steps will you take this week to become more diligent?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
+    {      
     {
         "id": 30,
-        "title": "Honor the Lord With Your Possessions/Generosity",
-        "question": "Do I honor God with my finances and practice generosity?",
+        "title": "Don't let a Perverse Mouth Sow Discord",
+        "question": "Do my words bring peace and unity, or do they sow discord and division?",
         "verses": [
-            {"ref": "Proverbs 3:9-10", "text": "Honor the LORD with your possessions, And with the firstfruits of all your increase; So your barns will be filled with plenty, And your vats will overflow with new wine."},
-            {"ref": "Proverbs 10:15", "text": "The rich man’s wealth is his strong city; The destruction of the poor is their poverty."},
-            {"ref": "Proverbs 10:22", "text": "The blessing of the LORD makes one rich, And He adds no sorrow with it."},
-            {"ref": "Proverbs 11:4", "text": "Riches do not profit in the day of wrath, But righteousness delivers from death."},
-            {"ref": "Proverbs 11:25-26", "text": "The generous soul will be made rich, And he who waters will also be watered himself. The people will curse him who withholds grain, But blessing will be on the head of him who sells it."},
-            {"ref": "Proverbs 11:28", "text": "He who trusts in his riches will fall, But the righteous will flourish like foliage."},
-            {"ref": "Proverbs 13:7-8", "text": "There is one who makes himself rich, yet has nothing; And one who makes himself poor, yet has great riches. The ransom of a man’s life is his riches, But the poor does not hear rebuke."},
-            {"ref": "Proverbs 13:22", "text": "A good man leaves an inheritance to his children’s children, But the wealth of the sinner is stored up for the righteous."},
-            {"ref": "Proverbs 14:20", "text": "The poor man is hated even by his own neighbor, But the rich has many friends."},
-            {"ref": "Proverbs 17:8", "text": "A present is a precious stone in the eyes of its possessor; Wherever he turns, he prospers."},
-            {"ref": "Proverbs 25:14", "text": "Whoever falsely boasts of giving Is like clouds and wind without rain."}
+            {"ref": "Proverbs 6:12-15", "text": "A worthless person, a wicked man, Walks with a perverse mouth; He winks with his eyes, He shuffles his feet, He points with his fingers; Perversity is in his heart, He devises evil continually, He sows discord. Therefore his calamity shall come suddenly; Suddenly he shall be broken without remedy."},
+            {"ref": "Proverbs 6:16-19", "text": "These six things the LORD hates, Yes, seven are an abomination to Him: … A false witness who speaks lies, And one who sows discord among brethren."},
+            {"ref": "Proverbs 10:12", "text": "Hatred stirs up strife, But love covers all sins."},
+            {"ref": "Proverbs 15:18", "text": "A wrathful man stirs up strife, But he who is slow to anger allays contention."},
+            {"ref": "Proverbs 16:28", "text": "A perverse man sows strife, And a whisperer separates the best of friends."},
+            {"ref": "Proverbs 22:10", "text": "Cast out the scoffer, and contention will leave; Yes, strife and reproach will cease."},
+            {"ref": "Proverbs 26:20-21", "text": "Where there is no wood, the fire goes out; And where there is no talebearer, strife ceases. As charcoal is to burning coals, and wood to fire, So is a contentious man to kindle strife."},
+            {"ref": "Proverbs 28:25", "text": "He who is of a proud heart stirs up strife, But he who trusts in the LORD will be prospered."}
         ],
         "dig_deeper": [
-            "What stops you from being generous? Fear of not having enough, fear of being taken advantage of, lack of control about what someone else will do with your resources?",
-            "What specifically, from the verses above, counters your argument?",
+            "Have your words (gossip, criticism, sarcasm, complaining) ever sown discord at work or home?",
+            "What damage have you seen division cause in a team, church, or family?",
+            "What practical steps can you take this week to become a peacemaker instead of a strife-starter?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 31,
-        "title": "Have a Merry Heart",
-        "question": "Do I maintain a merry heart and cheerful countenance?",
+        "title": "Avoid Wickedness/Seek Righteousness",
+        "question": "Am I actively fleeing wickedness and pursuing righteousness in every area of life?",
         "verses": [
-            {"ref": "Proverbs 15:13", "text": "A merry heart makes a cheerful countenance, But by sorrow of the heart the spirit is broken."},
-            {"ref": "Proverbs 15:15", "text": "All the days of the afflicted are evil, But he who is of a merry heart has a continual feast."},
-            {"ref": "Proverbs 15:30", "text": "The light of the eyes rejoices the heart, And a good report makes the bones healthy."},
-            {"ref": "Proverbs 17:22", "text": "A merry heart does good, like medicine, But a broken spirit dries the bones."},
-            {"ref": "Proverbs 18:14", "text": "The spirit of a man will sustain him in sickness, But who can bear a broken spirit?"},
-            {"ref": "Proverbs 25:25", "text": "As cold water to a weary soul, So is good news from a far country."}
+            {"ref": "Proverbs 3:7", "text": "Do not be wise in your own eyes; Fear the LORD and depart from evil."},
+            },
+            {"ref": "Proverbs 4:14-15", "text": "Do not enter the path of the wicked, And do not walk in the way of evil. Avoid it, do not travel on it; Turn away from it and pass on."},
+            {"ref": "Proverbs 8:13", "text": "The fear of the LORD is to hate evil; Pride and arrogance and the evil way And the perverse mouth I hate."},
+            {"ref": "Proverbs 11:5", "text": "The righteousness of the blameless will direct his way aright, But the wicked will fall by his own wickedness."},
+            {"ref": "Proverbs 11:19", "text": "As righteousness leads to life, So he who pursues evil pursues it to his own death."},
+            {"ref": "Proverbs 12:28", "text": "In the way of righteousness is life, And in its pathway there is no death."},
+            {"ref": "Proverbs 13:6", "text": "Righteousness guards him whose way is blameless, But wickedness overthrows the sinner."},
+            {"ref": "Proverbs 14:34", "text": "Righteousness exalts a nation, But sin is a reproach to any people."},
+            {"ref": "Proverbs 15:9", "text": "The way of the wicked is an abomination to the LORD, But He loves him who follows righteousness."},
+            {"ref": "Proverbs 21:21", "text": "He who follows righteousness and mercy Finds life, righteousness, and honor."}
         ],
         "dig_deeper": [
-            "Does sorrow or a broken spirit keep you from having a merry heart or a cheerful countenance? How does this impact the way you are perceived by others?",
-            "What do these verses teach you about what you can do to help make another’s heart merry? Hint: what is “the light of the eyes”? A smile?",
-            "Would you know what not to do? (some that are not good at understanding human nature might, unintentionally try to be too bright and cheery when another’s heart is heavy). Have you ever been accused of this, being insensitive?",
-            "Proverbs 25:20 “Like one who takes away a garment in cold weather… Is one who sings songs to a heavy heart.”",
+            "In what specific area of your life or work do you need to more actively “depart from evil” right now?",
+            "What does it look like practically to “pursue righteousness” in your daily decisions?",
+            "How does choosing righteousness affect your witness and influence at work?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
         "id": 32,
+        "title": "Store Knowledge",
+        "question": "Do I continually store up godly knowledge and understanding?",
+        "verses": [
+            {"ref": "Proverbs 10:14", "text": "Wise people store up knowledge, But the mouth of the foolish is near destruction."},
+            {"ref": "Proverbs 15:14", "text": "The heart of him who has understanding seeks knowledge, But the mouth of fools feeds on foolishness."},
+            {"ref": "Proverbs 18:15", "text": "The heart of the prudent acquires knowledge, And the ear of the wise seeks knowledge."},
+            {"ref": "Proverbs 19:2", "text": "Also it is not good for a soul to be without knowledge, And he sins who hastens with his feet."},
+            {"ref": "Proverbs 23:12", "text": "Apply your heart to instruction, And your ears to words of knowledge."},
+            {"ref": "Proverbs 24:4", "text": "By knowledge the rooms are filled With all precious and pleasant riches."}
+        ],
+        "dig_deeper": [
+            "How are you currently “storing up” godly knowledge (Bible reading, books, sermons, mentors, etc.)?",
+            "In what work-related skill or spiritual area do you most need to grow in knowledge right now?",
+            "What is one new habit you can start this week to seek and store more knowledge?",
+            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+        ]
+    {,
+    {
+        "id": 33,
+        "title": "Don't Use Dishonest Means",
+        "question": "Do I reject dishonest gain and dishonest scales?",
+        "verses": [
+            {"ref": "Proverbs 11:1", "text": "Dishonest scales are an abomination to the LORD, But a just weight is His delight."},
+            {"ref": "Proverbs 13:11", "text": "Wealth gained by dishonesty will be diminished, But he who gathers by labor will increase."},
+            {"ref": "Proverbs 16:8", "text": "Better is a little with righteousness, Than vast revenues without justice."},
+            {"ref": "Proverbs 20:10", "text": "Diverse weights and diverse measures, They are both alike, an abomination to the LORD."},
+            {"ref": "Proverbs 20:17", "text": "Bread gained by deceit is sweet to a man, But afterward his mouth will be filled with gravel."},
+            {"ref": "Proverbs 20:23", "text": "Diverse weights are an abomination to the LORD, And dishonest scales are not good."},
+            {"ref": "Proverbs 21:6", "text": "Getting treasures by a lying tongue Is the fleeting fantasy of those who seek death."}
+        ],
+        "dig_deeper": [
+            "Have you ever cut corners, exaggerated, or used dishonest means to gain advantage at work?",
+            "What does “bread gained by deceit” tasting sweet at first but turning to gravel teach us?",
+            "What practical steps can you take to ensure complete honesty in your business and finances?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 34,
+        "title": "Fairly Apply Justice",
+        "question": "Do I judge and treat people fairly and impartially?",
+        "verses": [
+            {"ref": "Proverbs 18:5", "text": "It is not good to show partiality to the wicked, Or to overthrow the righteous in judgment."},
+            {"ref": "Proverbs 20:8", "text": "A king who sits on the throne of judgment Scatters all evil with his eyes."},
+            {"ref": "Proverbs 24:23-25", "text": "These things also belong to the wise: It is not good to show partiality in judgment… But those who rebuke the wicked will have delight…"},
+            {"ref": "Proverbs 28:21", "text": "To show partiality is not good, Because for a piece of bread a man will transgress."},
+            {"ref": "Proverbs 29:14", "text": "The king who judges the poor with truth, His throne will be established forever."},
+            {"ref": "Proverbs 31:8-9", "text": "Open your mouth for the speechless… judge righteously, And plead the cause of the poor and needy."}
+        ],
+        "dig_deeper": [
+            "Where are you most tempted to show partiality (favoritism, fear of man, bribes, etc.)?",
+            "How can you ensure you treat everyone fairly at work, especially those above and below you?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 35,
+        "title": "Hold Your Tongue",
+        "question": "Do I guard my mouth and speak wisely?",
+        "verses": [
+            {"ref": "Proverbs 10:19", "text": "In the multitude of words sin is not lacking, But he who restrains his lips is wise."},
+            {"ref": "Proverbs 17:27-28", "text": "He who has knowledge spares his words… Even a fool is counted wise when he holds his peace."},
+            {"ref": "Proverbs 21:23", "text": "Whoever guards his mouth and tongue Keeps his soul from troubles."}
+        ],
+        "dig_deeper": [
+            "When have you regretted speaking too much or too quickly?",
+            "What triggers you to talk too much or say things you shouldn’t?",
+            "What practical habits can help you hold your tongue more effectively?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 36,
+        "title": "title": "Show Graciousness/Kindness",
+        "question": "Am I known for graciousness and kindness in the workplace?",
+        "verses": [
+            {"ref": "Proverbs 11:16", "text": "A gracious woman retains honor, But ruthless men retain riches."},
+            {"ref": "Proverbs 19:22", "text": "What is desired in a man is kindness…"},
+            {"ref": "Proverbs 22:11", "text": "He who loves purity of heart And has grace on his lips, The king will be his friend."}
+        ],
+        "dig_deeper": [
+            "Have you considered that kindness and grace bring honor and favor?",
+            "What are the opposite consequences of being ruthless or unkind?",
+            "How can you show more kindness at work this week?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 37,
+        "title": "Be Merciful",
+        "question": "Am I quick to show mercy and forgive others?",
+        "verses": [
+            {"ref": "Proverbs 11:17", "text": "The merciful man does good for his own soul, But he who is cruel troubles his own flesh."},
+            {"ref": "Proverbs 14:21", "text": "…he who has mercy on the poor, happy is he."},
+            {"ref": "Proverbs 19:17", "text": "He who has pity on the poor lends to the LORD…"},
+            {"ref": "Proverbs 21:21", "text": "He who follows righteousness and mercy Finds life, righteousness, and honor."}
+        ],
+        "dig_deeper": [
+            "Who do you need to show mercy to right now?",
+            "How does refusing to show mercy actually hurt you more than the other person?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 38,
+        "title": "Be Patient",
+        "question": "Am I patient and diligent instead of hasty and impulsive?",
+        "verses": [
+            {"ref": "Proverbs 14:29", "text": "He who is slow to wrath has great understanding, But he who is impulsive exalts folly."},
+            {"ref": "Proverbs 19:2", "text": "Also it is not good for a soul to be without knowledge, And he sins who hastens with his feet."},
+            {"ref": "Proverbs 21:5", "text": "The plans of the diligent lead surely to plenty, But those of everyone who is hasty, surely to poverty."}
+        ],
+        "dig_deeper": [
+            "Where do you most struggle with impatience?",
+            "How has haste ever cost you?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 39,
+        "title": "Respect Authority/Faithful Messenger",
+        "question": "Do I respect authority and serve faithfully as a messenger?",
+        "verses": [
+            {"ref": "Proverbs 13:17", "text": "A wicked messenger falls into trouble, But a faithful ambassador brings health."},
+            {"ref": "Proverbs 25:13", "text": "Like the cold of snow in time of harvest Is a faithful messenger to those who send him…"}
+        ],
+        "dig_deeper": [
+            "Do you serve those in authority over you with faithfulness and excellence?",
+            "How can you be a “refreshing” messenger this week?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 40,
+        "title": "Don't Be Scornful/Proud/Mockers (Scoffers)",
+        "question": "Am I humble, or do I mock, scorn, and act proudly?",
+        "verses": [
+            {"ref": "Proverbs 3:34", "text": "Surely He scorns the scornful, But gives grace to the humble."},
+            {"ref": "Proverbs 21:24", "text": "A proud and haughty man—“Scoffer” is his name; He acts with arrogant pride."},
+            {"ref": "Proverbs 22:10", "text": "Cast out the scoffer, and contention will leave…"}
+        ],
+        "dig_deeper": [
+            "Where do you see pride or scorn show up in your attitude or speech?",
+            "How can you cultivate genuine humility this week?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 41,
+        "title": "Honor the Lord With Your Possessions/Generosity",
+        "question": "Do I honor God with my finances and practice generosity?",
+        "verses": [
+            {"ref": "Proverbs 3:9-10", "text": "Honor the LORD with your possessions, And with the firstfruits of all your increase; So your barns will be filled with plenty…"},
+            {"ref": "Proverbs 11:24-25", "text": "There is one who scatters, yet increases more… The generous soul will be made rich…"}
+        ],
+        "dig_deeper": [
+            "What stops you from being generous?",
+            "How does honoring God with the “firstfruits” change your financial perspective?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 42,
+        "title": "Have a Merry Heart",
+        "question": "Do I maintain a merry heart and cheerful countenance?",
+        "verses": [
+            {"ref": "Proverbs 15:13", "text": "A merry heart makes a cheerful countenance, But by sorrow of the heart the spirit is broken."},
+            {"ref": "Proverbs 15:15", "text": "…he who is of a merry heart has a continual feast."},
+            {"ref": "Proverbs 17:22", "text": "A merry heart does good, like medicine, But a broken spirit dries the bones."}
+        ],
+        "dig_deeper": [
+            "Does sorrow or a broken spirit keep you from having a merry heart?",
+            "How can you cultivate joy and cheerfulness even in hard seasons?",
+            "Summarize/prioritize things you can do… to improve in this area:"
+        ]
+    },
+    {
+        "id": 43,
         "title": "Be Content, Not Greedy",
         "question": "Am I content with what I have, or always grasping for more?",
         "verses": [
@@ -799,28 +900,23 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 21:26", "text": "He covets greedily all day long, But the righteous gives and does not spare."},
             {"ref": "Proverbs 22:9", "text": "He who has a generous eye will be blessed, For he gives of his bread to the poor."},
             {"ref": "Proverbs 22:16", "text": "He who oppresses the poor to increase his riches, And he who gives to the rich, will surely come to poverty."},
-            {"ref": "Proverbs 23:1-5", "text": "When you sit down to eat with a ruler, Consider carefully what is before you; And put a knife to your throat If you are a man given to appetite. Do not desire his delicacies, For they are deceptive food. Do not overwork to be rich; Because of your own understanding, cease! Will you set your eyes on that which is not? For riches certainly make themselves wings; They fly away like an eagle toward heaven."},
-            {"ref": "Proverbs 23:6-10", "text": "Do not eat the bread of a miser, Nor desire his delicacies; For as he thinks in his heart, so is he. “Eat and drink!” he says to you, But his heart is not with you… (full 5 verses)"},
-            {"ref": "Proverbs 25:16", "text": "Have you found honey? Eat only as much as you need, Lest you be filled with it and vomit."},
+            {"ref": "Proverbs 23:4-5", "text": "Do not overwork to be rich; Because of your own understanding, cease! Will you set your eyes on that which is not? For riches certainly make themselves wings; They fly away like an eagle toward heaven."},
             {"ref": "Proverbs 27:20", "text": "Hell and Destruction are never full; So the eyes of man are never satisfied."},
             {"ref": "Proverbs 28:20", "text": "A faithful man will abound with blessings, But he who hastens to be rich will not go unpunished."},
             {"ref": "Proverbs 28:22", "text": "A man with an evil eye hastens after riches, And does not consider that poverty will come upon him."},
-            {"ref": "Proverbs 28:15-16", "text": "Like a roaring lion and a charging bear Is a wicked ruler over poor people. A ruler who lacks understanding is a great oppressor, But he who hates covetousness will prolong his days."},
-            {"ref": "Proverbs 28:27", "text": "He who gives to the poor will not lack, But he who hides his eyes will have many curses."},
-            {"ref": "Proverbs 30:8-9", "text": "Remove falsehood and lies far from me; Give me neither poverty nor riches— Feed me with the food allotted to me; Lest I be full and deny You, And say, “Who is the LORD?” Or lest I be poor and steal, And profane the name of my God."},
-            {"ref": "Proverbs 30:15-16", "text": "The leech has two daughters— Give and Give! There are three things that are never satisfied, Four never say, “Enough!”: The grave, The barren womb, The earth that is not satisfied with water— And the fire never says, “Enough!”"}
+            {"ref": "Proverbs 30:8-9", "text": "Remove falsehood and lies far from me; Give me neither poverty nor riches— Feed me with the food allotted to me; Lest I be full and deny You, And say, “Who is the LORD?” Or lest I be poor and steal, And profane the name of my God."}
         ],
         "dig_deeper": [
             "If you have not come to the place that you are content with what you have, what will change your attitude in this area?",
             "Does being content mean that you are lazy, don’t aspire for career advancement, don’t give 100%?",
             "Have you brought trouble to your own house by being greedy for gain? Give an example.",
-            "Are others’ attitudes and greed affecting the way you live? Do you eat with “misers” or do your daughters, spouse or boss say “Give and Give” and need to be addressed so that you can achieve the right balance?",
+            "Are others’ attitudes and greed affecting the way you live?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     {
-        "id": 33,
-        "title": "Don’t Cause Shame",
+        "id": 44,
+        "title": "Don't Cause Shame",
         "question": "Do my actions or words bring shame to others or to myself?",
         "verses": [
             {"ref": "Proverbs 17:2", "text": "A wise servant will rule over a son who causes shame, And will share an inheritance among the brothers."},
@@ -829,17 +925,17 @@ ASSESSMENT_DATA = [
         ],
         "dig_deeper": [
             "Have you ever caused someone shame? If so, have you made amends? Will you? How/when?",
-            "If your inheritance is eternal salvation, will your shameful behavior rob you of this? How can you make your salvation sure? 1 John 1:9",
-            "If someone has caused you shame, will you be willing to forgive them? What will it take from them, from you?",
-            "Are you a contentious spouse? Maybe you are not causing shame or ruin, but have you considered the impact you are having with your “continual dripping”? What can you do to change?",
-            "Does the company you keep bring shame to those you love? Is it because your loved one is being too judgmental or do they have good and biblical reason to be ashamed?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "If your inheritance is eternal salvation, will your shameful behavior rob you of this?",
+            "If someone has caused you shame, will you be willing to forgive them?",
+            "Are you a contentious spouse? What can you do to change?",
+            "Does the company you keep bring shame to those you love?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 34,
-        "title": "Don’t be a Rebel",
-        "question": "Am I rebellious or do I isolate myself from wise counsel?",
+        "id": 45,
+        "title": "Don't be a Rebel",
+        "question": "Am I rebellious or do I isolate myself from wise judgment?",
         "verses": [
             {"ref": "Proverbs 17:11", "text": "An evil man seeks only rebellion; Therefore a cruel messenger will be sent against him."},
             {"ref": "Proverbs 18:1", "text": "A man who isolates himself seeks his own desire; He rages against all wise judgment."}
@@ -847,12 +943,12 @@ ASSESSMENT_DATA = [
         "dig_deeper": [
             "A rebel, a lone ranger, seeking only one’s own desire and unrest. If you or someone you know exhibits this behavior, how will you warn them of the consequences?",
             "What can you offer such a person?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 35,
-        "title": "Don’t Take Revenge",
+        "id": 46,
+        "title": "Don't Take Revenge",
         "question": "Do I leave vengeance to God instead of taking revenge?",
         "verses": [
             {"ref": "Proverbs 20:22", "text": "Do not say, “I will recompense evil”; Wait for the LORD, and He will save you."},
@@ -860,380 +956,86 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 25:21-22", "text": "If your enemy is hungry, give him bread to eat; And if he is thirsty, give him water to drink; For so you will heap coals of fire on his head, And the LORD will reward you."}
         ],
         "dig_deeper": [
-            "What does it feel like when you are bent on getting revenge? Explain the emotions involved, the ways you rationalize your response, the physical manifestations, etc.",
-            "What, specifically, will you do when you are tempted to say “I will recompense (repay) evil” or “I will do to him just as he has done to me”?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "What does it feel like when you are bent on getting revenge?",
+            "What, specifically, will you do when tempted to repay evil?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 36,
-        "title": "Don’t Gloat",
-        "question": "Do I rejoice when my enemy falls or stumbles?",
+        "id": 47,
+        "title": "Don't Gloat",
+        "question": "Do I rejoice when my enemy falls, or let my heart be glad when he stumbles?",
         "verses": [
-            {"ref": "Proverbs 24:17-18", "text": "Do not rejoice when your enemy falls, And do not let your heart be glad when he stumbles; Lest the LORD see it, and it displease Him, And He turn away His wrath from him."},
-            {"ref": "Proverbs 25:27", "text": "It is not good to eat much honey; So to seek one’s own glory is not glory."}
+            {"ref": "Proverbs 24:17-18", "text": "Do not rejoice when your enemy falls, And do not let your heart be glad when he stumbles; Lest the LORD see it, and it displease Him, And He turn away His wrath from him."}
         ],
         "dig_deeper": [
-            "The definition of gloating: to contemplate or dwell on one's own success or another's misfortune with smugness or malignant pleasure. If you are known for having this type of character, are you ready to change?",
+            "The definition of gloating: to contemplate or dwell on one's own success or another's misfortune with smugness. If you are known for this, are you ready to change?",
             "What might cause one to develop these traits?",
             "What can influence someone to change?",
-            "Can you think of other Bible verses to support these proverbs above? (Hint: Proverbs 27:2).",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 37,
+        "id": 48,
         "title": "Avoid Conflict",
         "question": "Do I handle conflict wisely or escalate it?",
         "verses": [
-            {"ref": "Proverbs 25:8-10", "text": "Do not go hastily to court; For what will you do in the end, When your neighbor has put you to shame? Debate your case with your neighbor, And do not disclose the secret to another; Lest he who hears it expose your shame, And your reputation be ruined."},
+            {"ref": "Proverbs 25:8-10", "text": "Do not go hastily to court; For what will you do in the end, When your neighbor has put you to shame?..."},
             {"ref": "Proverbs 29:9", "text": "If a wise man contends with a foolish man, Whether the fool rages or laughs, there is no peace."}
         ],
         "dig_deeper": [
-            "The best way to handle conflict, in some cases, seems to be to avoid it or at least handle it privately. Do you agree?",
-            "If this isn’t the best way to handle your issue, state why?",
-            "Next, prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area; avoiding and/or handling conflict well:"
+            "The best way to handle conflict sometimes is to avoid it or handle it privately. Do you agree?",
+            "If this isn’t the best way, state why.",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 38,
+        "id": 49,
         "title": "Value Friends and Family",
         "question": "Do I cherish and nurture my relationships with friends and family?",
         "verses": [
             {"ref": "Proverbs 17:17", "text": "A friend loves at all times, And a brother is born for adversity."},
             {"ref": "Proverbs 18:24", "text": "A man who has friends must himself be friendly, But there is a friend who sticks closer than a brother."},
-            {"ref": "Proverbs 19:4", "text": "Wealth makes many friends, But the poor is separated from his friend."},
-            {"ref": "Proverbs 19:6-7", "text": "Many entreat the favor of the nobility, And every man is a friend to one who gives gifts. All the brothers of the poor hate him; How much more do his friends go far from him! He may pursue them with words, yet they abandon him."},
-            {"ref": "Proverbs 19:26", "text": "He who mistreats his father and chases away his mother Is a son who causes shame and brings reproach."},
-            {"ref": "Proverbs 20:20", "text": "Whoever curses his father or his mother, His lamp will be put out in deep darkness."},
-            {"ref": "Proverbs 23:15-26", "text": "My son, if your heart is wise, My heart will rejoice—indeed, I myself; Yes, my inmost being will rejoice When your lips speak right things... (full 12 verses)"},
-            {"ref": "Proverbs 27:9-10", "text": "Ointment and perfume delight the heart, And the sweetness of a man’s friend gives delight by hearty counsel. Do not forsake your own friend or your father’s friend, Nor go to your brother’s house in the day of your calamity; Better is a neighbor nearby than a brother far away."},
-            {"ref": "Proverbs 27:14", "text": "He who blesses his friend with a loud voice, rising early in the morning, It will be counted a curse to him."},
-            {"ref": "Proverbs 28:24", "text": "Whoever robs his father or his mother, And says, “It is no transgression,” The same is companion to a destroyer."},
-            {"ref": "Proverbs 29:17", "text": "Correct your son, and he will give you rest; Yes, he will give delight to your soul."},
-            {"ref": "Proverbs 30:11", "text": "There is a generation that curses its father, And does not bless its mother."}
+            {"ref": "Proverbs 27:10", "text": "Do not forsake your own friend or your father’s friend…"}
         ],
         "dig_deeper": [
-            "Relationships with friends and family are to be valued, cultivated, genuine, joyous, deemed sweet and giving delight, respected and revered. Do you find your relationships with your friends and family lacking in these areas? If so, what can you do differently to repair/restore these relationships?",
-            "Do you have “fake friends” those that aren’t genuine and may require you to be fake back or even may bring you ruin (Proverbs 18:24) or ones that will stick closer than a brother?",
-            "If others around you are having problems within their relationships, what will you do to encourage them to value their friends and family?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Do you find your relationships lacking in genuineness, joy, or reverence?",
+            "Do you have “fake friends” or true friends who stick closer than a brother?",
+            "How can you encourage others to value their friends and family?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 39,
+        "id": 50,
         "title": "Understands Human Nature",
         "question": "Do I understand human nature and respond wisely to people?",
         "verses": [
             {"ref": "Proverbs 18:16", "text": "A man’s gift makes room for him, And brings him before great men."},
-            {"ref": "Proverbs 21:14", "text": "A gift in secret pacifies anger, And a bribe behind the back, strong wrath."},
             {"ref": "Proverbs 20:14", "text": "“It is good for nothing,” cries the buyer; But when he has gone his way, then he boasts."},
             {"ref": "Proverbs 25:17", "text": "Seldom set foot in your neighbor’s house, Lest he become weary of you and hate you."},
-            {"ref": "Proverbs 25:20", "text": "Like one who takes away a garment in cold weather, And like vinegar on soda, Is one who sings songs to a heavy heart."},
-            {"ref": "Proverbs 30:24-31", "text": "There are four things which are little on the earth, But they are exceedingly wise: The ants are a people not strong, Yet they prepare their food in the summer; The rock badgers are a feeble folk, Yet they make their homes in the crags; The locusts have no king, Yet they all advance in ranks; The spider skillfully grasps with its hands, And it is in kings’ palaces. There are three things which are majestic in pace, Yes, four which are stately in walk: A lion, which is mighty among beasts And does not turn away from any; A greyhound, A male goat also, And a king whose troops are with him."}
+            {"ref": "Proverbs 25:20", "text": "Like one who takes away a garment in cold weather… Is one who sings songs to a heavy heart."},
+            {"ref": "Proverbs 30:24-31", "text": "There are four things which are little on the earth, But they are exceedingly wise… (ants, rock badgers, locusts, spider, lion, greyhound, goat, king)"}
         ],
         "dig_deeper": [
-            "Gifts, given from the bosom (the heart), not in a flashy way, broadcast so that you will get a reward, but sincere, in secret, can open doors and pacify anger, do you agree? Is this condoning bribes?",
-            "Have you ever heard a person bargaining for a good deal? Will they say one thing to get that deal (“it’s good for nothing”) and then brag of their accomplishment (“I got a great deal!”)? What does this tell us about human nature and negotiations?",
-            "Secular psychology links our negative behavior like greed, or reactions like anger or anxiety, etc. to experiences we have had from our childhoods. The Bible teaches us, however, that we are born with a sin nature. What can we do for them, instead?",
-            "Do you learn by observing others (animals or man) what it is about them that makes them unique; their strengths? If you only focus on a man’s sinful nature you may miss that they are still a child of God.",
-            "Are you sensitive (self-aware) not only of when you respond in your sin nature, but maybe when someone has had enough of you, when you are being too cheerful or when you’ve worn out your welcome?",
-            "Further, in Proverbs 30:25-28, what wisdom can you learn from the least/little animals about getting along: Preparedness, suitable environment, cooperation and diligence?",
-            "In Proverbs 30:29-31, what can you learn about leadership, having a stately walk, from the stately animals listed: Strength and courage, quickness, agility and surefootedness?",
-            "How can improving your skills of understanding human nature help you work with and/or lead others?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Gifts in secret can open doors — do you agree? Is this condoning bribes?",
+            "What does bargaining behavior tell us about human nature?",
+            "What can we learn from the “little but wise” creatures?",
+            "How can understanding human nature help you lead and work with others?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
-        "id": 40,
+        "id": 51,
         "title": "Respect Elders",
         "question": "Do I honor and learn from those with experience and gray hair?",
         "verses": [
             {"ref": "Proverbs 20:29", "text": "The glory of young men is their strength, And the splendor of old men is their gray head."}
         ],
         "dig_deeper": [
-            "Have you realized that the gray hair of your elders may hold wisdom?",
-            "Have you realized that if you are the one with gray hair that you have a duty to those under your care/entrusted to you?",
-            "1 Peter 5:1-4 NIV – To the elders among you…",
-            "As you read 1 Peter 5:5, what quality does “respecting your elders” show in your character?",
-            "As an elder, are you valuing yourself, passing on your wisdom and being an asset to those who are younger and have more strength and energy?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 41,
-        "title": "Great Commission",
-        "question": "Am I actively trying to share Christ and rescue those headed for death?",
-        "verses": [
-            {"ref": "Proverbs 24:11-12", "text": "Deliver those who are drawn toward death, And hold back those stumbling to the slaughter. If you say, “Surely we did not know this,” Does not He who weighs the hearts consider it? He who keeps your soul, does He not know it? And will He not render to each man according to his deeds?"}
-        ],
-        "dig_deeper": [
-            "Have you tried your best to share Christ with those around you that are drawn to death, stumbling to the slaughter?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 42,
-        "title": "Avoid Wickedness/Seek Righteousness",
-        "question": "Am I pursuing righteousness instead of wickedness in my work and life?",
-        "verses": [
-            {"ref": "Proverbs 10:2-3", "text": "Treasures of wickedness profit nothing, But righteousness delivers from death. The LORD will not allow the righteous soul to famish, But He casts away the desire of the wicked."},
-            {"ref": "Proverbs 10:7", "text": "The memory of the righteous is blessed, But the name of the wicked will rot."},
-            {"ref": "Proverbs 10:16", "text": "The labor of the righteous leads to life, The wages of the wicked to sin."},
-            {"ref": "Proverbs 10:23-25", "text": "To do evil is like sport to a fool, But a man of understanding has wisdom. The fear of the wicked will come upon him, And the desire of the righteous will be granted. When the whirlwind passes by, the wicked is no more, But the righteous has an everlasting foundation."},
-            {"ref": "Proverbs 10:27-30", "text": "The fear of the LORD prolongs days, But the years of the wicked will be shortened. The hope of the righteous will be gladness, But the expectation of the wicked will perish. The way of the LORD is strength for the upright, But destruction will come to the workers of iniquity. The righteous will never be removed, But the wicked will not inhabit the earth."},
-            {"ref": "Proverbs 11:5-8", "text": "The righteousness of the blameless will direct his way aright, But the wicked will fall by his own wickedness. The righteousness of the upright will deliver them, But the unfaithful will be caught by their lust. When a wicked man dies, his expectation will perish, And the hope of the unjust perishes. The righteous is delivered from trouble, And it comes to the wicked instead."},
-            {"ref": "Proverbs 11:19", "text": "As righteousness leads to life, So he who pursues evil pursues it to his own death."},
-            {"ref": "Proverbs 11:21", "text": "Though they join forces, the wicked will not go unpunished; But the posterity of the righteous will be delivered."},
-            {"ref": "Proverbs 11:23", "text": "The desire of the righteous is only good, But the expectation of the wicked is wrath."},
-            {"ref": "Proverbs 11:27", "text": "He who earnestly seeks good finds favor, But trouble will come to him who seeks evil."},
-            {"ref": "Proverbs 11:30-31", "text": "The fruit of the righteous is a tree of life, And he who wins souls is wise. If the righteous will be recompensed on the earth, How much more the ungodly and the sinner."},
-            {"ref": "Proverbs 13:6", "text": "Righteousness guards him whose way is blameless, But wickedness overthrows the sinner."},
-            {"ref": "Proverbs 13:9", "text": "The light of the righteous rejoices, But the lamp of the wicked will be put out."},
-            {"ref": "Proverbs 13:25", "text": "The righteous eats to the satisfying of his soul, But the stomach of the wicked shall be in want."},
-            {"ref": "Proverbs 14:11", "text": "The house of the wicked will be overthrown, But the tent of the upright will flourish."},
-            {"ref": "Proverbs 14:19", "text": "The evil will bow before the good, And the wicked at the gates of the righteous."},
-            {"ref": "Proverbs 14:32", "text": "The wicked is banished in his wickedness, But the righteous has a refuge in his death."},
-            {"ref": "Proverbs 14:34", "text": "Righteousness exalts a nation, But sin is a reproach to any people."},
-            {"ref": "Proverbs 15:3", "text": "The eyes of the LORD are in every place, Keeping watch on the evil and the good."},
-            {"ref": "Proverbs 15:6", "text": "In the house of the righteous there is much treasure, But in the revenue of the wicked is trouble."},
-            {"ref": "Proverbs 15:8-9", "text": "The sacrifice of the wicked is an abomination to the LORD, But the prayer of the upright is His delight. The way of the wicked is an abomination to the LORD, But He loves him who follows righteousness."},
-            {"ref": "Proverbs 15:29", "text": "The LORD is far from the wicked, But He hears the prayer of the righteous."},
-            {"ref": "Proverbs 16:12", "text": "It is an abomination for kings to commit wickedness, For a throne is established by righteousness."},
-            {"ref": "Proverbs 16:31", "text": "The silver-haired head is a crown of glory, If it is found in the way of righteousness."},
-            {"ref": "Proverbs 18:3", "text": "When the wicked comes, contempt comes also; And with dishonor comes reproach."},
-            {"ref": "Proverbs 20:26", "text": "A wise king sifts out the wicked, And brings the threshing wheel over them."},
-            {"ref": "Proverbs 21:3", "text": "To do righteousness and justice Is more acceptable to the LORD than sacrifice."},
-            {"ref": "Proverbs 21:7-8", "text": "The violence of the wicked will destroy them, Because they refuse to do justice. The way of a guilty man is perverse; But as for the pure, his work is right."},
-            {"ref": "Proverbs 21:10", "text": "The soul of the wicked desires evil; His neighbor finds no favor in his eyes."},
-            {"ref": "Proverbs 21:12", "text": "The righteous God wisely considers the house of the wicked, Overthrowing the wicked for their wickedness."},
-            {"ref": "Proverbs 21:18", "text": "The wicked shall be a ransom for the righteous, And the unfaithful for the upright."},
-            {"ref": "Proverbs 22:8", "text": "He who sows iniquity will reap sorrow, And the rod of his anger will fail."},
-            {"ref": "Proverbs 22:12", "text": "The eyes of the LORD preserve knowledge, But He overthrows the words of the faithless."},
-            {"ref": "Proverbs 28:1", "text": "The wicked flee when no one pursues, But the righteous are bold as a lion."},
-            {"ref": "Proverbs 28:12", "text": "When the righteous rejoice, there is great glory; But when the wicked arise, men hide themselves."},
-            {"ref": "Proverbs 28:28", "text": "When the wicked arise, men hide themselves; But when they perish, the righteous increase."},
-            {"ref": "Proverbs 29:6-7", "text": "By transgression an evil man is snared, But the righteous sings and rejoices. The righteous considers the cause of the poor, But the wicked does not understand such knowledge."},
-            {"ref": "Proverbs 29:10", "text": "The bloodthirsty hate the blameless, But the upright seek his well-being."},
-            {"ref": "Proverbs 29:16", "text": "When the wicked are multiplied, transgression increases; But the righteous will see their fall."}
-        ],
-        "dig_deeper": [
-            "Did you think the term “righteousness” had a bad connotation? Did it conjure up the idea of a person who is “self-righteous” or “holier than thou”? Why do you think this is?",
-            "Where should your righteousness come from? (Hint: Matthew 6).",
-            "Underline the positive consequences of righteousness in the passages above.",
-            "What causes you/others to behave wickedly (do what you know is not right)?",
-            "Even though it is not possible to be righteous without God, is it something to aspire to or is it futile?",
-            "By reading these verses, could you be encouraged, even if you are dealing with a wicked co-worker, supervisor or employee? How?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 43,
-        "title": "Store Knowledge",
-        "question": "Do I continually store up godly knowledge and understanding?",
-        "verses": [
-            {"ref": "Proverbs 10:14", "text": "Wise people store up knowledge, But the mouth of the foolish is near destruction."},
-            {"ref": "Proverbs 15:14", "text": "The heart of him who has understanding seeks knowledge, But the mouth of fools feeds on foolishness."},
-            {"ref": "Proverbs 28:2", "text": "Because of the transgression of a land, many are its princes; But by a man of understanding and knowledge Right will be prolonged."}
-        ],
-        "dig_deeper": [
-            "Could storing up more knowledge help you become wiser, advance your career?",
-            "What type of knowledge do you need to seek?",
-            "By gaining understanding and knowledge you could not only gain wisdom (and possibly career advantage) but also be able to help “prolong what is right” – Proverbs 28:2. What does this mean to you?",
-            "What is stopping you from growing in knowledge: fear, impatience, stubbornness, pride, anger, embarrassment, or incompetence? What can you do to overcome this?",
-            "What will you do to expand your knowledge?",
-            "In your pursuit of knowledge remember an important balance that the Bible teaches. What good is knowledge without love? How will you remind yourself of this? 1 Corinthians 13:8",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 44,
-        "title": "Don’t Use Dishonest Means",
-        "question": "Do I reject dishonest gain and dishonest scales?",
-        "verses": [
-            {"ref": "Proverbs 11:1", "text": "Dishonest scales are an abomination to the LORD, But a just weight is His delight."},
-            {"ref": "Proverbs 11:18", "text": "The wicked man does deceptive work, But he who sows righteousness will have a sure reward."},
-            {"ref": "Proverbs 11:24", "text": "There is one who scatters, yet increases more; And there is one who withholds more than is right, But it leads to poverty."},
-            {"ref": "Proverbs 13:11", "text": "Wealth gained by dishonesty will be diminished, But he who gathers by labor will increase."},
-            {"ref": "Proverbs 16:8", "text": "Better is a little with righteousness, Than vast revenues without justice."},
-            {"ref": "Proverbs 16:11", "text": "Honest weights and scales are the LORD’s; All the weights in the bag are His work."},
-            {"ref": "Proverbs 17:23", "text": "A wicked man accepts a bribe behind the back To pervert the ways of justice."},
-            {"ref": "Proverbs 20:10", "text": "Diverse weights and diverse measures, They are both alike, an abomination to the LORD."},
-            {"ref": "Proverbs 20:17", "text": "Bread gained by deceit is sweet to a man, But afterward his mouth will be filled with gravel."},
-            {"ref": "Proverbs 20:23", "text": "Diverse weights are an abomination to the LORD, And dishonest scales are not good."},
-            {"ref": "Proverbs 29:27", "text": "An unjust man is an abomination to the righteous, And he who is upright in the way is an abomination to the wicked."}
-        ],
-        "dig_deeper": [
-            "If you’ve been deceptive, used dishonest scales or have been bribed or otherwise gained without justice, how can you make it right?",
-            "If you believe others in the workplace are getting ahead by dishonest means, what can you do for them?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 45,
-        "title": "Fairly Apply Justice",
-        "question": "Do I judge and treat people fairly and impartially?",
-        "verses": [
-            {"ref": "Proverbs 16:10-11", "text": "Divination is on the lips of the king; His mouth must not transgress in judgment. Honest weights and scales are the LORD’s; All the weights in the bag are His work."},
-            {"ref": "Proverbs 18:13", "text": "He who answers a matter before he hears it, It is folly and shame to him."},
-            {"ref": "Proverbs 18:17", "text": "The first one to plead his cause seems right, Until his neighbor comes and examines him."},
-            {"ref": "Proverbs 20:8", "text": "A king who sits on the throne of judgment Scatters all evil with his eyes."},
-            {"ref": "Proverbs 21:15", "text": "It is a joy for the just to do justice, But destruction will come to the workers of iniquity."},
-            {"ref": "Proverbs 22:22-23", "text": "Do not rob the poor because he is poor, Nor oppress the afflicted at the gate; For the LORD will plead their cause, And plunder the soul of those who plunder them."},
-            {"ref": "Proverbs 23:10-11", "text": "Do not remove the ancient landmark, Nor enter the fields of the fatherless; For their Redeemer is mighty; He will plead their cause against you."},
-            {"ref": "Proverbs 24:23-26", "text": "These things also belong to the wise: It is not good to show partiality in judgment. He who says to the wicked, “You are righteous,” Him the people will curse; Nations will abhor him. But those who rebuke the wicked will have delight, And a good blessing will come upon them. He who gives a right answer kisses the lips."},
-            {"ref": "Proverbs 28:5", "text": "Evil men do not understand justice, But those who seek the LORD understand all."},
-            {"ref": "Proverbs 28:8", "text": "One who increases his possessions by usury and extortion Gathers it for him who will pity the poor."},
-            {"ref": "Proverbs 28:21", "text": "To show partiality is not good, Because for a piece of bread a man will transgress."},
-            {"ref": "Proverbs 29:2", "text": "When the righteous are in authority, the people rejoice; But when a wicked man rules, the people groan."},
-            {"ref": "Proverbs 29:4", "text": "The king establishes the land by justice, But he who receives bribes overthrows it."},
-            {"ref": "Proverbs 29:12-14", "text": "If a ruler pays attention to lies, All his servants become wicked. The poor man and the oppressor have this in common: The LORD gives light to the eyes of both. The king who judges the poor with truth, His throne will be established forever."},
-            {"ref": "Proverbs 31:8-9", "text": "Open your mouth for the speechless, In the cause of all who are appointed to die. Open your mouth, judge righteously, And plead the cause of the poor and needy."}
-        ],
-        "dig_deeper": [
-            "Have you shown partiality in judgment, not listened well enough to make good judgments, been easily misled with lies or not stood up for those that needed their cases plead? How can you make it right?",
-            "Are you prepared to admit your failure and start new making sure you heed the advice in the verses above? How?",
-            "If you feel someone, probably your boss, has been unfair in their judgment is it because they have been partial, not listened well, been misled by lies have accepted bribes, or simply not stood up for those that can’t stand up for themselves?",
-            "How will you let them know how this is affecting you (See Chapter 6 – Communicating Issues for some help with this)?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 46,
-        "title": "Hold Your Tongue",
-        "question": "Do I guard my mouth and speak wisely, or do I gossip and wound with words?",
-        "verses": [
-            {"ref": "Proverbs 11:13", "text": "A talebearer reveals secrets, But he who is of a faithful spirit conceals a matter."},
-            {"ref": "Proverbs 13:2-3", "text": "A man shall eat well by the fruit of his mouth, But the soul of the unfaithful feeds on violence. He who guards his mouth preserves his life, But he who opens wide his lips shall have destruction."},
-            {"ref": "Proverbs 14:23", "text": "In all labor there is profit, But idle chatter leads only to poverty."},
-            {"ref": "Proverbs 15:1-2", "text": "A soft answer turns away wrath, But a harsh word stirs up anger. The tongue of the wise uses knowledge rightly, But the mouth of fools pours forth foolishness."},
-            {"ref": "Proverbs 15:23", "text": "A man has joy by the answer of his mouth, And a word spoken in due season, how good it is!"},
-            {"ref": "Proverbs 15:26", "text": "The thoughts of the wicked are an abomination to the LORD, But the words of the pure are pleasant."},
-            {"ref": "Proverbs 15:28", "text": "The heart of the righteous studies how to answer, But the mouth of the wicked pours forth evil."},
-            {"ref": "Proverbs 16:1", "text": "The preparations of the heart belong to man, But the answer of the tongue is from the LORD."},
-            {"ref": "Proverbs 16:23-24", "text": "The heart of the wise teaches his mouth, And adds learning to his lips. Pleasant words are like a honeycomb, Sweetness to the soul and health to the bones."},
-            {"ref": "Proverbs 17:27-28", "text": "He who has knowledge spares his words, And a man of understanding is of a calm spirit. Even a fool is counted wise when he holds his peace; When he shuts his lips, he is considered perceptive."},
-            {"ref": "Proverbs 18:2", "text": "A fool has no delight in understanding, But in expressing his own heart."},
-            {"ref": "Proverbs 18:4", "text": "The words of a man’s mouth are deep waters; The wellspring of wisdom is a flowing brook."},
-            {"ref": "Proverbs 18:6-8", "text": "A fool’s lips enter into contention, And his mouth calls for blows. A fool’s mouth is his destruction, And his lips are the snare of his soul. The words of a talebearer are like tasty trifles, And they go down into the inmost body."},
-            {"ref": "Proverbs 18:23", "text": "The poor man uses entreaties, But the rich answers roughly."},
-            {"ref": "Proverbs 20:12", "text": "The hearing ear and the seeing eye, The LORD has made them both."},
-            {"ref": "Proverbs 20:25", "text": "It is a snare for a man to devote rashly something as holy, And afterward to reconsider his vows."},
-            {"ref": "Proverbs 21:23", "text": "Whoever guards his mouth and tongue Keeps his soul from troubles."},
-            {"ref": "Proverbs 23:9", "text": "Do not speak in the hearing of a fool, For he will despise the wisdom of your words."},
-            {"ref": "Proverbs 25:23", "text": "The north wind brings forth rain, And a backbiting tongue an angry countenance."},
-            {"ref": "Proverbs 29:11", "text": "A fool vents all his feelings, But a wise man holds them back."}
-        ],
-        "dig_deeper": [
-            "Have you ever really considered what a powerful tool or weapon the tongue can be?",
-            "Go back and underline the verses that most apply to the issue you have with your tongue; are you backbiting, a gossip, speak too quickly, talk too much, etc.",
-            "Describe a time when you should have held your tongue and didn’t. Maybe you said something you regret (gossiped, said something hurtful, said too much, spoke too soon)?",
-            "From the verses above, list the benefits and traits associated with those that “hold their tongue” or speak wisely:",
-            "From the verses above, list the problems and traits associated with those that don’t “hold their tongue” or speak wisely:",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 47,
-        "title": "Show Graciousness/Kindness",
-        "question": "Am I known for graciousness and kindness in the workplace?",
-        "verses": [
-            {"ref": "Proverbs 11:16", "text": "A gracious woman retains honor, But ruthless men retain riches."},
-            {"ref": "Proverbs 19:22", "text": "What is desired in a man is kindness, And a poor man is better than a liar."},
-            {"ref": "Proverbs 20:28", "text": "Mercy and truth preserve the king, And by lovingkindness he upholds his throne."},
-            {"ref": "Proverbs 21:13", "text": "Whoever shuts his ears to the cry of the poor Will also cry himself and not be heard."},
-            {"ref": "Proverbs 22:11", "text": "He who loves purity of heart And has grace on his lips, The king will be his friend."}
-        ],
-        "dig_deeper": [
-            "Have you considered that loving-kindness and grace will bring honor, uphold your position, create loyalty and bring you favor?",
-            "What are the opposite consequences?",
-            "Would you rather have honor or riches?",
-            "In Proverbs 29:19-21 is pampering different than being kind and gracious? Will it cause a servant to be insolent?",
-            "If you aren’t sure others would describe you as kind, what can you do to change your image?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 48,
-        "title": "Be Merciful",
-        "question": "Am I quick to show mercy and forgive others?",
-        "verses": [
-            {"ref": "Proverbs 11:17", "text": "The merciful man does good for his own soul, But he who is cruel troubles his own flesh."},
-            {"ref": "Proverbs 12:10", "text": "A righteous man regards the life of his animal, But the tender mercies of the wicked are cruel."},
-            {"ref": "Proverbs 14:21", "text": "He who despises his neighbor sins; But he who has mercy on the poor, happy is he."},
-            {"ref": "Proverbs 14:31", "text": "He who oppresses the poor reproaches his Maker, But he who honors Him has mercy on the needy."},
-            {"ref": "Proverbs 16:6", "text": "In mercy and truth Atonement is provided for iniquity; And by the fear of the LORD one departs from evil."},
-            {"ref": "Proverbs 19:17", "text": "He who has pity on the poor lends to the LORD, And He will pay back what he has given."},
-            {"ref": "Proverbs 21:21", "text": "He who follows righteousness and mercy Finds life, righteousness, and honor."},
-            {"ref": "Proverbs 28:13", "text": "He who covers his sins will not prosper, But whoever confesses and forsakes them will have mercy."}
-        ],
-        "dig_deeper": [
-            "The verses above reflect that the opposite of being merciful is being cruel or oppressive. Had you considered that?",
-            "Does this change your mind about how willing you are to be merciful (even when it is hard)?",
-            "What stops you from showing mercy sometimes?",
-            "Have you considered that your willingness to confess and forsake sin will be the way to achieve mercy from others? Have you done your part to receive mercy?",
-            "How will the Lord reward you for showing mercy?",
-            "Who do you need to show mercy to today?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 49,
-        "title": "Be Patient",
-        "question": "Am I patient and diligent instead of hasty and impulsive?",
-        "verses": [
-            {"ref": "Proverbs 13:12", "text": "Hope deferred makes the heart sick, But when the desire comes, it is a tree of life."},
-            {"ref": "Proverbs 13:19", "text": "A desire accomplished is sweet to the soul, But it is an abomination to fools to depart from evil."},
-            {"ref": "Proverbs 20:21", "text": "An inheritance gained hastily at the beginning Will not be blessed at the end."},
-            {"ref": "Proverbs 21:5", "text": "The plans of the diligent lead surely to plenty, But those of everyone who is hasty, surely to poverty."},
-            {"ref": "Proverbs 24:27", "text": "Prepare your outside work, Make it fit for yourself in the field; And afterward build your house."},
-            {"ref": "Proverbs 25:15", "text": "By long forbearance a ruler is persuaded, And a gentle tongue breaks a bone."}
-        ],
-        "dig_deeper": [
-            "How has being impatient ever caused problems for you?",
-            "Did you learn a lesson or are you still making mistakes by being hasty, not preparing, being heartsick while you wait?",
-            "What strategies can you employ to help you be more patient?",
-            "What strategy is shared below: Luke 14:28 NIV “Suppose one of you wants to build a tower. Won’t you first sit down and estimate the cost…”",
-            "How can you address others that rush in and experience problems as a result?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 50,
-        "title": "Respect Authority/Faithful Messenger",
-        "question": "Do I respect authority and serve faithfully as a messenger?",
-        "verses": [
-            {"ref": "Proverbs 13:17", "text": "A wicked messenger falls into trouble, But a faithful ambassador brings health."},
-            {"ref": "Proverbs 14:35", "text": "The king’s favor is toward a wise servant, But his wrath is against him who causes shame."},
-            {"ref": "Proverbs 24:21-22", "text": "My son, fear the LORD and the king; Do not associate with those given to change; For their calamity will rise suddenly, And who knows the ruin those two can bring?"},
-            {"ref": "Proverbs 25:13", "text": "Like the cold of snow in time of harvest Is a faithful messenger to those who send him, For he refreshes the soul of his masters."},
-            {"ref": "Proverbs 27:18", "text": "Whoever keeps the fig tree will eat its fruit; So he who waits on his master will be honored."},
-            {"ref": "Proverbs 29:26", "text": "Many seek the ruler’s favor, But justice for man comes from the LORD."}
-        ],
-        "dig_deeper": [
-            "Being faithful, having reverence (fear), humility and offering willing service to authority will be refreshing to authority. Even if it is not rewarded, justice for man comes from the Lord. Are you offering the authority figures in your life their due respect?",
-            "If not, consider why. What can you do to change your attitude toward authority?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    },
-    {
-        "id": 51,
-        "title": "Don’t Be Scornful/Proud/Mockers (Scoffers)",
-        "question": "Am I humble, or do I mock, scorn, and act proudly?",
-        "verses": [
-            {"ref": "Proverbs 3:34", "text": "Surely He scorns the scornful, But gives grace to the humble."},
-            {"ref": "Proverbs 14:6", "text": "A scoffer seeks wisdom and does not find it, But knowledge is easy to him who understands."},
-            {"ref": "Proverbs 17:5", "text": "He who mocks the poor reproaches his Maker; He who is glad at calamity will not go unpunished."},
-            {"ref": "Proverbs 19:25", "text": "Strike a scoffer, and the simple will become wary; Rebuke one who has understanding, and he will discern knowledge."},
-            {"ref": "Proverbs 21:24", "text": "A proud and haughty man—“Scoffer” is his name; He acts with arrogant pride."},
-            {"ref": "Proverbs 22:10", "text": "Cast out the scoffer, and contention will leave; Yes, strife and reproach will cease."},
-            {"ref": "Proverbs 29:8", "text": "Scoffers set a city aflame, But wise men turn away wrath."}
-        ],
-        "dig_deeper": [
-            "Someone who is scornful, proud, a mocker seems to value themselves more than others. Could there, however, be other reasons for their behavior?",
-            "Consider this verse: Philippians 2:3-4 “Let nothing be done through selfish ambition or conceit, but in lowliness of mind let each esteem others better than himself…” How should you value others?",
-            "It seems, even biblically, difficult to correct a scoffer. How can you change your own or others’ behavior if this is a character flaw?",
-            "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            "Have you realized that gray hair may hold wisdom?",
+            "If you have gray hair, do you have a duty to those under you?",
+            "As a younger person, does respecting elders show humility?",
+            "Summarize/prioritize things you can do… to improve in this area:"
         ]
     },
     {
@@ -1246,8 +1048,8 @@ ASSESSMENT_DATA = [
         "dig_deeper": [
             "Have you tried your best to share Christ with those around you that are drawn to death, stumbling to the slaughter?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
-        ]
-    }
+    ]
+}
 ]
 
 
@@ -1424,4 +1226,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
