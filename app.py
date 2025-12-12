@@ -730,7 +730,7 @@ ASSESSMENT_DATA = [
             "What is one new habit you can start this week to seek and store more knowledge?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    {,
+    },
     {
         "id": 33,
         "title": "Don't Use Dishonest Means",
