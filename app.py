@@ -84,7 +84,7 @@ ASSESSMENT_DATA = [
             {
                 "reference": "Proverbs 23:12",
                 "text": "Apply your heart to instruction, And your ears to words of knowledge."
-            }
+            },
         "dig_deeper": [
             "Looking at your life, how have you fallen short in the area of accepting instruction from others: your parents, teachers, Godly advisors? How about others that give commands or counsel i.e., your boss, your spouse? Give some examples of how this has hurt you.",
             "Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction?",
