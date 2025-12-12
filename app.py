@@ -859,7 +859,7 @@ ASSESSMENT_DATA = [
             "What, specifically, will you do when you are tempted to say “I will recompense (repay) evil” or “I will do to him just as he has done to me”?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    }
+    },
     {
         "id": 36,
         "title": "Don’t Gloat",
@@ -1092,7 +1092,7 @@ ASSESSMENT_DATA = [
             "How will you let them know how this is affecting you (See Chapter 6 – Communicating Issues for some help with this)?",
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    }
+    },
     {
         "id": 46,
         "title": "Hold Your Tongue",
