@@ -42,7 +42,6 @@ CORRECT_ANSWERS = {
 
 ASSESSMENT_DATA = [
     {
-]
         "id": 1,
         "title": "Accept Instruction from Others",
         "question": "I willingly accept instruction from others?",
