@@ -50,7 +50,7 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 3:1-4", "text": "My son, do not forget my law, But let your heart keep my commands; For length of days and long life And peace they will add to you. Let not mercy and truth forsake you; Bind them around your neck, Write them on the tablet of your heart, And so find favor and high esteem In the sight of God and man."},
             {"ref": "Proverbs 4:1-4", "text": "Hear, my children, the instruction of a father, And give attention to know understanding; For I give you good doctrine: Do not forsake my law. When I was my father's son, Tender and the only one in the sight of my mother, He also taught me, and said to me: Let your heart retain my words; Keep my commands, and live."},
             {"ref": "Proverbs 10:8", "text": "The wise in heart will receive commands, But a prating fool will fall."},
-            {"ref": "Proverbs 13:1", "text": "A wise son heeds his father's instruction, But a scoffer does not listen to rebuke."}
+            {"ref": "Proverbs 13:1", "text": "A wise son heeds his father's instruction, But a scoffer does not listen to rebuke."},
             {"ref": "Proverbs 19:27", "text": "Cease listening to instruction, my son, And you will stray from the words of knowledge."},
             {"ref": "Proverbs 23:12", "text": "Apply your heart to instruction, And your ears to words of knowledge."}
         ],
