@@ -45,8 +45,7 @@ ASSESSMENT_DATA = [
           # ========================================
             # TOPIC 1: Accept Instruction from Others
             # ========================================
-            ProverbTopic(
-                number=1,
+            "id": 1,
                 title="Accept Instruction from Others",
                 assessment_questions=[
                     AssessmentQuestion(
