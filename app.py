@@ -62,15 +62,15 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 23:12", "text": "12 Apply your heart to instruction, And your ears to words of knowledge."}
         ],
         "dig_deeper_questions": [
-            "1. Looking at your life, how have you fallen short in the area of accepting instruction from others: your parents, teachers, Godly advisors? How about others that give commands or counsel i.e., your boss, your spouse? Give some examples of how this has hurt you.",
-            "2. Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction? See Proverbs 23:12 above.",
-            "3. What do you think stops you from accepting or seeking out instruction willingly?",
-            "4. Specifically, has your lack of accepting instruction affected you in your work? How?",
-            "5. Is there something you could learn (be instructed in) right now that would make you a better employee in your current job or for future career aspirations?",
-            "6. If so, how will you improve in this area?",
-            "7. How can you minister to others that have an issue in this area?",
-            "8. Finally, review Chapter 2 – Self-Image Issues, regarding a \"Coachable Spirit\". How does this pertain to accepting instruction?",
-            "9. Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            " Looking at your life, how have you fallen short in the area of accepting instruction from others: your parents, teachers, Godly advisors? How about others that give commands or counsel i.e., your boss, your spouse? Give some examples of how this has hurt you.",
+            " Taking things one-step further, how have you sought out (or applied your heart to) instruction and made an effort to listen (open your ears) for instruction? See Proverbs 23:12 above.",
+            " What do you think stops you from accepting or seeking out instruction willingly?",
+            " Specifically, has your lack of accepting instruction affected you in your work? How?",
+            " Is there something you could learn (be instructed in) right now that would make you a better employee in your current job or for future career aspirations?",
+            " If so, how will you improve in this area?",
+            " How can you minister to others that have an issue in this area?",
+            " Finally, review Chapter 2 – Self-Image Issues, regarding a \"Coachable Spirit\". How does this pertain to accepting instruction?",
+            " Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     
@@ -95,18 +95,18 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 29:1", "text": "1 He who is often rebuked, and hardens his neck, Will suddenly be destroyed, and that without remedy."}
         ],
         "dig_deeper_questions": [
-            "1. After you have received criticism, explain your normal reaction initially and eventually?",
-            "2. How quickly can you recover after hearing criticism? What about self-criticism? Are you hard on yourself, beating yourself up and letting this affect your performance, long after others have moved on?",
-            "3. Can you think of someone that you have witnessed take criticism well? Describe what about that person's reaction appealed to you.",
-            "4. Delightful, \"in\" the way of life, knowledgeable, honored, prudent, wise, of good report, healthy, possesses understanding and cleansed away from evil, these are ways that Proverbs describes the person who accepts correction. Contrast that to the terms describing those who do not accept correction: going astray, stupid, poor, shameful, dead, despiser of one's own soul, fool, destroyed without remedy. Describe some of the negative consequences you've experienced from not accepting correction:",
-            "5. Which verses above will help you when you are tempted to harbor resentment against someone who offers criticism?",
-            "6. How does a person's demeanor/style when offering criticism impact how well you accept the message?",
-            "7. Explain how you would best like to hear criticism?",
-            "8. Do you offer criticism as a friend, in love, with well-chosen words, \"fitly spoken\"? If not, how can you improve?",
-            "9. The next time you receive criticism in a way, other than your preference outlined above, could you communicate to the person offering the message, how you would rather it be delivered? How could this conversation be helpful?",
-            "10. According to the verses above, should you offer criticism to fools? To wise men?",
-            "11. Does your boss consider you wise enough to be worthy of criticism? This may depend on your reaction (do you harden your neck or do you have a \"coachable spirit\"). Think about it. Is there anything you need to change?",
-            "10. Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            " After you have received criticism, explain your normal reaction initially and eventually?",
+            " How quickly can you recover after hearing criticism? What about self-criticism? Are you hard on yourself, beating yourself up and letting this affect your performance, long after others have moved on?",
+            " Can you think of someone that you have witnessed take criticism well? Describe what about that person's reaction appealed to you.",
+            " Delightful, \"in\" the way of life, knowledgeable, honored, prudent, wise, of good report, healthy, possesses understanding and cleansed away from evil, these are ways that Proverbs describes the person who accepts correction. Contrast that to the terms describing those who do not accept correction: going astray, stupid, poor, shameful, dead, despiser of one's own soul, fool, destroyed without remedy. Describe some of the negative consequences you've experienced from not accepting correction:",
+            " Which verses above will help you when you are tempted to harbor resentment against someone who offers criticism?",
+            " How does a person's demeanor/style when offering criticism impact how well you accept the message?",
+            " Explain how you would best like to hear criticism?",
+            " Do you offer criticism as a friend, in love, with well-chosen words, \"fitly spoken\"? If not, how can you improve?",
+            " The next time you receive criticism in a way, other than your preference outlined above, could you communicate to the person offering the message, how you would rather it be delivered? How could this conversation be helpful?",
+            " According to the verses above, should you offer criticism to fools? To wise men?",
+            " Does your boss consider you wise enough to be worthy of criticism? This may depend on your reaction (do you harden your neck or do you have a \"coachable spirit\"). Think about it. Is there anything you need to change?",
+            " Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     
@@ -133,13 +133,13 @@ ASSESSMENT_DATA = [
             {"ref": "Proverbs 29:15", "text": "15 The rod and rebuke give wisdom, But a child left to himself brings shame to his mother."}
         ],
         "dig_deeper_questions": [
-            "1. Are you consistent in your administration of discipline or constructive feedback?",
-            "2. Is it hard for you to discipline or correct someone? Why do you think this is?",
-            "3. Are you too harsh (set your heart on his destruction) in your discipline?",
-            "4. Are your words \"fitful\"? Do you feel you can appropriately communicate a correction or could use improvement in this area? (For help, see Chapter 6 – Communicating Issues.)",
-            "5. Have you ever given someone a break (spared the rod) because you felt sorry for them? How did it turn out? Looking back, was that the \"loving\" thing to do?",
-            "6. Can you accept discipline better because you now understand it's value and motivation (love/concern)?",
-            "7. Summarize/prioritize things you can do, (do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
+            " Are you consistent in your administration of discipline or constructive feedback?",
+            " Is it hard for you to discipline or correct someone? Why do you think this is?",
+            " Are you too harsh (set your heart on his destruction) in your discipline?",
+            " Are your words \"fitful\"? Do you feel you can appropriately communicate a correction or could use improvement in this area? (For help, see Chapter 6 – Communicating Issues.)",
+            " Have you ever given someone a break (spared the rod) because you felt sorry for them? How did it turn out? Looking back, was that the \"loving\" thing to do?",
+            " Can you accept discipline better because you now understand it's value and motivation (love/concern)?",
+            " Summarize/prioritize things you can do, (do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
     
