@@ -1199,7 +1199,7 @@ ASSESSMENT_DATA = [
 
 
 # ============================================================================
-# DO NOT EDIT BELOW THIS LINE
+# DO DO NOT EDIT BELOW THIS LINE
 # ============================================================================
 
 # Initialize session state
@@ -1276,7 +1276,7 @@ def render_results():
 
                 st.markdown("---")
                 st.subheader("Dig Deeper Questions")
-                for idx, question in enumerate(item["dig_deeper"]):
+                for idx, question in enumerate(item["dig_deeper_questions"]):
                     key = f"{item['id']}_dd_{idx}"
                     st.text_area(
                         label=question,
@@ -1320,7 +1320,7 @@ AREAS OF WEAKNESS: {len(weaknesses)}
         for v in item["verses"]:
             report += f"{v['ref']}\n{v['text']}\n\n"
         report += "Dig Deeper Responses:\n"
-        for i, q in enumerate(item["dig_deeper"]):
+        for i, q in enumerate(item["dig_deeper_questions"]):
             key = f"{item['id']}_dd_{i}"
             report += f"{i+1}. {q}\n   → {st.session_state.dig_deeper_responses.get(key, 'No response')}\n"
         report += "\n" + "="*80 + "\n"
@@ -1347,7 +1347,7 @@ def export_json(weaknesses):
             "your_answer": st.session_state.answers.get(item["id"]),
             "correct_answer": CORRECT_ANSWERS[item["id"]],
             "verses": item["verses"],
-            "dig_deeper": item["dig_deeper"],
+            "dig_deeper": item["dig_deeper_questions"],
             "responses": [
                 st.session_state.dig_deeper_responses.get(f"{item['id']}_dd_{i}", "")
                 for i in range(len(item["dig_deeper"]))
@@ -1371,3 +1371,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
