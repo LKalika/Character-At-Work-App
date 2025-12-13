@@ -1471,7 +1471,7 @@ if "dig_deeper_responses" not in st.session_state:
 # ————————————————————————————————————————
 def render_assessment():
     st.title("Proverbs at Work Assessment")
-    st.markdown("### Evaluate Yourself and Use to Evaluate Others. If Brave, Ask Others to Evaluate You")
+    st.markdown("### Evaluate Yourself. Use to Evaluate Others. If Brave, Ask Others to Evaluate You.")
 
     with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
