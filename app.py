@@ -47,7 +47,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 1,
-        "title": "1. Accept Instruction from Others",
+        "title": "Accept Instruction from Others",
         "question": "Do I willingly accept instruction from others?",
         "verses": [
             {"ref": "Proverbs 1:7-9", "text": "7 The fear of the LORD is the beginning of knowledge, But fools despise wisdom and instruction. 8 My son, hear the instruction of your father, And do not forsake the law of your mother; 9 For they will be a graceful ornament on your head, And chains about your neck."},
@@ -79,7 +79,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 2,
-        "title": "2. Accept Correction",
+        "title": "Accept Correction",
         "question": "Do I gracefully accept correction when it is given?",
         "verses": [
             {"ref": "Proverbs 1:20-33", "text": "20 Wisdom calls aloud outside; She raises her voice in the open squares. 21 She cries out in the chief concourses, At the openings of the gates in the city She speaks her words: 22 \"How long, you simple ones, will you love simplicity? For scorners delight in their scorning, And fools hate knowledge. 23 Turn at my rebuke; Surely I will pour out my spirit on you; I will make my words known to you. 24 Because I have called and you refused, I have stretched out my hand and no one regarded, 25 Because you disdained all my counsel, And would have none of my rebuke, 26 I also will laugh at your calamity; I will mock when your terror comes, 27 When your terror comes like a storm, And your destruction comes like a whirlwind, When distress and anguish come upon you. 28 \"Then they will call on me, but I will not answer; They will seek me diligently, but they will not find me. 29 Because they hated knowledge And did not choose the fear of the LORD, 30 They would have none of my counsel And despised my every rebuke. 31 Therefore they shall eat the fruit of their own way, And be filled to the full with their own fancies. 32 For the turning away of the simple will slay them, And the complacency of fools will destroy them; 33 But whoever listens to me will dwell safely, And will be secure, without fear of evil.\""},
@@ -115,7 +115,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 3,
-        "title": "3. Administer Discipline to Others",
+        "title": "Administer Discipline to Others",
         "question": "Do I readily discipline those that need correction?",
         "verses": [
             {"ref": "Proverbs 13:24", "text": "24 He who spares his rod hates his son, But he who loves him disciplines him"},
@@ -148,7 +148,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 4,
-        "title": "4. Avoid Sinners Enticing You",
+        "title": "Avoid Sinners Enticing You",
         "question": "Am I easily misled into wrong behavior by peer pressure?",
         "verses": [
             {"ref": "Proverbs 1:10-19", "text": "10 My son, if sinners entice you, Do not consent. 11 If they say, \"Come with us, Let us lie in wait to shed blood; Let us lurk secretly for the innocent without cause; 12 Let us swallow them alive like Sheol, 13 We shall find all kinds of precious possessions, We shall fill our houses with spoil; 14 Cast in your lot among us, Let us all have one purse\"— 15 My son, do not walk in the way with them, Keep your foot from their path; 16 For their feet run to evil, And they make haste to shed blood. 17 Surely, in vain the net is spread In the sight of any bird; 18 But they lie in wait for their own blood, They lurk secretly for their own lives. 19 So are the ways of everyone who is greedy for gain; It takes away the life of its owners."},
@@ -174,7 +174,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 5,
-        "title": "5. Seek Wisdom/Discretion",
+        "title": "Seek Wisdom/Discretion",
         "question": "Do I work hard at seeking wisdom and discretion to figure out the right thing to do in difficult situations?",
         "verses": [
             {"ref": "Proverbs 2:1-9", "text": "1 My son, if you receive my words, And treasure my commands within you, 2 So that you incline your ear to wisdom, And apply your heart to understanding; 3 Yes, if you cry out for discernment, And lift up your voice for understanding, 4 If you seek her as silver, And search for her as for hidden treasures; 5 Then you will understand the fear of the LORD, And find the knowledge of God. 6 For the LORD gives wisdom; From His mouth come knowledge and understanding; 7 He stores up sound wisdom for the upright; He is a shield to those who walk uprightly; 8 He guards the paths of justice, And preserves the way of His saints. 9 Then you will understand righteousness and justice, Equity and every good path."},
@@ -212,7 +212,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 6,
-        "title": "6. Seek Counsel",
+        "title": "Seek Counsel",
         "question": "Do I ask others (especially Christians) for counsel and value their insights and opinions?",
         "verses": [
             {"ref": "Proverbs 11:14", "text": "14 Where there is no counsel, the people fall; But in the multitude of counselors there is safety."},
@@ -236,7 +236,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 7,
-        "title": "7. Keep the Lord's Commands",
+        "title": "Keep the Lord's Commands",
         "question": "Do I try to follow the 10 Commandments?",
         "verses": [
             {"ref": "Proverbs 13:13-15", "text": "13 He who despises the word will be destroyed, But he who fears the commandment will be rewarded. 14 The law of the wise is a fountain of life, To turn one away from the snares of death. 15 Good understanding gains favor, But the way of the unfaithful is hard."},
@@ -263,7 +263,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 8,
-        "title": "8. Trust in the Lord",
+        "title": "Trust in the Lord",
         "question": "Do I demonstrate that I trust in the Lord?",
         "verses": [
             {"ref": "Proverbs 3:5-6", "text": "5 Trust in the LORD with all your heart, And lean not on your own understanding; 6 In all your ways acknowledge Him, And He shall direct your paths."},
@@ -291,7 +291,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 9,
-        "title": "9. Don't Be Wise in Your Own Eyes",
+        "title": "Don't Be Wise in Your Own Eyes",
         "question": "Do I give others the impression that I know-it-all (am wise in my own eyes)?",
         "verses": [
             {"ref": "Proverbs 3:7-8", "text": "7 Do not be wise in your own eyes; Fear the LORD and depart from evil. 8 It will be health to your flesh, And strength to your bones."},
@@ -321,7 +321,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 10,
-        "title": "10. Don't Withhold Good When Due",
+        "title": "Don't Withhold Good When Due",
         "question": "Do I give credit to people when credit is due?",
         "verses": [
             {"ref": "Proverbs 3:27-28", "text": "27 Do not withhold good from those to whom it is due, When it is in the power of your hand to do so. 28 Do not say to your neighbor, Go, and come back, And tomorrow I will give it,\" When you have it with you."}
@@ -338,7 +338,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 11,
-        "title": "11. Don't be in Debt",
+        "title": "Don't be in Debt",
         "question": "Do I manage my finances well and avoid debt or pledging for others irresponsibly?",
         "verses": [
             {"ref": "Proverbs 22:7", "text": "7 The rich rules over the poor, And the borrower is servant to the lender."},
@@ -356,7 +356,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 12,
-        "title": "12. Don't Devise Evil or Take Advantage",
+        "title": "Don't Devise Evil or Take Advantage",
         "question": "Do I plot against others (think about or plan to do something harmful to them)?",
         "verses": [
             {"ref": "Proverbs 3:29", "text": "29 Do not devise evil against your neighbor, For he dwells by you for safety's sake."},
@@ -377,7 +377,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 13,
-        "title": "13. Don't Strive",
+        "title": "Don't Strive",
         "question": "Do I start quarrels or easily get involved in quarrels?",
         "verses": [
             {"ref": "Proverbs 3:30", "text": "30 Do not strive with a man without cause, If he has done you no harm."},
@@ -411,7 +411,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 14,
-        "title": "14. Don't Have a Perverse Heart",
+        "title": "Don't Have a Perverse Heart",
         "question": "Do I often feel like my heart just isn't in the right place (filled with perverse thoughts, prideful or stubborn feelings, wicked intent, etc.)?",
         "verses": [
             {"ref": "Proverbs 11:20", "text": "20 Those who are of a perverse heart are an abomination to the LORD, But the blameless in their ways are His delight."},
@@ -442,7 +442,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 15,
-        "title": "15. Be an Excellent Wife",
+        "title": "Be an Excellent Wife",
         "question": "Would I say I'm an excellent wife/spouse? (If applicable, or substitute 'spouse/partner')",
         "verses": [
             {"ref": "Proverbs 12:4", "text": "4 An excellent wife is the crown of her husband, But she who causes shame is like rottenness in his bones."},
@@ -465,7 +465,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 16,
-        "title": "16. Avoid Anger",
+        "title": "Avoid Anger",
         "question": "Do I let anger build up inside or boil over into outbursts?",
         "verses": [
             {"ref": "Proverbs 12:16", "text": "16 A fool's wrath is known at once, But a prudent man covers shame."},
@@ -496,7 +496,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 17,
-        "title": "17. Avoid Anxiety",
+        "title": "Avoid Anxiety",
         "question": "Would I describe myself as overly anxious or easily depressed?",
         "verses": [
             {"ref": "Proverbs 12:25", "text": "25 Anxiety in the heart of man causes depression, But a good word makes it glad."}
@@ -515,7 +515,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 18,
-        "title": "18. Don't Abuse Alcohol",
+        "title": "Don't Abuse Alcohol",
         "question": "Do I allow substance abuse to affect my life or the life of others?",
         "verses": [
             {"ref": "Proverbs 20:1", "text": "1 Wine is a mocker, Strong drink is a brawler, And whoever is led astray by it is not wise."},
@@ -531,7 +531,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 19,
-        "title": "19. Don't Envy the Oppressors",
+        "title": "Don't Envy the Oppressors",
         "question": "Do I envy (or imitate) those who get ahead, even if by dishonest means?",
         "verses": [
             {"ref": "Proverbs 3:31-33", "text": "31 Do not envy the oppressor, And choose none of his ways; 32 For the perverse person is an abomination to the LORD, But His secret counsel is with the upright. 33 The curse of the LORD is on the house of the wicked, But He blesses the home of the just."},
@@ -553,7 +553,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 20,
-        "title": "20. Don't Envy/Be Jealous",
+        "title": "Don't Envy/Be Jealous",
         "question": "Am I jealous of someone or something they have?",
         "verses": [
             {"ref": "Proverbs 14:30", "text": "30 A sound heart is life to the body, But envy is rottenness to the bones."},
@@ -572,7 +572,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 21,
-        "title": "21. Don't Reward Evil",
+        "title": "Don't Reward Evil",
         "question": "Have I cheered on someone who did something bad or made fun of someone who was doing something good?",
         "verses": [
             {"ref": "Proverbs 17:13", "text": "13 Whoever rewards evil for good, Evil will not depart from his house."},
@@ -593,7 +593,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 22,
-        "title": "22. Be Humble",
+        "title": "Be Humble",
         "question": "Am I humble?",
         "verses": [
             {"ref": "Proverbs 11:2", "text": "2 When pride comes, then comes shame; But with the humble is wisdom."},
@@ -626,7 +626,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 23,
-        "title": "23. Put Away A Deceitful Mouth",
+        "title": "Put Away A Deceitful Mouth",
         "question": "Do I lie or act deceitfully, tell tales, am slanderous, or falsely flatter others?",
         "verses": [
             {"ref": "Proverbs 4:24", "text": "24 Put away from you a deceitful mouth, And put perverse lips far from you."},
@@ -670,7 +670,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 24,
-        "title": "24. Let Your Ways Be Established",
+        "title": "Let Your Ways Be Established",
         "question": "Am I known for being unwavering in my principles (having integrity)?",
         "verses": [
             {"ref": "Proverbs 4:25-27", "text": "25 Let your eyes look straight ahead, And your eyelids look right before you. 26 Ponder the path of your feet, And let all your ways be established. 27 Do not turn to the right or the left; Remove your foot from evil."},
@@ -708,7 +708,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 25,
-        "title": "25. Avoid Immoral Women",
+        "title": "Avoid Immoral Women",
         "question": "Do I exercise self-control over my sexual temptations?",
         "verses": [
             {"ref": "Proverbs 2:16-19", "text": "16 To deliver you from the immoral woman, From the seductress who flatters with her words, 17 Who forsakes the companion of her youth, And forgets the covenant of her God. 18 For her house leads down to death, And her paths to the dead; 19 None who go to her return, Nor do they regain the paths of life—"},
@@ -737,7 +737,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 26,
-        "title": "26. Don't Misplace your Confidence",
+        "title": "Don't Misplace your Confidence",
         "question": "Do I often misjudge the faithfulness/character of others?",
         "verses": [
             {"ref": "Proverbs 25:19", "text": "19 Confidence in an unfaithful man in time of trouble Is like a bad tooth and a foot out of joint."},
@@ -759,7 +759,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 27,
-        "title": "27. Avoid Folly",
+        "title": "Avoid Folly",
         "question": "Do I allow my decisions, behavior or attitude to make me appear foolish/unwise?",
         "verses": [
             {"ref": "Proverbs 5:21-23", "text": "21 For the ways of man are before the eyes of the LORD, And He ponders all his paths. 22 His own iniquities entrap the wicked man, And he is caught in the cords of his sin. 23 He shall die for lack of instruction, And in the greatness of his folly he shall go astray."},
@@ -798,7 +798,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 28,
-        "title": "28. Don't Pledge Surety",
+        "title": "Don't Pledge Surety",
         "question": "Do I find myself putting my neck on the line for those who don't do what they said they would after all? (Taken advantage of)",
         "verses": [
             {"ref": "Proverbs 6:1-5", "text": "1 My son, if you become surety for your friend, If you have shaken hands in pledge for a stranger, 2 You are snared by the words of your mouth; You are taken by the words of your mouth. 3 So do this, my son, and deliver yourself; For you have come into the hand of your friend: Go and humble yourself; Plead with your friend. 4 Give no sleep to your eyes, Nor slumber to your eyelids. 5 Deliver yourself like a gazelle from the hand of the hunter, And like a bird from the hand of the fowler."},
@@ -821,7 +821,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 29,
-        "title": "29. Don't Be a Sluggard/Lazy",
+        "title": "Don't Be a Sluggard/Lazy",
         "question": "Am I lazy about getting my work done?",
         "verses": [
             {"ref": "Proverbs 6:6-11", "text": "6 Go to the ant, you sluggard! Consider her ways and be wise, 7 Which, having no captain, Overseer or ruler, 8 Provides her supplies in the summer, And gathers her food in the harvest. 9 How long will you slumber, O sluggard? When will you rise from your sleep? 10 A little sleep, a little slumber, A little folding of the hands to sleep— 11 So shall your poverty come on you like a prowler, And your need like an armed man."},
@@ -861,7 +861,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 30,
-        "title": "30. Don't Let a Perverse Mouth Sow Discord",
+        "title": "Don't Let a Perverse Mouth Sow Discord",
         "question": "Do I say things that stir up a controversy (i.e., spread rumors, speak falsely, wickedly)?",
         "verses": [
             {"ref": "Proverbs 6:12-19", "text": "12 A worthless person, a wicked man, Walks with a perverse mouth; 13 He winks with his eyes, He shuffles his feet, He points with his fingers; 14 Perversity is in his heart, He devises evil continually, He sows discord. 15 Therefore his calamity shall come suddenly; Suddenly he shall be broken without remedy. 16 These six things the LORD hates, Yes, seven are an abomination to Him: 17 A proud look, A lying tongue, Hands that shed innocent blood, 18 A heart that devises wicked plans, Feet that are swift in running to evil, 19 A false witness who speaks lies, And one who sows discord among brethren."},
@@ -891,7 +891,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 31,
-        "title": "31. Avoid Wickedness/Seek Righteousness",
+        "title": "Avoid Wickedness/Seek Righteousness",
         "question": "Do I want to be known for my righteousness?",
         "verses": [
             {"ref": "Proverbs 10:2-3", "text": "2 Treasures of wickedness profit nothing, But righteousness delivers from death. 3 The LORD will not allow the righteous soul to famish, But He casts away the desire of the wicked."},
@@ -950,7 +950,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 32,
-        "title": "32. Store Knowledge",
+        "title": "Store Knowledge",
         "question": "Have I been trying to learn more, getting training, looking things up, and gaining/storing knowledge?",
         "verses": [
             {"ref": "Proverbs 10:14", "text": "14 Wise people store up knowledge, But the mouth of the foolish is near destruction."},
@@ -973,7 +973,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 33,
-        "title": "33. Don't Use Dishonest Means",
+        "title": "Don't Use Dishonest Means",
         "question": "Do I use dishonest means to accomplish my goals?",
         "verses": [
             {"ref": "Proverbs 11:1", "text": "1 Dishonest scales are an abomination to the LORD, But a just weight is His delight."},
@@ -999,7 +999,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 34,
-        "title": "34. Fairly Apply Justice",
+        "title": "Fairly Apply Justice",
         "question": "Have I been able to be fair and impartial when judging others?",
         "verses": [
             {"ref": "Proverbs 16:10-11", "text": "10 Divination is on the lips of the king; His mouth must not transgress in judgment."},
@@ -1032,7 +1032,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 35,
-        "title": "35. Hold Your Tongue",
+        "title": "Hold Your Tongue",
         "question": "Am I able to hold my tongue; not saying something I regret or speak without thinking?",
         "verses": [
             {"ref": "Proverbs 11:13", "text": "13 A talebearer reveals secrets, But he who is of a faithful spirit conceals a matter."},
@@ -1071,7 +1071,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 36,
-        "title": "36. Show Graciousness/Kindness",
+        "title": "Show Graciousness/Kindness",
         "question": "Do I demonstrate grace and kindness?",
         "verses": [
             {"ref": "Proverbs 11:16", "text": "16 A gracious woman retains honor, But ruthless men retain riches."},
@@ -1096,7 +1096,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 37,
-        "title": "37. Be Merciful",
+        "title": "Be Merciful",
         "question": "Am I willing to forgive or show mercy to others?",
         "verses": [
             {"ref": "Proverbs 11:17", "text": "17 The merciful man does good for his own soul, But he who is cruel troubles his own flesh."},
@@ -1124,7 +1124,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 38,
-        "title": "38. Be Patient",
+        "title": "Be Patient",
         "question": "Am I patient, not hasty, in my plans and with my goals?",
         "verses": [
             {"ref": "Proverbs 13:12", "text": "12 Hope deferred makes the heart sick, But when the desire comes, it is a tree of life."},
@@ -1149,7 +1149,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 39,
-        "title": "39. Respect Authority/Faithful Messenger",
+        "title": "Respect Authority/Faithful Messenger",
         "question": "Have I handled the authority figures in my life well (Have or had a good relationship with i.e., my boss, parents, teachers)?",
         "verses": [
             {"ref": "Proverbs 13:17", "text": "17 A wicked messenger falls into trouble, But a faithful ambassador brings health."},
@@ -1172,7 +1172,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 40,
-        "title": "40. Don't Be Scornful/Proud/Mockers (Scoffers)",
+        "title": "Don't Be Scornful/Proud/Mockers (Scoffers)",
         "question": "Am I known for acting scornful/proud/conceited or mocking (putting others down, making fun of them, glad at their calamity)?",
         "verses": [
             {"ref": "Proverbs 3:34", "text": "34 Surely He scorns the scornful, But gives grace to the humble."},
@@ -1200,7 +1200,7 @@ ASSESSMENT_DATA = [
     # ========================================
         {
         "id": 41,
-        "title": "41. Honor the Lord; With Your Possessions/Generosity",
+        "title": "Honor the Lord; With Your Possessions/Generosity",
         "question": "I'm known for my generosity?",
         "verses": [
             {"ref": "Proverbs 3:9-10", "text": "Honor the LORD with your possessions, And with the first fruits of all your increase; So your barns will be filled with plenty, And your vats will overflow with new wine."},
@@ -1226,7 +1226,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 42,
-        "title": "42. Have a Merry Heart",
+        "title": "Have a Merry Heart",
         "question": "I'm described as positive, upbeat or cheerful?",
         "verses": [
             {"ref": "Proverbs 15:13", "text": "A merry heart makes a cheerful countenance, But by sorrow of the heart the spirit is broken."},
@@ -1248,7 +1248,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 43,
-        "title": "43. Be Content, Not Greedy",
+        "title": "Be Content, Not Greedy",
         "question": "I display an attitude that I am content with what I have, not greedy?",
         "verses": [
             {"ref": "Proverbs 15:27", "text": "He who is greedy for gain troubles his own house, But he who hates bribes will live."},
@@ -1279,7 +1279,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 44,
-        "title": "44. Don't Cause Shame",
+        "title": "Don't Cause Shame",
         "question": "I cause my parents, friends or loved one's shame?",
         "verses": [
             {"ref": "Proverbs 17:2", "text": "A wise servant will rule over a son who causes shame, And will share an inheritance among the brothers."},
@@ -1300,7 +1300,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 45,
-        "title": "45. Don't Be a Rebel",
+        "title": "Don't Be a Rebel",
         "question": "I am rebellious/a rebel?",
         "verses": [
             {"ref": "Proverbs 17:11", "text": "An evil man seeks only rebellion; Therefore a cruel messenger will be sent against him."},
@@ -1317,7 +1317,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 46,
-        "title": "46. Don't Take Revenge",
+        "title": "Don't Take Revenge",
         "question": "I take the opportunity to 'get-even' or get revenge for something someone does to me?",
         "verses": [
             {"ref": "Proverbs 20:22", "text": "Do not say, 'I will recompense evil'; Wait for the LORD, and He will save you."},
@@ -1335,7 +1335,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 47,
-        "title": "47. Don't Gloat",
+        "title": "Don't Gloat",
         "question": "I'm known for bragging about my accomplishments and/or rejoicing when an enemy fails?",
         "verses": [
             {"ref": "Proverbs 24:17-18", "text": "Do not rejoice when your enemy falls, And do not let your heart be glad when he stumbles; Lest the LORD see it, and it displease Him, And He turn away His wrath from him."},
@@ -1354,7 +1354,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 48,
-        "title": "48. Avoid Conflict",
+        "title": "Avoid Conflict",
         "question": "I avoid getting into conflicts or am able to handle conflict well and resolve peacefully?",
         "verses": [
             {"ref": "Proverbs 25:8-10", "text": "Do not go hastily to court; For what will you do in the end, When your neighbor has put you to shame? Debate your case with your neighbor, And do not disclose the secret to another; Lest he who hears it expose your shame, And your reputation be ruined."},
@@ -1370,7 +1370,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 49,
-        "title": "49. Value Friends and Family",
+        "title": "Value Friends and Family",
         "question": "I have a good relationship with my family/friends?",
         "verses": [
             {"ref": "Proverbs 17:17", "text": "A friend loves at all times, And a brother is born for adversity."},
@@ -1398,7 +1398,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 50,
-        "title": "50. Understands Human Nature",
+        "title": "Understands Human Nature",
         "question": "I have a good understanding of human nature. I can usually read how people will react?",
         "verses": [
             {"ref": "Proverbs 18:16", "text": "A man's gift makes room for him, And brings him before great men."},
@@ -1425,7 +1425,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 51,
-        "title": "51. Respect Elders",
+        "title": "Respect Elders",
         "question": "I'd consider myself respectful of my elders? Or, if you are the elder, have you been respectful of yourself; imparting your knowledge to the younger generation?",
         "verses": [
             {"ref": "Proverbs 20:29", "text": "The glory of young men is their strength, And the splendor of old men is their gray head."}
@@ -1443,7 +1443,7 @@ ASSESSMENT_DATA = [
     # ========================================
     {
         "id": 52,
-        "title": "52. Great Commission",
+        "title": "Great Commission",
         "question": "I have told others about my faith in God/Christ?",
         "verses": [
             {"ref": "Proverbs 24:11-12", "text": "Deliver those who are drawn toward death, And hold back those stumbling to the slaughter. If you say, 'Surely we did not know this,' Does not He who weighs the hearts consider it? He who keeps your soul, does He not know it? And will He not render to each man according to his deeds?"}
