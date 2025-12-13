@@ -1394,11 +1394,11 @@ ASSESSMENT_DATA = [
         ]
     },
     # ========================================
-    # TOPIC 50: Understands Human Nature
+    # TOPIC 50: Understand Human Nature
     # ========================================
     {
         "id": 50,
-        "title": "Understands Human Nature",
+        "title": "Understand Human Nature",
         "question": "I have a good understanding of human nature. I can usually read how people will react?",
         "verses": [
             {"ref": "Proverbs 18:16", "text": "A man's gift makes room for him, And brings him before great men."},
@@ -1438,7 +1438,7 @@ ASSESSMENT_DATA = [
             "Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
     },
-        # ========================================
+    # ========================================
     # TOPIC 52: Great Commission
     # ========================================
     {
@@ -1471,7 +1471,7 @@ if "dig_deeper_responses" not in st.session_state:
 # ————————————————————————————————————————
 def render_assessment():
     st.title("Proverbs at Work Assessment")
-    st.markdown("### Self-Evaluation")
+    st.markdown("### Evaluate Yourself and Use to Evaluate Others. If Brave, Ask Others to Evaluate You")
 
     with st.form("assessment_form"):
         for item in ASSESSMENT_DATA:
