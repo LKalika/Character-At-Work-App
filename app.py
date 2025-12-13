@@ -41,8 +41,7 @@ CORRECT_ANSWERS = {
 # ============================================================================
 
 ASSESSMENT_DATA = [
-    {
-   
+       
     # ========================================
     # TOPIC 1: Accept Instruction from Others
     # ========================================
@@ -1195,7 +1194,7 @@ ASSESSMENT_DATA = [
             "3. It seems, even biblically, difficult to correct a scoffer? How can you change your own or others behavior, if this is a character flaw?",
             "4. Summarize/prioritize things you can do, (or do for) your boss, co-worker, and/or employee, to improve in this area:"
         ]
-    }
+}
 ]
 
 
