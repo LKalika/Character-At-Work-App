@@ -497,7 +497,7 @@ ASSESSMENT_DATA = [
     {
         "id": 17,
         "title": "Avoid Anxiety",
-        "question": "Would I describe myself as overly anxious or easily depressed?",
+        "question": "Would I describe myself as overly anxious or moody?",
         "verses": [
             {"ref": "Proverbs 12:25", "text": "25 Anxiety in the heart of man causes depression, But a good word makes it glad."}
         ],
@@ -892,7 +892,7 @@ ASSESSMENT_DATA = [
     {
         "id": 31,
         "title": "Avoid Wickedness/Seek Righteousness",
-        "question": "Do I want to be known for my righteousness?",
+        "question": "Would I be decribed as righteous; seeking good, being upright, doing the right thing?",
         "verses": [
             {"ref": "Proverbs 10:2-3", "text": "2 Treasures of wickedness profit nothing, But righteousness delivers from death. 3 The LORD will not allow the righteous soul to famish, But He casts away the desire of the wicked."},
             {"ref": "Proverbs 10:7", "text": "7 The memory of the righteous is blessed, But the name of the wicked will rot."},
